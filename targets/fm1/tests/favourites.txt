@@ -1,4 +1,5 @@
-# SOUNDS (HOME + key 14): F2 hidden with OCT-, then OCT+ from F1 skips it to the drums; screenshots
+# SOUNDS (HOME + key 14, HOME let go): F2 hidden with OCT-, SEL on a sound, the MENU line to SETTINGS and back out
+# with a menu button; then OCT+ from F1 skips F2 to the drums; screenshots
 master 3000
 wait 3600
 press HOME
@@ -11,8 +12,19 @@ shot fav1.png
 turn SELECT 1 10
 wait 50
 tap OCT-
+wait 50
+turn SELECT 2 10
+wait 50
+turn PRESET 2 10
+wait 50
+tap SEL
 wait 100
 shot fav2.png
+turn SELECT 9 10
+wait 50
+turn PRESET 1 10
+wait 200
+shot fav3.png
 tap HOME
 wait 100
 turn PRESET 1 10

@@ -5,6 +5,11 @@
 
 
 
+## 19 November 2026 — SOUNDS: one line a family
+
+- SOUNDS stays open with HOME let go; one line a family (green all offered, blue “F2” some, red line none), a bottom
+  MENU line to switch to SETTINGS (PRESET or OCT), any menu button closes and saves. SETTINGS has the MENU line too.
+
 ## 19 November 2026 — SOUNDS (favourites)
 
 - HOME + key 14: **SOUNDS**, the sounds PRESET offers, family by family (green offered, red hidden; OCT− / OCT+ the
