@@ -1,6 +1,6 @@
 # 20. The sounds and the drum keys
 
-PRESET turns through the 36 factory sounds in this order (nine families, F1–F9 with USER; OCT− / OCT+ jump between them, SOUNDS chooses which ones PRESET offers), then USER 1–8 (the sounds you keep with SAVE + white key).
+PRESET turns through the 48 factory sounds in this order (nine families by character, F1–F9 with USER; OCT− / OCT+ jump between them, SOUNDS chooses which ones PRESET offers), then USER 1–8 (the sounds you keep with SAVE + white key).
 Track 1 starts on **ACID 303** (tracks 2, 3, 4: BASS, LEAD, DRUMS 808). A runs the synth sounds and USER sounds that
 hold a synth. The same list on the FM-1 and the SMK-37. Every button and key of the FM-1: [05](05-using-the-fm1.md).
 
@@ -15,39 +15,51 @@ filter, WHALE's pure tone, INIT's two saws, a kick.
 | 1 | **ACID 303** | F1 acid | TB-303 style: one saw, high resonance, short envelope, glide; hard notes open the filter (accents), overlapping notes slide. |
 | 2 | **ACID SQUARE** | F1 acid | the 303's other wave: a square, hollower, the same squelch and glide. |
 | 3 | **ACID SCREAM** | F1 acid | acid that screams: resonance at the edge, short hard filter envelope, pushed drive. For build-ups. |
-| 4 | **ACID DEEP** | F1 acid | round, hypnotic acid: low filter, long decay, longer glide, a little echo (minimal, dub techno). |
-| 5 | **BASS** | F2 basses | mono legato with glide: saw + sub-octave, snappy resonant filter, drive. |
-| 6 | **SUB** | F2 basses | round triangle and its sub-octave, a touch of drive. |
-| 7 | **REESE** | F2 basses | drum & bass Reese: two saws detuned against each other, low-passed, mono. |
-| 8 | **WOBBLE** | F2 basses | an LFO on the tempo (1/8, from each note) opens and shuts the filter: dubstep / DnB wobble. |
-| 9 | **DEEP SUB** | F2 basses | dub's deep sub: round, the sub oscillator full, almost no filter movement. |
-| 10 | **DRUMS 808** | F3 drum kits | analog-style drum machine: boomy kick, soft snare, hats, clap, toms, rim, cowbell, triangle. |
-| 11 | **DRUMS 909** | F3 drum kits | 909 style from the same voices: a higher, shorter kick with its click, a cracking snare, bright metallic hats (computed, not samples). |
-| 12 | **DRUMS TIGHT** | F3 drum kits | short and punchy, for fast patterns. |
-| 13 | **DRUMS LOFI** | F3 drum kits | dark and driven. |
-| 14 | **DRUMS IRON** | F3 drum kits | industrial: low, metallic, distorted, long rattling hats. |
-| 15 | **LEAD** | F4 leads | mono legato: pulse-width-modulated square + saw an octave up, vibrato, delay. |
-| 16 | **PLUCK** | F4 leads | a bright attack that dies away, echoes behind it. |
-| 17 | **STAB** | F4 leads | the house / techno chord stab: two saws, a short snappy filter and amp, chorus, an echo. Play chords, short. |
-| 18 | **BRASS** | F4 leads | the filter opens after the attack, like a breath. |
-| 19 | **SCREECH** | F4 leads | metal screech: a filter on the edge of whistling, swept and crushed. |
-| 20 | **ORGAN** | F5 keys | triangle + square an octave up + sub, chorus II as a rotary. |
-| 21 | **POLY** | F5 keys | warm poly chords, Juno style: two saws gently detuned, the filter half open, a soft attack, both choruses. |
-| 22 | **VINTAGE KEYS** | F5 keys | a 70s electric piano: a bell-like start that fades, darker when soft, a slow tremolo and chorus I. |
-| 23 | **PAD** | F6 pads | slow attack, moving filter, Juno-style chorus, delay. |
-| 24 | **STRINGS** | F6 pads | string ensemble: detuned saws, slow attack, both choruses. |
-| 25 | **STRINGS 70** | F6 pads | a 70s string machine: two saws close together, a gentle attack, both choruses deep (the ensemble) and a slow phaser. |
-| 26 | **SWEEP** | F6 pads | the pad through the phaser. |
-| 27 | **GRUNGE** | F7 textures | detuned saws and sub, driven hard, phaser and bitcrusher. |
-| 28 | **DRONE** | F7 textures | an octave-down square under a saw, a filter breathing over half a minute. Hold a chord. |
-| 29 | **HOLD** | F7 textures | a ship's hold: creaks, the hull groaning, long echoes. |
-| 30 | **INIT** | F7 textures | two slightly detuned saws: a neutral start for SOUND EDIT. |
-| 31 | **THUNDER** | F8 SFX | thunder: noise through a closed low-pass that swells in and rumbles; low notes boom (the sub), a hard hit cracks. Hold it for a long roll. |
-| 32 | **RAIN** | F8 SFX | rain: bright noise in a band-pass, drops from a fast random level and filter; higher notes, lighter rain. Chorus spreads it wide. |
-| 33 | **WIND** | F8 SFX | filtered noise: the keys move the band, a slow LFO breathes. |
-| 34 | **CREAK** | F8 SFX | a door or a hull creaking: a low saw through a sharp band-pass, cut into grains, the pitch slowly bending; slow notes groan, hard ones crack. |
-| 35 | **WHALE** | F8 SFX | a pure tone sliding for seconds between notes, slow sway, far echoes. Play legato, low. |
-| 36 | **DUB SIREN** | F8 SFX | the dub siren: a square swept up and down by a slow LFO, into a long echo. Hold a note. |
+| 4 | **SCREECH** | F1 acid | metal screech: a filter on the edge of whistling, swept and crushed. |
+| 5 | **GRUNGE** | F1 acid | detuned saws and sub, driven hard, phaser and bitcrusher. |
+| 6 | **TALK** | F1 acid | a saw through a narrow band-pass swaying on the 1/8: a vowel-like “yoi”, with acid's glide and drive (one filter: an approach of a real formant). |
+| 7 | **PSY BASS** | F2 psy | the psytrance rolling bass: short, clicky saw and sub, shut within a 1/16, for K-B-B-B lines. |
+| 8 | **ZAP** | F2 psy | the pitch dives two octaves in a blink, a little echo. |
+| 9 | **LASER** | F2 psy | a longer dive, the filter singing on the way down, echoes that keep it flying. |
+| 10 | **BLIP** | F2 psy | a tiny square, each note a random pitch and brightness: glitchy fast patterns behind the mix. |
+| 11 | **METAL** | F2 psy | a square and a saw a ninth apart, slightly off, through a ringing band-pass: struck metal (high) or wood (low). Close to an FM percussion, without FM. |
+| 12 | **ARP** | F2 psy | cut for fast hypnotic arpeggios: saw and square, snappy filter, short body, an echo. |
+| 13 | **BASS** | F3 basses | mono legato with glide: saw + sub-octave, snappy resonant filter, drive. |
+| 14 | **SUB** | F3 basses | round triangle and its sub-octave, a touch of drive. |
+| 15 | **DEEP SUB** | F3 basses | dub's deep sub: round, the sub oscillator full, almost no filter movement. |
+| 16 | **REESE** | F3 basses | drum & bass Reese: two saws detuned against each other, low-passed, mono. |
+| 17 | **WOBBLE** | F3 basses | an LFO on the tempo (1/8, from each note) opens and shuts the filter: dubstep / DnB wobble. |
+| 18 | **ACID DEEP** | F3 basses | round, hypnotic acid: low filter, long decay, longer glide, a little echo (minimal, dub techno). |
+| 19 | **DRUMS 808** | F4 drums | analog-style drum machine: boomy kick, soft snare, hats, clap, toms, rim, cowbell, triangle. |
+| 20 | **DRUMS 909** | F4 drums | 909 style from the same voices: a higher, shorter kick with its click, a cracking snare, bright metallic hats (computed, not samples). |
+| 21 | **DRUMS TIGHT** | F4 drums | short and punchy, for fast patterns. |
+| 22 | **DRUMS LOFI** | F4 drums | dark and driven. |
+| 23 | **DRUMS IRON** | F4 drums | industrial: low, metallic, distorted, long rattling hats. |
+| 24 | **LEAD** | F5 punch | mono legato: pulse-width-modulated square + saw an octave up, vibrato, delay. |
+| 25 | **PLUCK** | F5 punch | a bright attack that dies away, echoes behind it. |
+| 26 | **STAB** | F5 punch | the house / techno chord stab: two saws, a short snappy filter and amp, chorus, an echo. Play chords, short. |
+| 27 | **BRASS** | F5 punch | the filter opens after the attack, like a breath. |
+| 28 | **ORGAN** | F5 punch | triangle + square an octave up + sub, chorus II as a rotary. |
+| 29 | **VINTAGE KEYS** | F5 punch | a 70s electric piano: a bell-like start that fades, darker when soft, a slow tremolo and chorus I. |
+| 30 | **NOISE** | F6 SFX | white noise in a low-pass, held: K1 (cutoff) opens it for a build-up of your own. |
+| 31 | **RISER** | F6 SFX | noise and a saw, filter and pitch (an octave) rising for about 8 s while held (4 bars at 120 BPM), then staying up. |
+| 32 | **DOWNLIFTER** | F6 SFX | the other way: open and an octave up, falling and fading for about 8 s (held). |
+| 33 | **SHAKER** | F6 SFX | high-passed noise pulsing on the 1/16 (an LFO on the tempo): a hat loop to hold. |
+| 34 | **THUNDER** | F6 SFX | thunder: noise through a closed low-pass that swells in and rumbles; low notes boom (the sub), a hard hit cracks. Hold it for a long roll. |
+| 35 | **RAIN** | F6 SFX | rain: bright noise in a band-pass, drops from a fast random level and filter; higher notes, lighter rain. Chorus spreads it wide. |
+| 36 | **DUB SIREN** | F6 SFX | the dub siren: a square swept up and down by a slow LFO, into a long echo. Hold a note. |
+| 37 | **DRONE** | F7 dark | an octave-down square under a saw, a filter breathing over half a minute. Hold a chord. |
+| 38 | **HOLD** | F7 dark | a ship's hold: creaks, the hull groaning, long echoes. |
+| 39 | **CREAK** | F7 dark | a door or a hull creaking: a low saw through a sharp band-pass, cut into grains, the pitch slowly bending; slow notes groan, hard ones crack. |
+| 40 | **WIND** | F7 dark | filtered noise: the keys move the band, a slow LFO breathes. |
+| 41 | **POLY** | F8 soft | warm poly chords, Juno style: two saws gently detuned, the filter half open, a soft attack, both choruses. |
+| 42 | **PAD** | F8 soft | slow attack, moving filter, Juno-style chorus, delay. |
+| 43 | **STRINGS** | F8 soft | string ensemble: detuned saws, slow attack, both choruses. |
+| 44 | **STRINGS 70** | F8 soft | a 70s string machine: two saws close together, a gentle attack, both choruses deep (the ensemble) and a slow phaser. |
+| 45 | **SWEEP** | F8 soft | the pad through the phaser. |
+| 46 | **WHALE** | F8 soft | a pure tone sliding for seconds between notes, slow sway, far echoes. Play legato, low. |
+| 47 | **CHOIR** | F8 soft | detuned saws in a band-pass around the voice, a slow breath in, vibrato, both choruses: the breaks' synth choir. |
+| 48 | **INIT** | F8 soft | two slightly detuned saws: a neutral start for SOUND EDIT. |
 
 On a synth sound the four SOUND knobs are CUTOFF, RESO, ENV, FX (delay); SOUND EDIT (ARP + SEL) opens every parameter.
 

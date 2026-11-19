@@ -1,6 +1,6 @@
 # 20. Les sons et les touches de batterie
 
-PRESET fait défiler les 36 sons d'usine dans cet ordre (neuf familles, F1–F9 avec USER ; OCT− / OCT+ sautent de l'une à l'autre, SOUNDS choisit ceux que PRESET propose), puis USER 1–8 (les sons gardés avec SAVE + touche blanche).
+PRESET fait défiler les 48 sons d'usine dans cet ordre (neuf familles par caractère, F1–F9 avec USER ; OCT− / OCT+ sautent de l'une à l'autre, SOUNDS choisit ceux que PRESET propose), puis USER 1–8 (les sons gardés avec SAVE + touche blanche).
 La piste 1 démarre sur **ACID 303** (pistes 2, 3, 4 : BASS, LEAD, DRUMS 808). A joue les sons de synthé et les sons
 USER qui contiennent un synthé. La même liste sur le FM-1 et le SMK-37. Chaque bouton et touche du FM-1 :
 [05](05-utilisation-fm1.md).
@@ -16,39 +16,51 @@ qui siffle de SCREECH, le son pur de WHALE, les deux scies d'INIT, une grosse ca
 | 1 | **ACID 303** | F1 acid | façon TB-303 : une scie, forte résonance, enveloppe courte, glide ; les notes jouées fort ouvrent le filtre (accents), les notes qui se chevauchent glissent. |
 | 2 | **ACID SQUARE** | F1 acid | l'autre onde du 303 : un carré, plus creux, le même « squelch » et le glide. |
 | 3 | **ACID SCREAM** | F1 acid | l'acid qui crie : résonance au bord, enveloppe de filtre courte et forte, drive poussé. Pour les montées. |
-| 4 | **ACID DEEP** | F1 acid | l'acid ronde et hypnotique : filtre bas, déclin long, glide plus long, un peu d'écho (minimale, dub techno). |
-| 5 | **BASS** | F2 basses | mono legato avec glide : scie + sous-octave, filtre résonant claquant, saturation. |
-| 6 | **SUB** | F2 basses | triangle rond et sa sous-octave, un peu de saturation. |
-| 7 | **REESE** | F2 basses | la Reese du drum & bass : deux scies désaccordées l'une contre l'autre, filtre bas, mono. |
-| 8 | **WOBBLE** | F2 basses | un LFO au tempo (1/8, repart à chaque note) ouvre et ferme le filtre : le wobble dubstep / DnB. |
-| 9 | **DEEP SUB** | F2 basses | la basse profonde du dub : ronde, sub-oscillateur à fond, presque pas de filtre. |
-| 10 | **DRUMS 808** | F3 kits de batterie | boîte à rythmes façon analogique : grosse caisse ronde, caisse claire douce, charleys, clap, toms, rim, cowbell, triangle. |
-| 11 | **DRUMS 909** | F3 kits de batterie | façon 909 avec les mêmes voix : grosse caisse plus haute et plus courte avec son clic, caisse claire qui claque, charleys métalliques brillants (calculés, pas d'échantillons). |
-| 12 | **DRUMS TIGHT** | F3 kits de batterie | court et percutant, pour les motifs rapides. |
-| 13 | **DRUMS LOFI** | F3 kits de batterie | sombre et saturé. |
-| 14 | **DRUMS IRON** | F3 kits de batterie | industriel : grave, métallique, distordu, longs charleys qui grésillent. |
-| 15 | **LEAD** | F4 leads | mono legato : carré à largeur modulée + scie une octave au-dessus, vibrato, delay. |
-| 16 | **PLUCK** | F4 leads | une attaque brillante qui s'éteint, des échos derrière. |
-| 17 | **STAB** | F4 leads | le « stab » d'accord house / techno : deux scies, filtre et ampli courts et claquants, chorus, un écho. Joue des accords, courts. |
-| 18 | **BRASS** | F4 leads | le filtre s'ouvre après l'attaque, comme un souffle. |
-| 19 | **SCREECH** | F4 leads | crissement métallique : un filtre au bord du sifflement, balayé et écrasé. |
-| 20 | **ORGAN** | F5 claviers | triangle + carré une octave au-dessus + sub, chorus II en guise de cabine tournante. |
-| 21 | **POLY** | F5 claviers | des accords chauds façon Juno : deux scies légèrement désaccordées, filtre à moitié ouvert, attaque douce, les deux chorus. |
-| 22 | **VINTAGE KEYS** | F5 claviers | un piano électrique des années 70 : une attaque de cloche qui s'éteint, plus sombre joué doux, un trémolo lent et le chorus I. |
-| 23 | **PAD** | F6 nappes | attaque lente, filtre qui bouge, chorus façon Juno, delay. |
-| 24 | **STRINGS** | F6 nappes | ensemble de cordes : scies désaccordées, attaque lente, les deux chorus. |
-| 25 | **STRINGS 70** | F6 nappes | l'orgue à cordes des années 70 : deux scies proches, une attaque douce, les deux chorus à fond (l'ensemble) et un phaser lent. |
-| 26 | **SWEEP** | F6 nappes | le pad à travers le phaser. |
-| 27 | **GRUNGE** | F7 textures | scies désaccordées et sub, très saturées, phaser et bitcrusher. |
-| 28 | **DRONE** | F7 textures | un carré une octave plus bas sous une scie, un filtre qui respire sur une demi-minute. Tenir un accord. |
-| 29 | **HOLD** | F7 textures | la cale d'un navire : craquements, la coque qui gémit, longs échos. |
-| 30 | **INIT** | F7 textures | deux scies légèrement désaccordées : un départ neutre pour SOUND EDIT. |
-| 31 | **THUNDER** | F8 SFX | le tonnerre : du bruit dans un passe-bas fermé qui monte et gronde ; les notes graves font le boum (le sub), une note frappée fort claque. Tiens-la pour un long roulement. |
-| 32 | **RAIN** | F8 SFX | la pluie : un bruit clair dans un passe-bande, des gouttes par un niveau et un filtre aléatoires rapides ; plus aigu, plus fine. Le chorus l'élargit. |
-| 33 | **WIND** | F8 SFX | bruit filtré : les touches déplacent la bande, un LFO lent respire. |
-| 34 | **CREAK** | F8 SFX | une porte ou une coque qui grince : une scie grave dans un passe-bande serré, découpée en grains, la hauteur qui ploie lentement ; lent ça gémit, fort ça craque. |
-| 35 | **WHALE** | F8 SFX | un son pur qui glisse pendant des secondes d'une note à l'autre, balancement lent, échos lointains. Jouer legato, grave. |
-| 36 | **DUB SIREN** | F8 SFX | la sirène dub : un carré qui monte et descend sur un LFO lent, dans un long écho. Tenir une note. |
+| 4 | **SCREECH** | F1 acid | crissement métallique : un filtre au bord du sifflement, balayé et écrasé. |
+| 5 | **GRUNGE** | F1 acid | scies désaccordées et sub, très saturées, phaser et bitcrusher. |
+| 6 | **TALK** | F1 acid | une scie dans un passe-bande étroit qui oscille à la croche : un « yoi » de voyelle, avec le glide et la saturation de l'acid (un seul filtre : une approche d'un vrai formant). |
+| 7 | **PSY BASS** | F2 psy | la basse roulante de la psytrance : scie et sub courtes et claquantes, coupées en une double croche, pour les lignes K-B-B-B. |
+| 8 | **ZAP** | F2 psy | la hauteur plonge de deux octaves en un éclair, un petit écho. |
+| 9 | **LASER** | F2 psy | une plongée plus longue, le filtre qui chante en descendant, des échos qui le font voler. |
+| 10 | **BLIP** | F2 psy | un tout petit carré, chaque note une hauteur et une brillance au hasard : des motifs rapides et glitchés derrière le mix. |
+| 11 | **METAL** | F2 psy | un carré et une scie à une neuvième, un peu désaccordés, dans un passe-bande qui sonne : du métal frappé (aigu) ou du bois (grave). Proche d'une percussion FM, sans FM. |
+| 12 | **ARP** | F2 psy | taillé pour les arpèges rapides et hypnotiques : scie et carré, filtre claquant, corps court, un écho. |
+| 13 | **BASS** | F3 basses | mono legato avec glide : scie + sous-octave, filtre résonant claquant, saturation. |
+| 14 | **SUB** | F3 basses | triangle rond et sa sous-octave, un peu de saturation. |
+| 15 | **DEEP SUB** | F3 basses | la basse profonde du dub : ronde, sub-oscillateur à fond, presque pas de filtre. |
+| 16 | **REESE** | F3 basses | la Reese du drum & bass : deux scies désaccordées l'une contre l'autre, filtre bas, mono. |
+| 17 | **WOBBLE** | F3 basses | un LFO au tempo (1/8, repart à chaque note) ouvre et ferme le filtre : le wobble dubstep / DnB. |
+| 18 | **ACID DEEP** | F3 basses | l'acid ronde et hypnotique : filtre bas, déclin long, glide plus long, un peu d'écho (minimale, dub techno). |
+| 19 | **DRUMS 808** | F4 batteries | boîte à rythmes façon analogique : grosse caisse ronde, caisse claire douce, charleys, clap, toms, rim, cowbell, triangle. |
+| 20 | **DRUMS 909** | F4 batteries | façon 909 avec les mêmes voix : grosse caisse plus haute et plus courte avec son clic, caisse claire qui claque, charleys métalliques brillants (calculés, pas d'échantillons). |
+| 21 | **DRUMS TIGHT** | F4 batteries | court et percutant, pour les motifs rapides. |
+| 22 | **DRUMS LOFI** | F4 batteries | sombre et saturé. |
+| 23 | **DRUMS IRON** | F4 batteries | industriel : grave, métallique, distordu, longs charleys qui grésillent. |
+| 24 | **LEAD** | F5 punch | mono legato : carré à largeur modulée + scie une octave au-dessus, vibrato, delay. |
+| 25 | **PLUCK** | F5 punch | une attaque brillante qui s'éteint, des échos derrière. |
+| 26 | **STAB** | F5 punch | le « stab » d'accord house / techno : deux scies, filtre et ampli courts et claquants, chorus, un écho. Joue des accords, courts. |
+| 27 | **BRASS** | F5 punch | le filtre s'ouvre après l'attaque, comme un souffle. |
+| 28 | **ORGAN** | F5 punch | triangle + carré une octave au-dessus + sub, chorus II en guise de cabine tournante. |
+| 29 | **VINTAGE KEYS** | F5 punch | un piano électrique des années 70 : une attaque de cloche qui s'éteint, plus sombre joué doux, un trémolo lent et le chorus I. |
+| 30 | **NOISE** | F6 SFX | du bruit blanc dans un passe-bas, tenu : K1 (cutoff) l'ouvre pour faire ta propre montée. |
+| 31 | **RISER** | F6 SFX | bruit et scie, filtre et hauteur (une octave) qui montent pendant environ 8 s tant que la note est tenue (4 mesures à 120 BPM), puis restent en haut. |
+| 32 | **DOWNLIFTER** | F6 SFX | l'inverse : ouvert et une octave plus haut, il descend et s'éteint en environ 8 s (tenu). |
+| 33 | **SHAKER** | F6 SFX | du bruit passe-haut qui pulse à la double croche (un LFO au tempo) : une boucle de charley à tenir. |
+| 34 | **THUNDER** | F6 SFX | le tonnerre : du bruit dans un passe-bas fermé qui monte et gronde ; les notes graves font le boum (le sub), une note frappée fort claque. Tiens-la pour un long roulement. |
+| 35 | **RAIN** | F6 SFX | la pluie : un bruit clair dans un passe-bande, des gouttes par un niveau et un filtre aléatoires rapides ; plus aigu, plus fine. Le chorus l'élargit. |
+| 36 | **DUB SIREN** | F6 SFX | la sirène dub : un carré qui monte et descend sur un LFO lent, dans un long écho. Tenir une note. |
+| 37 | **DRONE** | F7 sombre | un carré une octave plus bas sous une scie, un filtre qui respire sur une demi-minute. Tenir un accord. |
+| 38 | **HOLD** | F7 sombre | la cale d'un navire : craquements, la coque qui gémit, longs échos. |
+| 39 | **CREAK** | F7 sombre | une porte ou une coque qui grince : une scie grave dans un passe-bande serré, découpée en grains, la hauteur qui ploie lentement ; lent ça gémit, fort ça craque. |
+| 40 | **WIND** | F7 sombre | bruit filtré : les touches déplacent la bande, un LFO lent respire. |
+| 41 | **POLY** | F8 doux | des accords chauds façon Juno : deux scies légèrement désaccordées, filtre à moitié ouvert, attaque douce, les deux chorus. |
+| 42 | **PAD** | F8 doux | attaque lente, filtre qui bouge, chorus façon Juno, delay. |
+| 43 | **STRINGS** | F8 doux | ensemble de cordes : scies désaccordées, attaque lente, les deux chorus. |
+| 44 | **STRINGS 70** | F8 doux | l'orgue à cordes des années 70 : deux scies proches, une attaque douce, les deux chorus à fond (l'ensemble) et un phaser lent. |
+| 45 | **SWEEP** | F8 doux | le pad à travers le phaser. |
+| 46 | **WHALE** | F8 doux | un son pur qui glisse pendant des secondes d'une note à l'autre, balancement lent, échos lointains. Jouer legato, grave. |
+| 47 | **CHOIR** | F8 doux | des scies désaccordées dans un passe-bande autour de la voix, un souffle lent, vibrato, les deux chorus : le chœur synthétique des breaks. |
+| 48 | **INIT** | F8 doux | deux scies légèrement désaccordées : un départ neutre pour SOUND EDIT. |
 
 Sur un son de synthé, les quatre boutons SOUND sont CUTOFF, RESO, ENV, FX (delay) ; SOUND EDIT (ARP + SEL) ouvre
 tous les paramètres.

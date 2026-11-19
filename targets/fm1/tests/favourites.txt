@@ -1,5 +1,5 @@
 # SOUNDS (HOME + key 14, HOME let go): F2 hidden with OCT-, SEL on a sound, the MENU line to SETTINGS and back out
-# with a menu button; then OCT+ from F1 skips F2 to the drums; screenshots
+# with a menu button; then OCT+ from F1 skips F2 (PSY) to the basses; screenshots
 master 3000
 wait 3600
 press HOME
@@ -31,4 +31,4 @@ turn PRESET 1 10
 wait 50
 tap OCT+
 wait 50
-expect preset 31
+expect preset 1

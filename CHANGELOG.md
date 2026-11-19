@@ -5,6 +5,11 @@
 
 
 
+## 19 November 2026 — 12 new sounds, families by character
+
+- Psytrance and transitions: TALK, PSY BASS, ZAP, LASER, BLIP, METAL, ARP, CHOIR, NOISE, RISER, DOWNLIFTER,
+  SHAKER. Families: ACID, PSY, BASSES, DRUMS, PUNCH, SFX, DARK, SOFT, USER.
+
 ## 19 November 2026 — recording's pink from the first note
 
 - The pink line starts at the first note recorded (or the punch), to see where the take began and when to stop.
