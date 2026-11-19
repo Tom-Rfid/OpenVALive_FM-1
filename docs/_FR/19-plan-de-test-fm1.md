@@ -32,7 +32,7 @@ Une révision plus ancienne (logo sous l'écran) est bienvenue comme testeur.
 |---|---|---|
 | 2.1 | Transport arrêté, piste 2 : jouer 4 notes, puis EDIT (CAPTURE) | la boucle tourne tout de suite, en rythme avec ce que tu jouais |
 | 2.2 | ENV puis LFO | annuler / rétablir |
-| 2.3 | SEL + REC (métronome), REC depuis l'arrêt | une mesure de décompte, puis l'enregistrement |
+| 2.3 | SEL + REC (métronome), REC à l'arrêt, puis PLAY et REC | à l'arrêt « PLAY FIRST » ; en lecture l'enregistrement |
 | 2.4 | SEL + PLAY tapé 4 fois | le tempo suit |
 | 2.5 | ARP + touche blanche 1 (fort puis doux) | MUTATE plus ou moins marqué |
 | 2.6 | SEL + touche blanche 11 sur la piste 4 | Euclide 5/16 sur la grosse caisse |

@@ -5,6 +5,11 @@
 
 
 
+## 20 November 2026 — HOME keys 8–10, titles, REC / CAPTURE while playing
+
+- HOME + white keys 8 / 9 / 10: SOUNDS, LOOP EDIT, OPTIONS; titles: green check when taken, red when given up,
+  gone when another key is pressed; REC and CAPTURE need PLAY; OCT -/+ in SOUNDS.
+
 ## 19 November 2026 — SEL valid on release, lights, drum levels
 
 - SEL + white keys 6–16 valid on release; muted tracks blink fast, MUTE ALL lit; SEL blinks while a sound waits;

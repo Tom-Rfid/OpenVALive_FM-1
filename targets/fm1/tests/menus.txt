@@ -59,10 +59,10 @@ tap FX
 wait 50
 expect page 0
 press HOME
-key 26 down 100
+key 16 down 100
 wait 50
 release HOME
-key 26 up
+key 16 up
 wait 100
 expect map_menu 2
 turn SELECT 3 10

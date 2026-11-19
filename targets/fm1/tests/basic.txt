@@ -46,8 +46,12 @@ expect p9 0
 midi B0 4A 7F
 wait 50
 expect p9 100
-# CAPTURE: transport stopped, a pause (a phrase ends after 1.5 bars of silence),
+# CAPTURE needs PLAY (at STOP: "PLAY FIRST"); playing, a pause (a phrase ends after 1.5 bars of silence),
 # four notes one per beat (120 BPM), then EDIT
+tap EDIT
+wait 50
+expect notes 0
+tap PLAY
 wait 3500
 key 0 down 110
 wait 250
@@ -527,10 +531,10 @@ wait 50
 expect drum_map 1
 expect drum_key_d# 39
 press HOME
-key 26 down 100
+key 16 down 100
 wait 50
 release HOME
-key 26 up
+key 16 up
 wait 50
 expect map_open 1
 tap HOME

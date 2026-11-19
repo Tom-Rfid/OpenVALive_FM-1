@@ -3,10 +3,10 @@
 master 3000
 wait 3600
 press HOME
-key 23 down 100
+key 12 down 100
 wait 50
 release HOME
-key 23 up
+key 12 up
 wait 200
 shot fav1.png
 turn SELECT 1 10

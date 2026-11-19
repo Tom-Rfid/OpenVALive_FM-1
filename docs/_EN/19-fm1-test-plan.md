@@ -9,7 +9,7 @@ revision (logo under the screen) is welcome as a tester.
 |---|---|
 | 0 Install | `fm1_install.py --info` (note the flash part), install `openvalive-0.0.3.fwsc` → `FM-1_023`, the screen shows T1 INIT 120 BPM STOP |
 | 1 Sound, CPU | idle CPU ≤ 5 %; every sound on PRESET (17 synths, 4 kits) clean and balanced; drums on C D F# A#; speaker vs headphones; key pressure opens the filter |
-| 2 Loops | CAPTURE from stop loops in time; undo/redo; metronome count-in; tap tempo; MUTATE by velocity; Euclid on drums; CPU with 4 busy tracks (< 80 % expected) |
+| 2 Loops | CAPTURE while playing loops in time (at STOP: PLAY FIRST); undo/redo; metronome; tap tempo; MUTATE by velocity; Euclid on drums; CPU with 4 busy tracks (< 80 % expected) |
 | 3 Performance | SEQ tap = latched loop; BREAK held then released drops on the one; two effects together, key 16 all off; scene on the next bar; 2-bar cross-fade; MORPH knob |
 | 4 Memory | SAVE + key = USER sound; SAVE, power cycle, everything back; HOME at power-on = safe start |
 | 5 MIDI | notes in play the selected track; CONTROLLER mode in a DAW; Roland T-8 as master (CLOCK only, CLOCK IN); CLOCK OUT to a DAW |

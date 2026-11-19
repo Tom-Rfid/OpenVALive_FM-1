@@ -30,7 +30,7 @@ On [The Firmware Hub](https://thefirmwarehub.com): **FM-1_023** (this firmware) 
 | 🎛️ **Four tracks, one clock** | synths or drums on each track, own loop lengths, swing, MIDI clock in and out |
 | 🔊 **29 sounds in 7 families** | F1 acid (303, square, scream, deep), F2 basses (Reese, wobble, deep sub…), F3 five drum kits (808, 909…), F4 leads and keys, F5 pads, F6 textures (dub siren…), F7 your own; PRESET then OCT−/OCT+ jumps family |
 | 🥁 **Drum keys** | the ORIGINAL map (toms high → low, choosable D# and G#) or GM, with key lights |
-| 🎯 **CAPTURE and LOOP EDIT** | the last phrase you played becomes the loop, in time; then edit it note by note (HOME + key 15) |
+| 🎯 **CAPTURE and LOOP EDIT** | the last phrase you played becomes the loop, in time; then edit it note by note (HOME + key 9) |
 | ↩️ **Undo everything** | 8 steps: takes, captures, creative gestures, clears, edits |
 | 🧬 **Creative Engine** | Mutate, Humanize, Fill, Simplify, Rotate, Reverse, Euclid… one gesture each, its % shown before you take it |
 | 🌗 **Scenes and Morph** | 8 snapshots; one knob glides between two of them |

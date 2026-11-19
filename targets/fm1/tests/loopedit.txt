@@ -25,10 +25,10 @@ tap PLAY
 wait 100
 expect notes 3
 press HOME
-key 24 down 100
+key 14 down 100
 wait 50
 release HOME
-key 24 up
+key 14 up
 wait 200
 turn SELECT 1 10
 wait 50
