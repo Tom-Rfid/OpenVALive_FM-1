@@ -13,7 +13,7 @@ courte ; la complète est dans ce dépôt ([architecture](https://github.com/Tom
       │                                                                      ── ce dépôt : targets/fm1/
  targets/fm1        app.h (nom, carte flash, options) · app.c → va/app/openvalive_app.c · ols_dsp.c → va/app/ols_dsp.c
       │                                                                      ── le sous-module : va/
- va/app             l'instrument : pages, couches, CONTROL MAP, SOUND EDIT, sauvegarde, MIDI   (unity build, -Os)
+ va/app             l'instrument : pages, couches, MAP CONTROL, SOUND EDIT, sauvegarde, MIDI   (unity build, -Os)
  va/core/live       le Live Core : horloge, 4 pistes, REC, CAPTURE, undo, scènes, Morph, Creative Engine
  va/core/engines    VA (2 osc + sub + bruit, filtre, 2 env, 2 LFO, matrice de modulation, effets) · DRUM (famille 808)
  va/core/dsp        PolyBLEP, ZDF SVF, ADSR, LFO, delay, chorus, phaser    (ols_dsp.c, -O2, fastmath)
@@ -36,7 +36,7 @@ courte ; la complète est dans ce dépôt ([architecture](https://github.com/Tom
 | Quoi | Où |
 |---|---|
 | Nom `OPENVALIVE`, couleur du splash, identité `FM-1_023` | `targets/fm1/app.h`, `fm1.toml` |
-| Carte flash : réglages 0xFC000, calibration 0xDC000, live set 0xD8000 + 0xDA000, sons perso 0xD6000, CONTROL MAP 0xD4000 | `APP_STORE_MAP` dans `app.h` |
+| Carte flash : réglages 0xFC000, calibration 0xDC000, live set 0xD8000 + 0xDA000, sons perso 0xD6000, MAP CONTROL 0xD4000 | `APP_STORE_MAP` dans `app.h` |
 | Vélocité et pression des touches, délestage de voix en surcharge | `APP_TOUCH`, `APP_OVERLOAD` |
 | Horodatage MIDI, coupe-bas du haut-parleur, pas de Bluetooth | `fm1.toml` |
 | Site, manuel, captures, scripts du simulateur (80 vérifications) | `targets/fm1/site`, `docs/`, `tests/` |

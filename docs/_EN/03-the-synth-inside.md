@@ -13,7 +13,7 @@ the full one is in that repository ([architecture](https://github.com/Tom-Rfid/O
       │                                                                      ── this repository: targets/fm1/
  targets/fm1        app.h (name, flash map, switches) · app.c → va/app/openvalive_app.c · ols_dsp.c → va/app/ols_dsp.c
       │                                                                      ── the submodule: va/
- va/app             the instrument: pages, layers, CONTROL MAP, SOUND EDIT, saving, MIDI   (unity build, -Os)
+ va/app             the instrument: pages, layers, MAP CONTROL, SOUND EDIT, saving, MIDI   (unity build, -Os)
  va/core/live       the Live Core: clock, 4 tracks, REC, CAPTURE, undo, scenes, Morph, Creative Engine
  va/core/engines    VA (2 osc + sub + noise, filter, 2 env, 2 LFO, mod matrix, FX) · DRUM (808 family)
  va/core/dsp        PolyBLEP, ZDF SVF, ADSR, LFO, delay, chorus, phaser    (ols_dsp.c, -O2, fastmath)
@@ -36,7 +36,7 @@ the full one is in that repository ([architecture](https://github.com/Tom-Rfid/O
 | What | Where |
 |---|---|
 | Name `OPENVALIVE`, splash colour, identity `FM-1_023` | `targets/fm1/app.h`, `fm1.toml` |
-| Flash map: settings 0xFC000, calibration 0xDC000, live set 0xD8000 + 0xDA000, user sounds 0xD6000, CONTROL MAP 0xD4000 | `APP_STORE_MAP` in `app.h` |
+| Flash map: settings 0xFC000, calibration 0xDC000, live set 0xD8000 + 0xDA000, user sounds 0xD6000, MAP CONTROL 0xD4000 | `APP_STORE_MAP` in `app.h` |
 | Key velocity and pressure, voice shedding on overload | `APP_TOUCH`, `APP_OVERLOAD` |
 | MIDI time-stamping, headphone low cut, no Bluetooth | `fm1.toml` |
 | Site, manual, screenshots, simulator scripts (80 checks) | `targets/fm1/site`, `docs/`, `tests/` |

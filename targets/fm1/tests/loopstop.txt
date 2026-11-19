@@ -1,0 +1,88 @@
+# LOOP (SEQ + white keys 1-6): latched, then let go by SEQ tapped in every case (on A, back on a track, after OCT,
+# the key again, and from another track than its own)
+master 3000
+wait 3600
+tap PLAY
+wait 50
+tap REC
+key 7 down 100
+wait 200
+key 7 up
+wait 2000
+tap REC
+wait 100
+# on a track: SEQ held, key, SEQ let go first: latched
+press SEQ
+key 0 down 100
+wait 50
+release SEQ
+key 0 up
+wait 300
+expect loop 0
+tap SEQ
+wait 300
+expect loop -1
+# A: tap = latched
+turn SELECT 5 10
+wait 50
+expect on_a 1
+press SEQ
+tapkey w0 100
+release SEQ
+wait 300
+expect loop 0
+tap SEQ
+wait 300
+expect loop -1
+# A latched then back to a track, tap SEQ there
+press SEQ
+tapkey w1 100
+release SEQ
+wait 300
+expect loop 1
+turn SELECT -5 10
+wait 100
+tap SEQ
+wait 300
+expect loop -1
+# track: latched, then OCT- twice, OCT+ , tap SEQ
+press SEQ
+key 0 down 100
+wait 50
+release SEQ
+key 0 up
+wait 300
+tap OCT+
+wait 100
+tap OCT+
+wait 100
+tap SEQ
+wait 300
+expect loop -1
+# track: latched, then SEQ+same key again (the key first) 
+press SEQ
+key 0 down 100
+wait 50
+release SEQ
+key 0 up
+wait 300
+press SEQ
+key 0 down 100
+wait 50
+release SEQ
+key 0 up
+wait 300
+expect loop -1
+# a loop latched on track 1, track 2 selected: SEQ tapped still lets it go
+press SEQ
+key 0 down 100
+wait 50
+release SEQ
+key 0 up
+wait 300
+expect loop 0
+turn SELECT 1 10
+wait 100
+tap SEQ
+wait 300
+expect loop -1

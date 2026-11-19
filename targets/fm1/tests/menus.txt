@@ -1,0 +1,98 @@
+# MAP CONTROL: the EQ page in FX's turn and its BASS knob; a page moved and hidden; EDIT puts the order back.
+# OPTION CONTROL: PERC 3 (G#4) its own percussion, T1's new sound brings the EQ page. The MENU rows go round
+# SOUNDS -> MAP CONTROL -> OPTION CONTROL. A new sound (THUNDER) on PRESET. Screenshots.
+master 3000
+wait 3600
+expect page 0
+tap FX
+tap FX
+tap FX
+tap FX
+tap FX
+wait 50
+expect page 6
+turn K1 8 5
+wait 50
+expect eq_bass 160
+shot eq_page.png
+tap FX
+wait 50
+expect page 0
+press GLO
+tap SEL
+release GLO
+wait 100
+expect map_menu 1
+shot map_pages.png
+turn SELECT 1 10
+turn ALGO 1 10
+wait 50
+turn SELECT -1 10
+press GLO
+wait 10
+release GLO
+wait 100
+expect map_open 0
+tap FX
+wait 50
+expect page 2
+press GLO
+tap SEL
+release GLO
+wait 100
+tap EDIT
+wait 50
+tap HOME
+wait 100
+tap FX
+tap FX
+tap FX
+tap FX
+tap FX
+wait 50
+expect page 1
+tap FX
+tap FX
+tap FX
+tap FX
+tap FX
+wait 50
+expect page 0
+press HOME
+key 26 down 100
+wait 50
+release HOME
+key 26 up
+wait 100
+expect map_menu 2
+turn SELECT 3 10
+turn PRESET 3 10
+wait 50
+expect perc_g#4 67
+expect perc_g#3 81
+turn SELECT 3 10
+turn PRESET -1 10
+wait 50
+shot options.png
+turn SELECT 9 10
+wait 50
+turn PRESET 1 10
+wait 100
+expect fav_open 1
+shot sounds_menu.png
+turn PRESET 1 10
+wait 100
+expect map_menu 1
+turn PRESET -1 10
+wait 100
+expect fav_open 1
+turn PRESET -1 10
+wait 100
+expect map_menu 2
+tap HOME
+wait 100
+expect map_open 0
+turn PRESET 1 10
+wait 50
+expect page 6
+expect dropped 0

@@ -31,4 +31,4 @@ turn PRESET 1 10
 wait 50
 tap OCT+
 wait 50
-expect preset 26
+expect preset 31

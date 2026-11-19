@@ -5,6 +5,16 @@
 
 
 
+## 19 November 2026 — new sounds, MAP CONTROL, OPTION CONTROL, EQ page
+
+- THUNDER, RAIN, CREAK, STRINGS 70, VINTAGE KEYS; nine families (KEYS and SFX added, USER last).
+- MAP CONTROL (GLO + SEL): the pages' order, hide a page, the knobs of MACRO, LIVE, EQ and USER; EDIT = default.
+- OPTION CONTROL (HOME + key 16): PERC 1–4 (each D# / G# drum key its own sound, new bells and triangle), the page
+  a new sound brings per track.
+- EQ page: BASS, MID, TREBLE, MID FREQ on the whole mix.
+- Playhead green on a red / pink line; a LOOP left on another track is let go by SEQ tapped. Tests: menus.txt,
+  loopstop.txt.
+
 ## 19 November 2026 — A VOL, MUTE ALL moved
 
 - SEL + first black key (F#3): MUTE ALL, blinking fast while all are out (white key 5 is free now).

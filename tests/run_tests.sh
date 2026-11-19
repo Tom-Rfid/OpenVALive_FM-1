@@ -46,6 +46,8 @@ if [ -n "${FM1_BASE:-}" ] && [ -f "$FM1_BASE/include/fastmath.h" ]; then
     if python3 "$FM1_BASE/tools/build.py" targets/fm1 --host >$B/fm1_build.log 2>&1; then
         if targets/fm1/build/host/openvalive_host targets/fm1/tests/basic.txt targets/fm1/build/host >$B/fm1_run.log 2>&1 \
            && targets/fm1/build/host/openvalive_host targets/fm1/tests/avol.txt targets/fm1/build/host >>$B/fm1_run.log 2>&1 \
+           && targets/fm1/build/host/openvalive_host targets/fm1/tests/loopstop.txt targets/fm1/build/host >>$B/fm1_run.log 2>&1 \
+           && targets/fm1/build/host/openvalive_host targets/fm1/tests/menus.txt targets/fm1/build/host >>$B/fm1_run.log 2>&1 \
            && ! grep -q FAIL $B/fm1_run.log; then
             pass "FM-1: app in the fm1-base simulator ($(grep -c '^  ok' $B/fm1_run.log) checks)"
         else

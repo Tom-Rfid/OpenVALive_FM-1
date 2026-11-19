@@ -234,12 +234,15 @@ turn K2 -1 10
 tap FX
 wait 50
 expect xfade 0
-# USER page (SEL again) and the CONTROL MAP (GLO + SEL): K1 = FILTER on the selected track by default
+# USER page (SEL again) and MAP CONTROL (GLO + SEL): USER K1 = FILTER on the selected track by default
 press GLO
 tap SEL
 release GLO
 wait 50
 expect map_open 1
+# MAP CONTROL: the pages (7 rows), MACRO, LIVE, EQ (12), then USER K1
+turn SELECT 19 5
+wait 50
 turn PRESET 1 10
 wait 50
 expect map_k1 10
@@ -449,7 +452,7 @@ expect notes 4
 expect pending -1
 turn PRESET 1 10
 wait 50
-expect preset 31
+expect preset 36
 expect pending 0
 tap SEL
 wait 50
@@ -458,7 +461,7 @@ expect pending -1
 turn PRESET -1 10
 tap SEL
 wait 50
-expect preset 31
+expect preset 36
 turn PRESET 1 10
 turn SELECT 1
 wait 50

@@ -35,7 +35,7 @@ On [The Firmware Hub](https://thefirmwarehub.com): **FM-1_023** (this firmware) 
 | 🧬 **Creative Engine** | Mutate, Humanize, Fill, Simplify, Rotate, Reverse, Euclid… one gesture each, its % shown before you take it |
 | 🌗 **Scenes and Morph** | 8 snapshots; one knob glides between two of them |
 | 🔥 **Hold-to-play effects** | stutter, filter, delay throw, drive — push and release: the arrow ↑ shows what letting go takes |
-| 🎚️ **CONTROL MAP and SOUND EDIT** | choose what the knobs control; every parameter, the modulation matrix and tempo-locked LFOs |
+| 🎚️ **MAP CONTROL and SOUND EDIT** | choose the knob pages and what every knob controls; a master EQ page; every parameter, the modulation matrix and tempo-locked LFOs |
 | 🔌 **MIDI & audio** | MIDI in over USB and TRS, MIDI out over USB, controller mode, USB audio |
 | 🌐 **Try it without an FM-1** | the whole firmware runs in your browser |
 
