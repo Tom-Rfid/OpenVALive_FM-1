@@ -3,6 +3,12 @@
 
 
 
+
+## 19 November 2026 — STAB, POLY, DRUM EQ
+
+- Two sounds: **STAB** (house / techno chord stab, with the leads and keys) and **POLY** (warm Juno-style chords,
+  with the pads). 31 sounds; the drum kits and USER sounds 2 higher (settings OLS9, older ones moved by themselves).
+- **DRUM EQ** page (red), on a drum track only: BASS, TREBLE, the kick's and the hats' levels.
 ## 19 November 2026 — titles held, ARP %, recording shown, drums louder; recovery scripts
 
 - A layer button held keeps its title; gestures show ↑ and the button; ARP shows the % a key gives, a tap chooses

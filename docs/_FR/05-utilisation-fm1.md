@@ -31,6 +31,7 @@ Le manuel illustré publié avec le firmware est [`targets/fm1/docs/MANUAL.md`](
 | **FX** + touche blanche 15 / 16, FX relâché d'abord | touches de batterie ORIGINAL / GM ([20](20-sons-et-touches-batterie.md)), gardé tout de suite |
 | **HOME** + touche blanche 16, HOME relâché d'abord | les réglages : DRUM KEYS, DRUM D#, DRUM G#, KEYS ON SCREEN |
 | **PRESET**, puis OCT− / OCT+ dans les 2 s (ou tant qu'un son attend SEL) | famille de sons précédente / suivante, affichée devant le nom : F1 acid, F2 basses, F3 batteries, F4 leads et claviers, F5 nappes, F6 textures, F7 USER |
+| **FX** (tap) sur une piste de batterie | les pages font SOUND → MACRO → LIVE → SETUP → USER → **DRUM EQ** (rouge) : K1 graves (BASS), K2 aigus (TREBLE), K3 le niveau de la grosse caisse, K4 celui des charleys (une piste synthé la saute) |
 | **HOME** + touche blanche 15, HOME relâché d'abord | **LOOP EDIT** de la piste choisie : SELECT passe d'une note à l'autre (elle sonne), une touche lui donne sa hauteur, K1 position (1/16), K2 longueur, K3 vélocité, K4 hauteur ; REC efface la note, EDIT en ajoute une un 1/16 plus loin ; PLAY lance la lecture ; HOME ou SEL pour sortir. Toute l'édition = un seul UNDO (ENV) |
 | **OCT− / OCT+** | octave de la ligne sélectionnée, −3 à +3 (T1..T4 et A ont chacune la leur ; un son USER ramène son octave) ; une LOOP en cours : ×2 / ÷2 |
 | **MASTER** | volume |

@@ -29,19 +29,21 @@ qui siffle de SCREECH, le son pur de WHALE, les deux scies d'INIT, une grosse ca
 | 14 | **DRUMS IRON** | kits de batterie | industriel : grave, métallique, distordu, longs charleys qui grésillent. |
 | 15 | **LEAD** | leads et claviers | mono legato : carré à largeur modulée + scie une octave au-dessus, vibrato, delay. |
 | 16 | **PLUCK** | leads et claviers | une attaque brillante qui s'éteint, des échos derrière. |
-| 17 | **BRASS** | leads et claviers | le filtre s'ouvre après l'attaque, comme un souffle. |
-| 18 | **ORGAN** | leads et claviers | triangle + carré une octave au-dessus + sub, chorus II en guise de cabine tournante. |
-| 19 | **PAD** | nappes | attaque lente, filtre qui bouge, chorus façon Juno, delay. |
-| 20 | **STRINGS** | nappes | ensemble de cordes : scies désaccordées, attaque lente, les deux chorus. |
-| 21 | **SWEEP** | nappes | le pad à travers le phaser. |
-| 22 | **GRUNGE** | textures | scies désaccordées et sub, très saturées, phaser et bitcrusher. |
-| 23 | **SCREECH** | textures | crissement métallique : un filtre au bord du sifflement, balayé et écrasé. |
-| 24 | **DRONE** | textures | un carré une octave plus bas sous une scie, un filtre qui respire sur une demi-minute. Tenir un accord. |
-| 25 | **WIND** | textures | bruit filtré : les touches déplacent la bande, un LFO lent respire. |
-| 26 | **HOLD** | textures | la cale d'un navire : craquements, la coque qui gémit, longs échos. |
-| 27 | **WHALE** | textures | un son pur qui glisse pendant des secondes d'une note à l'autre, balancement lent, échos lointains. Jouer legato, grave. |
-| 28 | **DUB SIREN** | textures | la sirène dub : un carré qui monte et descend sur un LFO lent, dans un long écho. Tenir une note. |
-| 29 | **INIT** | départ | deux scies légèrement désaccordées : un départ neutre pour SOUND EDIT. |
+| 17 | **STAB** | leads et claviers | le « stab » d'accord house / techno : deux scies, filtre et ampli courts et claquants, chorus, un écho. Joue des accords, courts. |
+| 18 | **BRASS** | leads et claviers | le filtre s'ouvre après l'attaque, comme un souffle. |
+| 19 | **ORGAN** | leads et claviers | triangle + carré une octave au-dessus + sub, chorus II en guise de cabine tournante. |
+| 20 | **POLY** | nappes | des accords chauds façon Juno : deux scies légèrement désaccordées, filtre à moitié ouvert, attaque douce, les deux chorus. |
+| 21 | **PAD** | nappes | attaque lente, filtre qui bouge, chorus façon Juno, delay. |
+| 22 | **STRINGS** | nappes | ensemble de cordes : scies désaccordées, attaque lente, les deux chorus. |
+| 23 | **SWEEP** | nappes | le pad à travers le phaser. |
+| 24 | **GRUNGE** | textures | scies désaccordées et sub, très saturées, phaser et bitcrusher. |
+| 25 | **SCREECH** | textures | crissement métallique : un filtre au bord du sifflement, balayé et écrasé. |
+| 26 | **DRONE** | textures | un carré une octave plus bas sous une scie, un filtre qui respire sur une demi-minute. Tenir un accord. |
+| 27 | **WIND** | textures | bruit filtré : les touches déplacent la bande, un LFO lent respire. |
+| 28 | **HOLD** | textures | la cale d'un navire : craquements, la coque qui gémit, longs échos. |
+| 29 | **WHALE** | textures | un son pur qui glisse pendant des secondes d'une note à l'autre, balancement lent, échos lointains. Jouer legato, grave. |
+| 30 | **DUB SIREN** | textures | la sirène dub : un carré qui monte et descend sur un LFO lent, dans un long écho. Tenir une note. |
+| 31 | **INIT** | départ | deux scies légèrement désaccordées : un départ neutre pour SOUND EDIT. |
 
 Sur un son de synthé, les quatre boutons SOUND sont CUTOFF, RESO, ENV, FX (delay) ; SOUND EDIT (ARP + SEL) ouvre
 tous les paramètres.

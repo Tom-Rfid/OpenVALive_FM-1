@@ -28,19 +28,21 @@ filter, WHALE's pure tone, INIT's two saws, a kick.
 | 14 | **DRUMS IRON** | drum kits | industrial: low, metallic, distorted, long rattling hats. |
 | 15 | **LEAD** | leads and keys | mono legato: pulse-width-modulated square + saw an octave up, vibrato, delay. |
 | 16 | **PLUCK** | leads and keys | a bright attack that dies away, echoes behind it. |
-| 17 | **BRASS** | leads and keys | the filter opens after the attack, like a breath. |
-| 18 | **ORGAN** | leads and keys | triangle + square an octave up + sub, chorus II as a rotary. |
-| 19 | **PAD** | pads | slow attack, moving filter, Juno-style chorus, delay. |
-| 20 | **STRINGS** | pads | string ensemble: detuned saws, slow attack, both choruses. |
-| 21 | **SWEEP** | pads | the pad through the phaser. |
-| 22 | **GRUNGE** | textures | detuned saws and sub, driven hard, phaser and bitcrusher. |
-| 23 | **SCREECH** | textures | metal screech: a filter on the edge of whistling, swept and crushed. |
-| 24 | **DRONE** | textures | an octave-down square under a saw, a filter breathing over half a minute. Hold a chord. |
-| 25 | **WIND** | textures | filtered noise: the keys move the band, a slow LFO breathes. |
-| 26 | **HOLD** | textures | a ship's hold: creaks, the hull groaning, long echoes. |
-| 27 | **WHALE** | textures | a pure tone sliding for seconds between notes, slow sway, far echoes. Play legato, low. |
-| 28 | **DUB SIREN** | textures | the dub siren: a square swept up and down by a slow LFO, into a long echo. Hold a note. |
-| 29 | **INIT** | start | two slightly detuned saws: a neutral start for SOUND EDIT. |
+| 17 | **STAB** | leads and keys | the house / techno chord stab: two saws, a short snappy filter and amp, chorus, an echo. Play chords, short. |
+| 18 | **BRASS** | leads and keys | the filter opens after the attack, like a breath. |
+| 19 | **ORGAN** | leads and keys | triangle + square an octave up + sub, chorus II as a rotary. |
+| 20 | **POLY** | pads | warm poly chords, Juno style: two saws gently detuned, the filter half open, a soft attack, both choruses. |
+| 21 | **PAD** | pads | slow attack, moving filter, Juno-style chorus, delay. |
+| 22 | **STRINGS** | pads | string ensemble: detuned saws, slow attack, both choruses. |
+| 23 | **SWEEP** | pads | the pad through the phaser. |
+| 24 | **GRUNGE** | textures | detuned saws and sub, driven hard, phaser and bitcrusher. |
+| 25 | **SCREECH** | textures | metal screech: a filter on the edge of whistling, swept and crushed. |
+| 26 | **DRONE** | textures | an octave-down square under a saw, a filter breathing over half a minute. Hold a chord. |
+| 27 | **WIND** | textures | filtered noise: the keys move the band, a slow LFO breathes. |
+| 28 | **HOLD** | textures | a ship's hold: creaks, the hull groaning, long echoes. |
+| 29 | **WHALE** | textures | a pure tone sliding for seconds between notes, slow sway, far echoes. Play legato, low. |
+| 30 | **DUB SIREN** | textures | the dub siren: a square swept up and down by a slow LFO, into a long echo. Hold a note. |
+| 31 | **INIT** | start | two slightly detuned saws: a neutral start for SOUND EDIT. |
 
 On a synth sound the four SOUND knobs are CUTOFF, RESO, ENV, FX (delay); SOUND EDIT (ARP + SEL) opens every parameter.
 
