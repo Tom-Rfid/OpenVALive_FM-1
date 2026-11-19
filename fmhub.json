@@ -1,0 +1,9 @@
+{
+  "what": "A live-first instrument: four synth tracks with their own loops, Capture (play freely, press once, it loops in time), undo, scenes and Morph, hold-to-play stutter and filter throws, and a Creative Engine that mutates, humanizes, fills or simplifies what you played.",
+  "author": "Tom-Rfid",
+  "kinds": ["groove"],
+  "play": "https://tom-rfid.github.io/OpenVALive_FM-1/emu/",
+  "cheat": "https://tom-rfid.github.io/OpenVALive_FM-1/manual/",
+  "image": "docs/img/fm1-card.png",
+  "color": "#FFB43C"
+}

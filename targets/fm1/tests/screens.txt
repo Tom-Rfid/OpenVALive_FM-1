@@ -1,0 +1,221 @@
+# Screenshots for the documentation (targets/fm1/docs/img), made in the fm1-base simulator:
+#   python3 ~/fm1-base/tools/build.py targets/fm1 --host
+#   targets/fm1/build/host/openvalive_host targets/fm1/tests/screens.txt targets/fm1/docs/img
+master 3000
+wait 1050
+shot 01-ready.png
+wait 1300
+# track 1 (ACID 303, the sound at power-on)
+key 4 down 110
+key 7 down 100
+key 11 down 100
+key 14 down 90
+wait 700
+shot 02-init-chord.png
+key 4 up
+key 7 up
+key 11 up
+key 14 up
+wait 1500
+# K1 turned: the value is shown over the header
+turn K1 8 15
+wait 200
+shot 03-knob-cutoff.png
+wait 1500
+# track 2 (BASS): play a line with the transport stopped, then CAPTURE (EDIT)
+turn SELECT 1
+wait 1400
+key 0 down 120
+wait 200
+shot 04-bass.png
+wait 50
+key 0 up
+wait 250
+key 0 down 100
+wait 120
+key 0 up
+wait 130
+key 7 down 100
+wait 250
+key 7 up
+wait 250
+key 5 down 100
+wait 250
+key 5 up
+wait 250
+key 3 down 100
+wait 250
+key 3 up
+wait 100
+tap EDIT
+wait 300
+shot 10-capture.png
+wait 1200
+# track 1: a Euclidean 5/16 (hold FX + white key 12)
+turn SELECT -1
+wait 100
+press SEL
+tapkey 19 100
+release SEL
+wait 1200
+# track 3 (LEAD): record a motif while it plays (REC), then MUTATE it (hold ARP + white key 1)
+turn SELECT 2
+wait 100
+tap REC
+key 14 down 100
+wait 200
+key 14 up
+wait 300
+key 18 down 100
+wait 200
+key 18 up
+wait 300
+key 21 down 100
+wait 450
+shot 06-lead.png
+key 21 up
+wait 500
+tap REC
+wait 200
+press ARP
+key 0 down 110
+wait 50
+release ARP
+key 0 up
+wait 150
+shot 11-creative.png
+wait 1500
+# track 4 (DRUMS 808): four on the floor (hold FX + white key 11 = Euclid 4/16 on the kick), hats by hand
+turn SELECT 1
+wait 600
+key 7 down 120
+key 7 up
+press SEL
+tapkey 18 100
+release SEL
+wait 1200
+tapkey 13 90
+wait 400
+tapkey 13 70
+wait 300
+shot 05-pad.png
+wait 600
+# scenes: store 1, change the sound, store 2, recall 1 then 2, MORPH back half-way on the LIVE page
+# (GLO + key, GLO let go first: taken)
+press GLO
+key 14 down 100
+wait 30
+release GLO
+key 14 up
+turn K1 -40 5
+press GLO
+key 16 down 100
+wait 30
+release GLO
+key 16 up
+press GLO
+key 0 down 100
+wait 30
+release GLO
+key 0 up
+press GLO
+key 2 down 100
+wait 30
+release GLO
+key 2 up
+tap FX
+wait 100
+turn K1 -32 10
+wait 300
+shot 12-morph.png
+wait 1500
+# SEQ + white key 2, SEQ let go first: stutter 1/8 (latched); SEQ tapped: it lets go
+press SEQ
+key 2 down 100
+wait 50
+release SEQ
+key 2 up
+wait 400
+shot 13-stutter.png
+tap SEQ
+wait 1500
+# hold FX + white key 3: mute track 3
+press SEL
+tapkey 4 100
+release SEL
+wait 200
+shot 14-mute.png
+wait 1500
+tap FX
+# CONTROLLER mode: hold FX + white key 16
+press SEL
+tapkey 26 100
+release SEL
+wait 100
+turn K1 10 10
+wait 100
+shot 15-controller.png
+press SEL
+tapkey 26 100
+release SEL
+wait 1400
+# another sound on track 2 (its loop plays: the sound waits, SEL takes it)
+turn SELECT -2
+wait 100
+turn PRESET 1 10
+wait 100
+tap SEL
+wait 100
+shot 16-sound.png
+wait 1400
+# octave, save, panic messages
+tap OCT+
+wait 100
+shot 07-octave.png
+wait 1400
+tap SAVE
+wait 100
+shot 08-saved.png
+wait 1400
+tap HOME
+wait 100
+shot 09-panic.png
+wait 1400
+# the CONTROL MAP (GLO + SEL): what the USER page's knobs control
+press GLO
+tap SEL
+release GLO
+wait 100
+shot 17-control-map.png
+tap HOME
+wait 100
+wait 1400
+# SOUND EDIT (ARP + SEL): the modulation matrix of track 1's sound
+turn SELECT -3
+wait 100
+press ARP
+tap SEL
+release ARP
+wait 100
+turn SELECT 49 30
+wait 300
+turn PRESET 1 30
+wait 100
+shot 18-sound-edit.png
+tap HOME
+wait 100
+# A, the live line: SELECT past track 4, ARP tapped (UP), two keys held arpeggiated, the SETUP page (violet)
+turn SELECT 4
+wait 100
+tap ARP
+tap FX
+tap FX
+tap FX
+wait 50
+key 7 down 100
+key 11 down 100
+wait 600
+shot 19-live-a.png
+key 7 up
+key 11 up
+wait 100

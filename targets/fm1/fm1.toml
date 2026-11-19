@@ -1,0 +1,21 @@
+# OpenVALive FM-1 (fm1-base tools/build.py)
+name = "OPENVALIVE"
+id_prefix = "FM-1_023"         # package identity, registered on The Firmware Hub; change it in a fork
+id_fixed = true                # the identity is FM-1_023 for every build (scripts/fm1-base-fixed-id.py); the version is in the release
+usb_manufacturer = "OpenVALive"
+usb_product = "OpenVALive FM-1"         # kept: the installers and DAWs know the device by this name
+o2 = ["ols_dsp.c"]             # the DSP at -O2, the rest at -Os
+words = "words.tsv"
+ble = false                    # no Bluetooth: RAM and flash go to music
+midi_stamp = true              # incoming MIDI time-stamped where it lands: a steady MIDI clock (T-8, DAW...)
+headphones = true              # read the headphone jack: the speaker gets its own low cut
+tagline = "a live-first open-source synth for the FM-1"
+repo = "https://github.com/Tom-Rfid/OpenVALive_FM-1"
+licence = "MIT"
+credits = "Built on OpenVALive CORE (MIT), fm1-base (MPL-2.0) and felucca-bsp (MPL-2.0)."
+author = "Tom-Rfid"
+description = "A live-first instrument for the FM-1: four virtual analog tracks with their own loops, CAPTURE (play freely, it loops in time), undo, scenes and Morph, hold-to-play stutter and filter effects, a Creative Engine (mutate, humanize, fill, simplify...), MIDI clock in and out, and a real-time oscilloscope."
+tags = ["groovebox", "synth", "drum-machine", "sequencer", "controller"]
+install = "https://tom-rfid.github.io/OpenVALive_FM-1/install/"
+site = "https://tom-rfid.github.io/OpenVALive_FM-1/"
+screenshot = "docs/img/05-pad.png"

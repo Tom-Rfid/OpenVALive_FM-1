@@ -1,0 +1,162 @@
+# One low note on every factory sound, in PRESET's order, for docs/img/fm1-sounds.png:
+#   targets/fm1/build/host/openvalive_host targets/fm1/tests/sounds.txt targets/fm1/build/sounds
+#   python3 scripts/make-composites.py
+# (the scope's auto-gain shows each sound's shape; a drum kit: the kick, just hit)
+master 3000
+wait 1050
+tap PLAY
+wait 50
+tap PLAY
+wait 1300
+key 2 down 110
+wait 700
+shot snd-acid.png
+key 2 up
+wait 900
+turn PRESET 1 10
+wait 300
+key 2 down 110
+wait 700
+shot snd-bass.png
+key 2 up
+wait 900
+turn PRESET 1 10
+wait 300
+key 2 down 110
+wait 700
+shot snd-sub.png
+key 2 up
+wait 900
+turn PRESET 1 10
+wait 300
+key 7 down 127
+wait 25
+shot snd-d808.png
+key 7 up
+wait 600
+turn PRESET 1 10
+wait 300
+key 7 down 127
+wait 25
+shot snd-d909.png
+key 7 up
+wait 600
+turn PRESET 1 10
+wait 300
+key 7 down 127
+wait 25
+shot snd-dtight.png
+key 7 up
+wait 600
+turn PRESET 1 10
+wait 300
+key 7 down 127
+wait 25
+shot snd-dlofi.png
+key 7 up
+wait 600
+turn PRESET 1 10
+wait 300
+key 7 down 127
+wait 25
+shot snd-diron.png
+key 7 up
+wait 600
+turn PRESET 1 10
+wait 300
+key 2 down 110
+wait 700
+shot snd-lead.png
+key 2 up
+wait 900
+turn PRESET 1 10
+wait 300
+key 2 down 110
+wait 120
+shot snd-pluck.png
+key 2 up
+wait 900
+turn PRESET 1 10
+wait 300
+key 2 down 110
+wait 700
+shot snd-brass.png
+key 2 up
+wait 900
+turn PRESET 1 10
+wait 300
+key 2 down 110
+wait 700
+shot snd-organ.png
+key 2 up
+wait 900
+turn PRESET 1 10
+wait 300
+key 2 down 110
+wait 700
+shot snd-pad.png
+key 2 up
+wait 900
+turn PRESET 1 10
+wait 300
+key 2 down 110
+wait 700
+shot snd-strings.png
+key 2 up
+wait 900
+turn PRESET 1 10
+wait 300
+key 2 down 110
+wait 700
+shot snd-sweep.png
+key 2 up
+wait 900
+turn PRESET 1 10
+wait 300
+key 2 down 110
+wait 700
+shot snd-grunge.png
+key 2 up
+wait 900
+turn PRESET 1 10
+wait 300
+key 2 down 110
+wait 700
+shot snd-screech.png
+key 2 up
+wait 900
+turn PRESET 1 10
+wait 300
+key 7 down 127
+wait 25
+shot snd-drone.png
+key 7 up
+wait 600
+turn PRESET 1 10
+wait 300
+key 2 down 110
+wait 700
+shot snd-wind.png
+key 2 up
+wait 900
+turn PRESET 1 10
+wait 300
+key 2 down 110
+wait 700
+shot snd-hold.png
+key 2 up
+wait 900
+turn PRESET 1 10
+wait 300
+key 2 down 110
+wait 700
+shot snd-whale.png
+key 2 up
+wait 900
+turn PRESET 1 10
+wait 300
+key 2 down 110
+wait 700
+shot snd-init.png
+key 2 up
+wait 900

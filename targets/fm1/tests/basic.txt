@@ -1,0 +1,542 @@
+# OpenVALive in the fm1-base simulator (run by tests/run_tests.sh):
+#   python3 <fm1-base>/tools/build.py targets/fm1 --host
+#   targets/fm1/build/host/openvalive_host targets/fm1/tests/basic.txt targets/fm1/build/host
+master 3000
+wait 700
+shot boot.png
+wav play.wav
+expect voices 0
+expect track 0
+expect voice_limit 11
+# track 1 (ACID 303, the sound at power-on: mono): a chord on the keys (Am: keys 4 7 11 14 = A3 C4 E4 G4)
+key 4 down 100
+key 7 down 90
+key 11 down 90
+key 14 down 80
+wait 400
+expect voices 1
+shot chord.png
+key 4 up
+key 7 up
+key 11 up
+key 14 up
+wait 1500
+expect voices 0
+# K1 = cutoff: +16 detents
+turn K1 16 10
+wait 100
+expect dirty 1
+# track 2 (BASS, mono): USB-MIDI notes go to the selected track
+turn SELECT 1
+wait 50
+expect track 1
+expect preset 1
+midi 90 24 7F
+wait 200
+expect voices 1
+midi 90 2B 64
+wait 200
+expect voices 1
+midi 80 24 00
+midi 80 2B 00
+# CC74 cutoff over MIDI, on track 2
+midi B0 4A 00
+wait 50
+expect p9 0
+midi B0 4A 7F
+wait 50
+expect p9 100
+# CAPTURE: transport stopped, a pause (a phrase ends after 1.5 bars of silence),
+# four notes one per beat (120 BPM), then EDIT
+wait 3500
+key 0 down 110
+wait 250
+key 0 up
+wait 250
+key 7 down 100
+wait 250
+key 7 up
+wait 250
+key 12 down 100
+wait 250
+key 12 up
+wait 250
+key 7 down 100
+wait 250
+key 7 up
+wait 100
+tap EDIT
+wait 50
+expect playing 1
+expect notes 4
+expect bars 1
+wait 1000
+shot capture.png
+# UNDO (ENV) / REDO (LFO)
+tap ENV
+wait 50
+expect notes 0
+tap LFO
+wait 50
+expect notes 4
+# Creative Engine: hold ARP + white key 10 (EXPAND), then white key 11 (CONTRACT)
+# on a track, ARP + key only shows the gesture (its %); a tap chooses it, ARP let go takes the last one chosen...
+press ARP
+tapkey 16 100
+release ARP
+wait 50
+expect bars 2
+# ...as it does with the key still held
+press ARP
+key 16 down 100
+wait 50
+release ARP
+key 16 up
+wait 50
+expect bars 4
+press ARP
+key 18 down 100
+wait 50
+release ARP
+key 18 up
+wait 50
+expect bars 2
+expect notes 4
+# REC on track 1 while playing: one note in
+turn SELECT -1
+wait 50
+expect track 0
+tap REC
+wait 50
+expect recording 1
+key 7 down 100
+wait 300
+key 7 up
+wait 50
+tap REC
+wait 50
+expect recording 0
+expect notes 1
+# PUNCH: EDIT held + a note records over the track (replacing what the playhead passes), EDIT let go stops;
+# one undo puts the loop back
+press EDIT
+key 9 down 100
+wait 50
+expect recording 1
+wait 200
+key 9 up
+release EDIT
+wait 50
+expect recording 0
+tap ENV
+wait 50
+expect notes 1
+# scenes: hold GLO + white key 9 = store scene 1
+# (on a track, GLO let go first takes it; the key let go first gives it up)
+press GLO
+tapkey 14 100
+release GLO
+wait 50
+expect scenes 0
+press GLO
+key 14 down 100
+wait 50
+release GLO
+key 14 up
+wait 50
+expect scenes 1
+# tracks layer: hold FX + white key 11 = Euclid 4/16 on track 1, white key 1 = mute track 1
+press SEL
+tapkey 18 100
+tapkey 0 100
+release SEL
+wait 50
+expect notes 4
+expect steps 16
+expect muted 1
+wait 1500
+shot tracks.png
+# aftertouch over MIDI reaches the selected track's synth (track 1)
+midi D0 7F
+wait 50
+expect pressure 100
+midi D0 00
+wait 50
+# MIDI IN channel: hold FX and turn PRESET; CLOCK only = 17 (a drum machine's notes ignored)
+press SEL
+turn PRESET -1 10
+release SEL
+wait 50
+expect midi_ch 17
+expect preset 0
+press SEL
+turn PRESET 1 10
+release SEL
+expect midi_ch 0
+# perform (hold SEQ): TAP white key 3 = LOOP 1/4 latched, tap again = off
+press SEQ
+key 4 down 100
+wait 50
+release SEQ
+key 4 up
+wait 50
+expect looping 1
+expect loop 2
+# SEQ held on a loop: OCT+ halves it, OCT- doubles it
+press SEQ
+tap OCT+
+tap OCT+
+tap OCT-
+release SEQ
+wait 50
+expect loop 3
+expect octave 0
+# SEQ tapped: the loop lets go
+tap SEQ
+wait 50
+expect loop -1
+wait 600
+expect looping 0
+# HOLD white key 12 = BREAK: the drum track (4) out while held, back on the next bar
+press SEQ
+key 19 down 100
+wait 50
+release SEQ
+key 19 up
+wait 400
+expect held_out 8
+press SEQ
+key 19 down 100
+wait 50
+release SEQ
+key 19 up
+wait 2100
+expect held_out 0
+# MACRO page (SEL once): ENERGY up, back to 50
+tap FX
+turn K1 16 10
+wait 50
+expect energy 75
+turn K1 -16 10
+expect energy 50
+# LIVE page (SEL again): K3 = PUMP
+tap FX
+turn K3 32 5
+wait 50
+expect pump 50
+turn K3 -32 5
+# SETUP page (SEL again): K2 = scene cross-fade 1 bar
+tap FX
+turn K2 1 10
+wait 50
+expect xfade 1
+turn K2 -1 10
+tap FX
+wait 50
+expect xfade 0
+# USER page (SEL again) and the CONTROL MAP (GLO + SEL): K1 = FILTER on the selected track by default
+press GLO
+tap SEL
+release GLO
+wait 50
+expect map_open 1
+turn PRESET 1 10
+wait 50
+expect map_k1 10
+turn PRESET -1 10
+wait 50
+expect map_k1 9
+tap HOME
+wait 50
+expect map_open 0
+turn K1 20 5
+wait 50
+expect overrides 1
+turn K1 -40 5
+wait 50
+expect overrides 0
+tap FX
+wait 50
+# SOUND EDIT (ARP + SEL): PRESET turns the first parameter (OSC1 wave: SAW -> SQUARE), HOME closes
+press ARP
+tap SEL
+release ARP
+wait 50
+expect edit_open 1
+expect p0 0
+turn PRESET 1 10
+wait 50
+expect p0 50
+turn PRESET -1 10
+wait 50
+expect p0 17
+tap HOME
+wait 50
+expect edit_open 0
+# scene chain: GLO + PLAY
+press GLO
+tap PLAY
+release GLO
+wait 50
+expect chain 1
+press GLO
+tap PLAY
+release GLO
+expect chain 0
+# keep track 1's sound as USER 1 (hold SAVE + white key 1); SAVE alone still saves on release
+press SAVE
+tapkey 0 100
+release SAVE
+wait 50
+expect user 1
+# metronome (FX + REC) and tap tempo (FX + PLAY)
+press SEL
+tap REC
+release SEL
+wait 50
+expect metronome 1
+press SEL
+tap REC
+release SEL
+expect metronome 0
+# tempo on ALGO, then stop
+turn ALGO 10 10
+wait 50
+expect bpm 130
+tap PLAY
+wait 50
+expect playing 0
+wait 2000
+# track 4 is the drum machine: a kick from the keys (key 7 = C4)
+turn SELECT 3
+wait 50
+expect kind 1
+tapkey 7 120
+expect voices 1
+wait 1600
+# CONTROLLER mode (hold FX + white key 16): the keys only send MIDI
+press SEL
+tapkey 26 100
+release SEL
+expect controller 1
+tapkey 7 120
+expect voices 0
+press SEL
+tapkey 26 100
+release SEL
+expect controller 0
+# a drum kit on track 3 (PRESET's order: LEAD - 5 = DRUMS 808, the kits sit after the basses), then back
+turn SELECT -1
+wait 50
+expect kind 0
+turn PRESET -5 10
+wait 50
+expect kind 1
+turn PRESET 5 10
+wait 50
+expect kind 0
+turn SELECT -2
+wait 50
+# A, the live line (SELECT past track 4): the keys play its own sound, live, not into the loop
+turn SELECT 4
+wait 50
+expect on_a 1
+expect track 3
+key 7 down 100
+wait 50
+expect lv_voices 1
+key 7 up
+wait 400
+# the octave belongs to the line: OCT+ on A moves A only; track 4 keeps its own
+expect octave 0
+tap OCT+
+wait 50
+expect octave 1
+turn SELECT -1
+wait 50
+expect octave 0
+turn SELECT 1
+wait 50
+expect octave 1
+tap OCT-
+wait 50
+expect octave 0
+# SEL held on A + SELECT to T1, let go: A and T1 swap
+# their sounds and octaves, A stays selected; ENV on T1 swaps back, LFO again
+tap OCT+
+wait 50
+press SEL
+turn SELECT -4
+wait 50
+release SEL
+wait 50
+expect on_a 1
+expect swap 1
+expect octave 0
+turn SELECT -4
+wait 50
+expect on_a 0
+expect octave 1
+tap ENV
+wait 50
+expect swap -1
+expect octave 0
+tap LFO
+wait 50
+expect swap 1
+expect octave 1
+tap ENV
+wait 50
+expect octave 0
+turn SELECT 4
+wait 50
+expect on_a 1
+expect octave 1
+tap OCT-
+wait 50
+# A is live only: ENV (undo) does nothing there
+expect undo_track 0
+tap ENV
+wait 50
+expect on_a 1
+# its sound on PRESET (synth sounds only), its arpeggio: ARP tapped (UP), two keys held play one at a time
+turn PRESET 1 10
+wait 50
+expect live_sound 4
+tap ARP
+wait 50
+expect arp_mode 1
+key 7 down 100
+key 11 down 100
+wait 300
+expect lv_voices <2
+key 7 up
+key 11 up
+tap ARP
+tap ARP
+tap ARP
+tap ARP
+wait 50
+expect arp_mode 0
+# FX + white key 5: the four tracks out (A plays on) and A let go; again: back
+press SEL
+tapkey w4 100
+release SEL
+wait 50
+expect muted 15
+expect on_a 0
+press SEL
+tapkey w4 100
+release SEL
+wait 50
+expect muted 0
+# per-track UNDO: CLEAR on track 2, ENV undoes it; track 1 keeps its loop
+turn SELECT -2
+wait 50
+press SEL
+tapkey w5 100
+release SEL
+wait 50
+expect undo_track 1
+expect notes 0
+tap ENV
+wait 50
+expect notes 4
+turn SELECT -1
+wait 50
+expect notes 4
+# a sound for a track whose loop plays waits for SEL (red in the header); another track gives it up
+expect pending -1
+turn PRESET 1 10
+wait 50
+expect preset 29
+expect pending 0
+tap SEL
+wait 50
+expect preset 0
+expect pending -1
+turn PRESET -1 10
+tap SEL
+wait 50
+expect preset 29
+turn PRESET 1 10
+turn SELECT 1
+wait 50
+expect pending -1
+# SEL held + SELECT: point at a line (violet), SEL let go selects it
+press SEL
+turn SELECT -1
+wait 50
+expect track 1
+release SEL
+wait 50
+expect track 0
+# track 1 muted again, as before
+press SEL
+tapkey w0 100
+release SEL
+wait 50
+expect muted 1
+wavstop
+expect dropped 0
+# SAVE then restart: the whole live set comes back
+tap SAVE
+wait 50
+expect dirty 0
+reboot
+wait 700
+expect bpm 130
+expect track 0
+expect notes 4
+expect muted 1
+expect scenes 1
+turn SELECT 1
+wait 50
+expect notes 4
+expect p9 100
+expect user 1
+# safe start: HOME held while switching on, the saved set is not loaded (it stays in flash)
+press HOME
+reboot
+wait 700
+release HOME
+wait 100
+expect bpm 120
+expect notes 0
+# the drum keys: original (D# = COWBELL 56) by default; FX + white key 16, FX let go first: GM (D# = clap 39),
+# kept at once (no SAVE): still GM after the reboot; HOME + white key 16 opens the settings rows
+expect drum_map 0
+expect drum_key_d# 56
+press FX
+key 26 down 100
+wait 50
+release FX
+key 26 up
+wait 50
+expect drum_map 1
+expect drum_key_d# 39
+press HOME
+key 26 down 100
+wait 50
+release HOME
+key 26 up
+wait 50
+expect map_open 1
+tap HOME
+wait 50
+expect map_open 0
+reboot
+wait 700
+expect bpm 130
+# FX + white key 1, FX let go first: the line plays as it was made (octave 0 here), no page turn
+tap OCT+
+wait 50
+expect octave 1
+press FX
+key 0 down 100
+wait 50
+release FX
+key 0 up
+wait 50
+expect octave 0
+expect drum_map 1

@@ -1,0 +1,17 @@
+name: tests
+on:
+  push:
+  pull_request:
+jobs:
+  fm1:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          submodules: true
+      - name: Packages
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq python3-numpy python3-pil
+      - name: fm1-base (FM-1 simulator)
+        run: git clone --recursive --depth 1 https://github.com/charlesvestal/fm1-base "$HOME/fm1-base"
+      - name: Tests (OpenVALive CORE at the pinned version, then the FM-1)
+        run: FM1_BASE="$HOME/fm1-base" sh tests/run_tests.sh

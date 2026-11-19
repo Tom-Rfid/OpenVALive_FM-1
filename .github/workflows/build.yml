@@ -1,0 +1,172 @@
+# OpenVALive FM-1 - full build: tests, FM-1 firmware, browser emulator, web installer site. The synth itself is
+# OpenVALive CORE, the va/ submodule, at the version this repository pins. Publishes:
+#   push to main      -> the site on the gh-pages branch + a rolling "nightly" pre-release
+#   tag vX.Y.Z        -> the site + a GitHub release vX.Y.Z
+#   pull request      -> a "preview-<branch>" pre-release (same-repository branches only)
+#   manual run        -> a "preview-<branch>" pre-release (Actions tab > build > Run workflow)
+# scripts/update-prebuilt.sh copies a release's files into prebuilt/ (committed in git).
+#
+# Forks: everything works the same in a fork. Change id_prefix in targets/fm1/fm1.toml, and the
+# repo / install / site URLs, then enable Pages (Settings > Pages > Branch: gh-pages).
+# Releases go on main only (dev is the default branch): see docs/_EN/18-rules-git-and-publishing.md.
+name: build
+
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      release:
+        description: "Publish the release vX.Y.Z of the VERSION file (tag + files), from this branch"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    outputs:
+      version: ${{ steps.version.outputs.version }}
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          submodules: true
+
+      - name: Packages
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq python3-pil python3-numpy zip
+
+      - name: fm1-base (FM-1 platform, MPL-2.0)
+        run: |
+          git clone --recursive --depth 1 https://github.com/charlesvestal/fm1-base "$HOME/fm1-base"
+          python3 scripts/fm1-base-fixed-id.py "$HOME/fm1-base"     # identity FM-1_023 for every build (fm1.toml id_fixed)
+
+      - name: JieLi toolchain
+        run: |
+          bash "$HOME/fm1-base/tools/get_toolchain.sh"
+          echo "JIELI_TOOLCHAIN=$HOME/.jieli/toolchain" >> "$GITHUB_ENV"
+
+      - name: JieLi AC79 SDK (the build takes 3 files from it, checked by SHA-256)
+        run: |
+          for attempt in 1 2 3; do
+            git clone --depth 1 --branch AC79NN_SDK_V1.2.1_2023-12-13 \
+              https://gitee.com/Jieli-Tech/fw-AC79_AIoT_SDK.git "$HOME/fw-AC79_AIoT_SDK" && break
+            rm -rf "$HOME/fw-AC79_AIoT_SDK"
+            sleep 20
+          done
+          test -d "$HOME/fw-AC79_AIoT_SDK"
+          echo "AC79_SDK=$HOME/fw-AC79_AIoT_SDK" >> "$GITHUB_ENV"
+
+      - name: Emscripten (browser emulator)
+        uses: mymindstorm/setup-emsdk@v14
+        with:
+          version: 3.1.74
+
+      - name: Version
+        id: version
+        run: |
+          V="$(cat VERSION)"
+          case "$GITHUB_REF" in refs/tags/v*) V="${GITHUB_REF#refs/tags/v}" ;; esac
+          echo "VERSION=$V" >> "$GITHUB_ENV"
+          echo "version=$V" >> "$GITHUB_OUTPUT"
+
+      - name: Tests
+        run: FM1_BASE="$HOME/fm1-base" sh tests/run_tests.sh
+
+      - name: FM-1 firmware (release build)
+        run: python3 "$HOME/fm1-base/tools/build.py" targets/fm1 --release "$VERSION"
+
+      - name: Browser emulator
+        run: python3 "$HOME/fm1-base/tools/build.py" targets/fm1 --web --release "$VERSION"
+
+      - name: Site (landing page, web installer, manual, emulator)
+        run: |
+          python3 "$HOME/fm1-base/tools/make_site.py" targets/fm1 \
+            "targets/fm1/build/openvalive-$VERSION.fwsc" "$VERSION" build/site
+
+      - name: Collect the files
+        run: |
+          mkdir -p dist
+          cp "targets/fm1/build/openvalive-$VERSION.fwsc" dist/
+          cp targets/fm1/build/firmware.json dist/
+          cp "$HOME/fm1-base/tools/fm1_install.py" "$HOME/fm1-base/tools/fm1ports.py" dist/
+          cp scripts/windows/flash.ps1 scripts/windows/FLASH-FM1.bat dist/
+          (cd build/site && zip -qr "../../dist/openvalive-fm1-site-$VERSION.zip" .)
+          # one zip for Windows: browsers often refuse to download a bare .bat
+          zip -qj "dist/OpenVALive-FM1-$VERSION.zip" "dist/openvalive-$VERSION.fwsc" dist/firmware.json \
+            dist/fm1_install.py dist/fm1ports.py dist/flash.ps1 dist/FLASH-FM1.bat
+          ls -la dist
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: openvalive-fm1-${{ env.VERSION }}
+          path: dist/
+          retention-days: 14
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: site
+          path: build/site/
+          retention-days: 14
+
+  publish:
+    needs: build
+    # pull requests from forks cannot publish (their token is read-only)
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-24.04
+    env:
+      GH_TOKEN: ${{ github.token }}
+      VERSION: ${{ needs.build.outputs.version }}
+      BRANCH: ${{ github.head_ref || github.ref_name }}
+      HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          submodules: true
+
+      - uses: actions/download-artifact@v4
+        with:
+          name: openvalive-fm1-${{ needs.build.outputs.version }}
+          path: dist
+
+      - uses: actions/download-artifact@v4
+        with:
+          name: site
+          path: site
+
+      - name: Site -> gh-pages (main and tags)
+        if: github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/tags/v')
+        run: |
+          cd site
+          git init -q -b gh-pages
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add -A
+          git commit -q -m "Site for OpenVALive FM-1 $VERSION ($GITHUB_SHA)"
+          git push -q -f "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" gh-pages
+
+      - name: Release (tag)
+        if: startsWith(github.ref, 'refs/tags/v')
+        run: |
+          gh release create "$GITHUB_REF_NAME" dist/* --title "OpenVALive FM-1 $VERSION" \
+            --notes "See CHANGELOG.md. Install: docs/_EN/04-install.md"
+
+      - name: Release (Actions > build > Run workflow, "release" ticked)
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.release }}
+        run: |
+          gh release create "v$VERSION" dist/* --target "$HEAD_SHA" --title "OpenVALive FM-1 $VERSION" \
+            --notes "See CHANGELOG.md. Windows: OpenVALive-FM1-$VERSION.zip, then FLASH-FM1.bat. Install: docs/_EN/04-install.md. The synth: OpenVALive CORE $(git -C va describe --tags --always)."
+
+      - name: Rolling pre-release (main = nightly, other branches = preview-<branch>)
+        if: ${{ !startsWith(github.ref, 'refs/tags/v') && !(github.event_name == 'workflow_dispatch' && inputs.release) }}
+        run: |
+          if [ "$GITHUB_REF" = "refs/heads/main" ]; then TAG=nightly; else TAG="preview-$(echo "$BRANCH" | tr '/' '-')"; fi
+          gh release delete "$TAG" --yes --cleanup-tag 2>/dev/null || true
+          gh release create "$TAG" dist/* --prerelease --target "$HEAD_SHA" \
+            --title "OpenVALive FM-1 $VERSION ($TAG, $(echo "$HEAD_SHA" | cut -c1-7))" \
+            --notes "Automatic build of $BRANCH at $HEAD_SHA. Not a release: for testing."

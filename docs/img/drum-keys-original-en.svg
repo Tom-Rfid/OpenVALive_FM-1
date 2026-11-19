@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 450" font-family="Helvetica, Arial, sans-serif">
+<rect width="860" height="450" rx="14" fill="#16161c"/>
+<rect x="38" y="40" width="108" height="300" rx="6" fill="#f4f4f6" stroke="#888"/>
+<circle cx="92.0" cy="314" r="9" fill="#ee5a24"/>
+<text x="92.0" y="250" font-size="15" font-weight="700" fill="#16161c" text-anchor="middle">KICK</text>
+<text x="92.0" y="290" font-size="13" fill="#555" text-anchor="middle">C · GM 36</text>
+<rect x="150" y="40" width="108" height="300" rx="6" fill="#f4f4f6" stroke="#888"/>
+<circle cx="204.0" cy="314" r="9" fill="#ffd628"/>
+<text x="204.0" y="250" font-size="15" font-weight="700" fill="#16161c" text-anchor="middle">SNARE</text>
+<text x="204.0" y="290" font-size="13" fill="#555" text-anchor="middle">D · GM 38</text>
+<rect x="262" y="40" width="108" height="300" rx="6" fill="#f4f4f6" stroke="#888"/>
+<circle cx="316.0" cy="314" r="9" fill="#ffd628"/>
+<text x="316.0" y="250" font-size="15" font-weight="700" fill="#16161c" text-anchor="middle">SNARE 2</text>
+<text x="316.0" y="290" font-size="13" fill="#555" text-anchor="middle">E · GM 40</text>
+<rect x="374" y="40" width="108" height="300" rx="6" fill="#f4f4f6" stroke="#888"/>
+<text x="428.0" y="250" font-size="15" font-weight="700" fill="#16161c" text-anchor="middle">HIGH TOM</text>
+<text x="428.0" y="290" font-size="13" fill="#555" text-anchor="middle">F · GM 50</text>
+<rect x="486" y="40" width="108" height="300" rx="6" fill="#f4f4f6" stroke="#888"/>
+<text x="540.0" y="250" font-size="15" font-weight="700" fill="#16161c" text-anchor="middle">MID TOM</text>
+<text x="540.0" y="290" font-size="13" fill="#555" text-anchor="middle">G · GM 48</text>
+<rect x="598" y="40" width="108" height="300" rx="6" fill="#f4f4f6" stroke="#888"/>
+<text x="652.0" y="250" font-size="15" font-weight="700" fill="#16161c" text-anchor="middle">LOW TOM</text>
+<text x="652.0" y="290" font-size="13" fill="#555" text-anchor="middle">A · GM 45</text>
+<rect x="710" y="40" width="108" height="300" rx="6" fill="#f4f4f6" stroke="#888"/>
+<text x="764.0" y="250" font-size="15" font-weight="700" fill="#16161c" text-anchor="middle">FLOOR TOM</text>
+<text x="764.0" y="290" font-size="13" fill="#555" text-anchor="middle">B · GM 41</text>
+<rect x="112.0" y="40" width="72" height="185" rx="5" fill="#2a2a33" stroke="#000"/>
+<text x="148.0" y="110" font-size="12" font-weight="700" fill="#f4f4f6" text-anchor="middle">RIM</text>
+<text x="148.0" y="165" font-size="11" fill="#aaa" text-anchor="middle">C#</text>
+<text x="148.0" y="180" font-size="11" fill="#aaa" text-anchor="middle">GM 37</text>
+<rect x="224.0" y="40" width="72" height="185" rx="5" fill="#2a2a33" stroke="#ffd628" stroke-dasharray="5 3" stroke-width="2"/>
+<text x="260.0" y="110" font-size="12" font-weight="700" fill="#f4f4f6" text-anchor="middle">COWBELL</text>
+<text x="260.0" y="165" font-size="11" fill="#aaa" text-anchor="middle">D#</text>
+<text x="260.0" y="180" font-size="11" fill="#aaa" text-anchor="middle">GM 56</text>
+<rect x="448.0" y="40" width="72" height="185" rx="5" fill="#2a2a33" stroke="#000"/>
+<circle cx="484.0" cy="205" r="8" fill="#ffd628"/>
+<text x="484.0" y="110" font-size="12" font-weight="700" fill="#f4f4f6" text-anchor="middle">CLOSED</text>
+<text x="484.0" y="125" font-size="12" font-weight="700" fill="#f4f4f6" text-anchor="middle">HAT</text>
+<text x="484.0" y="165" font-size="11" fill="#aaa" text-anchor="middle">F#</text>
+<text x="484.0" y="180" font-size="11" fill="#aaa" text-anchor="middle">GM 42</text>
+<rect x="560.0" y="40" width="72" height="185" rx="5" fill="#2a2a33" stroke="#ffd628" stroke-dasharray="5 3" stroke-width="2"/>
+<text x="596.0" y="110" font-size="12" font-weight="700" fill="#f4f4f6" text-anchor="middle">TRIANGLE</text>
+<text x="596.0" y="165" font-size="11" fill="#aaa" text-anchor="middle">G#</text>
+<text x="596.0" y="180" font-size="11" fill="#aaa" text-anchor="middle">GM 81</text>
+<rect x="672.0" y="40" width="72" height="185" rx="5" fill="#2a2a33" stroke="#000"/>
+<circle cx="708.0" cy="205" r="8" fill="#ee5a24"/>
+<text x="708.0" y="110" font-size="12" font-weight="700" fill="#f4f4f6" text-anchor="middle">OPEN</text>
+<text x="708.0" y="125" font-size="12" font-weight="700" fill="#f4f4f6" text-anchor="middle">HAT</text>
+<text x="708.0" y="165" font-size="11" fill="#aaa" text-anchor="middle">A#</text>
+<text x="708.0" y="180" font-size="11" fill="#aaa" text-anchor="middle">GM 46</text>
+<circle cx="46" cy="369" r="8" fill="#ffd628"/><text x="62" y="374" font-size="14" fill="#eee">lit on a drum track</text>
+<circle cx="406" cy="369" r="8" fill="#ee5a24"/><text x="422" y="374" font-size="14" fill="#eee">blinks every half second</text>
+<rect x="38" y="386" width="16" height="12" fill="none" stroke="#ffd628" stroke-dasharray="4 2"/><text x="62" y="397" font-size="14" fill="#eee">chosen in the settings (DRUM D# / DRUM G#)</text>
+<text x="38" y="424" font-size="13" fill="#bbb">Every octave repeats these 12 keys. GM = the General MIDI note sent and recorded.</text>
+</svg>

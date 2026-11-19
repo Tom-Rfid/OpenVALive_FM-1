@@ -1,0 +1,6 @@
+build/
+targets/fm1/build/
+targets/fm1/web/
+*.wav
+*.f32
+__pycache__/

@@ -1,0 +1,7 @@
+# OpenVALive: on-screen text <TAB> what a screen reader says (fm1-reader)
+# url: https://github.com/Tom-Rfid/OpenVALive_FM-1/words/
+OPENVALIVE	open live synth
+CUTOFF	cutoff
+RESO	resonance
+ENV	filter envelope
+FX	effects
