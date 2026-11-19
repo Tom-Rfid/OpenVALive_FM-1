@@ -5,6 +5,12 @@
 
 
 
+## 19 November 2026 — SOUNDS and SETTINGS tidied
+
+- SOUNDS: place / family / ON-HIDDEN under the title, family names in colour, coloured help (SEL ON/OFF, OCT +/-,
+  arrow down MENU: OUT). SETTINGS: DRUM KEYS drawn as the two keys (violet = in use; FX + key 15 / 16 still switch
+  it live), KEYS ON SCREEN ON green / OFF red.
+
 ## 19 November 2026 — SOUNDS: one line a family
 
 - SOUNDS stays open with HOME let go; one line a family (green all offered, blue “F2” some, red line none), a bottom
