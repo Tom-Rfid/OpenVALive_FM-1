@@ -147,9 +147,11 @@ wait 50
 expect scenes 1
 # tracks layer: hold FX + white key 11 = Euclid 4/16 on track 1, white key 1 = mute track 1
 press SEL
-tapkey 18 100
+key 18 down 100
+wait 30
 tapkey 0 100
 release SEL
+key 18 up
 wait 50
 expect notes 4
 expect steps 16
@@ -319,14 +321,18 @@ expect voices 1
 wait 1600
 # CONTROLLER mode (hold FX + white key 16): the keys only send MIDI
 press SEL
-tapkey 26 100
+key 26 down 100
+wait 30
 release SEL
+key 26 up
 expect controller 1
 tapkey 7 120
 expect voices 0
 press SEL
-tapkey 26 100
+key 26 down 100
+wait 30
 release SEL
+key 26 up
 expect controller 0
 # a drum kit on track 3 (PRESET's order: LEAD - 5 = DRUMS 808, the kits sit after the basses), then back
 turn SELECT -1
@@ -437,8 +443,10 @@ expect muted 0
 turn SELECT -2
 wait 50
 press SEL
-tapkey w5 100
+key w5 down 100
+wait 30
 release SEL
+key w5 up
 wait 50
 expect undo_track 1
 expect notes 0

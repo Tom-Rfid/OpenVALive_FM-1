@@ -55,8 +55,10 @@ wait 1200
 turn SELECT -1
 wait 100
 press SEL
-tapkey 19 100
+key 19 down 100
+wait 30
 release SEL
+key 19 up
 wait 1200
 # track 3 (LEAD): record a motif while it plays (REC), then MUTATE it (hold ARP + white key 1)
 turn SELECT 2
@@ -91,8 +93,10 @@ wait 600
 key 7 down 120
 key 7 up
 press SEL
-tapkey 18 100
+key 18 down 100
+wait 30
 release SEL
+key 18 up
 wait 1200
 tapkey 13 90
 wait 400
@@ -149,15 +153,19 @@ wait 1500
 tap FX
 # CONTROLLER mode: hold FX + white key 16
 press SEL
-tapkey 26 100
+key 26 down 100
+wait 30
 release SEL
+key 26 up
 wait 100
 turn K1 10 10
 wait 100
 shot 15-controller.png
 press SEL
-tapkey 26 100
+key 26 down 100
+wait 30
 release SEL
+key 26 up
 wait 1400
 # another sound on track 2 (its loop plays: the sound waits, SEL takes it)
 turn SELECT -2

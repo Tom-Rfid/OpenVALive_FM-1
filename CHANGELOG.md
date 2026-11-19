@@ -5,6 +5,11 @@
 
 
 
+## 19 November 2026 — SEL valid on release, lights, drum levels
+
+- SEL + white keys 6–16 valid on release; muted tracks blink fast, MUTE ALL lit; SEL blinks while a sound waits;
+  infinity sign in place of PLAY while loops play; kick +10 %, D# keys −10 %, G# keys −20 %.
+
 ## 19 November 2026 — LOOP EDIT chords, UNDER
 
 - LOOP EDIT: EDIT held + keys = a chord on the note. F7 renamed UNDER. The recording's infinity sign appears with
