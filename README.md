@@ -45,7 +45,7 @@ On [The Firmware Hub](https://thefirmwarehub.com): **FM-1_023** (this firmware) 
 |---|---|
 | **try it now** | the [browser emulator](https://tom-rfid.github.io/OpenVALive_FM-1/emu/) |
 | **install it on my FM-1** | the [web installer](https://tom-rfid.github.io/OpenVALive_FM-1/install/) (Chrome / Edge), or the latest [release](https://github.com/Tom-Rfid/OpenVALive_FM-1/releases): `OpenVALive-FM1-X.Y.Z.zip`, then `FLASH-FM1.bat` ([guide](docs/_EN/04-install.md)) |
-| **bring back a unit that no longer starts** | [`recovery/`](recovery/README.md): a Raspberry Pi through the USB cable, the unit stays closed |
+| **bring back a unit that no longer starts** | [jieli-usbkey-unbrick](https://github.com/Tom-Rfid/jieli-usbkey-unbrick) (also in `recovery/`): a Raspberry Pi through the USB cable, the unit stays closed |
 | **build everything on Windows** | double-click `INSTALL-WINDOWS.bat` (WSL, toolchain, tests, firmware, flash) |
 | **build on Linux** | `git clone --recursive`, then [15 — from zero to a flashed FM-1](docs/_EN/15-from-zero-to-fm1.md) |
 | **play it on my PC** | the desktop app of [OpenVALive_CORE](https://github.com/Tom-Rfid/OpenVALive_CORE) |
@@ -56,7 +56,7 @@ On [The Firmware Hub](https://thefirmwarehub.com): **FM-1_023** (this firmware) 
 targets/fm1/   the FM-1 target: app.h (name, flash map), app.c and ols_dsp.c (one line each: the app in va/),
                fm1.toml, site, manual, simulator scripts
 va/            OpenVALive CORE, a git submodule pinned to one version (sh scripts/va.sh status)
-recovery/      bring back a unit that no longer starts (Raspberry Pi, JieLi USB key, M-Flasher)
+recovery/      jieli-usbkey-unbrick (submodule): bring back a unit that no longer starts
 scripts/       va.sh / va.ps1 (the submodule), Windows / WSL install, flash, update-prebuilt
 tests/         run_tests.sh: OpenVALive CORE's tests, no-libc build, the app in the fm1-base simulator
 docs/          _EN (English) and _FR (français)
