@@ -38,8 +38,9 @@ jobs:
 
       - name: Packages
         run: |
-          sudo apt-get update -qq
-          sudo apt-get install -y -qq python3-pil python3-numpy zip
+          # the Ubuntu mirrors sometimes answer 503: pip then (zip is on the runner already)
+          sudo apt-get update -qq || true
+          sudo apt-get install -y -qq python3-pil python3-numpy zip || python3 -m pip install -q --break-system-packages pillow numpy
 
       - name: fm1-base (FM-1 platform, MPL-2.0)
         run: |
