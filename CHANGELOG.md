@@ -5,6 +5,10 @@
 
 
 
+## 19 November 2026 — recording's pink from the first note
+
+- The pink line starts at the first note recorded (or the punch), to see where the take began and when to stop.
+
 ## 19 November 2026 — lights checked, PAN
 
 - Every layer's key lights checked; SAVE held lights the USER slots; the set-up screens light their buttons; SOUND
