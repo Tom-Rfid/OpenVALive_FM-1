@@ -5,6 +5,11 @@
 
 
 
+## 19 November 2026 — lights checked, PAN
+
+- Every layer's key lights checked; SAVE held lights the USER slots; the set-up screens light their buttons; SOUND
+  EDIT and LOOP EDIT close with any menu button. MAP CONTROL target PAN: stereo on a knob.
+
 ## 19 November 2026 — new sounds, MAP CONTROL, OPTION CONTROL, EQ page
 
 - THUNDER, RAIN, CREAK, STRINGS 70, VINTAGE KEYS; nine families (KEYS and SFX added, USER last).
