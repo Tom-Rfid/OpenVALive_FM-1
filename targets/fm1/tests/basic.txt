@@ -418,15 +418,15 @@ tap ARP
 tap ARP
 wait 50
 expect arp_mode 0
-# FX + white key 5: the four tracks out (A plays on) and A let go; again: back
+# SEL + the first black key (F#3): the four tracks out (A plays on) and A let go; again: back
 press SEL
-tapkey w4 100
+tapkey b0 100
 release SEL
 wait 50
 expect muted 15
 expect on_a 0
 press SEL
-tapkey w4 100
+tapkey b0 100
 release SEL
 wait 50
 expect muted 0

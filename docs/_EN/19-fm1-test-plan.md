@@ -2,6 +2,9 @@
 
 The same checklist as [the French one](../_FR/19-plan-de-test-fm1.md), in short. Write OK or what you saw.
 
+Tested so far on the latest FM-1 hardware revision (no M-VAVE logo under the screen; November 2026). An older
+revision (logo under the screen) is welcome as a tester.
+
 | Section | Checks |
 |---|---|
 | 0 Install | `fm1_install.py --info` (note the flash part), install `openvalive-0.0.3.fwsc` → `FM-1_023`, the screen shows T1 INIT 120 BPM STOP |

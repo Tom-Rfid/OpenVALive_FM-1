@@ -1,0 +1,60 @@
+# SEL + the first black key: MUTE ALL; SEL + the fourth (C#4): A VOL. Track 1 at 50 %, track 2 at 100 %:
+# the two loudest averaged (75 %), reached over the longest loop (1 bar, 2 s at 120 BPM), A too, then it stops
+master 3000
+wait 3600
+tap PLAY
+wait 50
+tap REC
+wait 50
+key 7 down 100
+wait 200
+key 7 up
+wait 2200
+tap REC
+wait 50
+turn SELECT 1 10
+wait 50
+tap REC
+wait 50
+key 9 down 100
+wait 200
+key 9 up
+wait 2200
+tap REC
+wait 50
+expect notes 1
+turn SELECT -1 10
+wait 50
+tap FX
+tap FX
+wait 50
+turn K4 -32 5
+wait 50
+expect level 50
+press SEL
+tapkey b0 100
+release SEL
+wait 50
+expect muted 15
+press SEL
+tapkey b0 100
+release SEL
+wait 50
+expect muted 0
+press SEL
+wait 100
+shot avol_title.png
+tapkey b3 100
+wait 50
+expect avol 1
+wait 1000
+shot avol_keys.png
+release SEL
+wait 1500
+expect avol 0
+expect level 75
+expect a_level 75
+turn SELECT 1 10
+wait 50
+expect level 75
+expect dropped 0

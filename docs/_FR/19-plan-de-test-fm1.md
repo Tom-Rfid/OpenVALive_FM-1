@@ -3,6 +3,9 @@
 À faire dans l'ordre. Note pour chaque ligne : OK, ou ce que tu as vu (une photo de l'écran aide). Si quelque chose
 bloque, passe à la suite : chaque section est indépendante.
 
+Testé pour l'instant sur la dernière révision matérielle du FM-1 (sans le logo M-VAVE sous l'écran ; novembre 2026).
+Une révision plus ancienne (logo sous l'écran) est bienvenue comme testeur.
+
 ## 0. Installer
 
 | # | Action | Attendu |

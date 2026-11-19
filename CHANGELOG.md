@@ -5,6 +5,12 @@
 
 
 
+## 19 November 2026 — A VOL, MUTE ALL moved
+
+- SEL + first black key (F#3): MUTE ALL, blinking fast while all are out (white key 5 is free now).
+- SEL + fourth black key (C#4): **A VOL**, the levels brought together over the longest loop, then it stops.
+- SOUNDS: "3/5" under the family names. Test plan: tested on the latest FM-1 revision (no logo under the screen).
+
 ## 19 November 2026 — SOUNDS and SETTINGS tidied
 
 - SOUNDS: place / family / ON-HIDDEN under the title, family names in colour, coloured help (SEL ON/OFF, OCT +/-,
