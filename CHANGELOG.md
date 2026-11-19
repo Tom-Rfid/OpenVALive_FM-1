@@ -4,6 +4,12 @@
 
 
 
+
+## 19 November 2026 — SOUNDS (favourites)
+
+- HOME + key 14: **SOUNDS**, the sounds PRESET offers, family by family (green offered, red hidden; OCT− / OCT+ the
+  whole family). PRESET and the family jumps skip what is hidden and the families left empty. The set-up keys blink
+  slowly while HOME is held.
 ## 19 November 2026 — STAB, POLY, DRUM EQ
 
 - Two sounds: **STAB** (house / techno chord stab, with the leads and keys) and **POLY** (warm Juno-style chords,

@@ -1,0 +1,22 @@
+# SOUNDS (HOME + key 14): F2 hidden with OCT-, then OCT+ from F1 skips it to the drums; screenshots
+master 3000
+wait 3600
+press HOME
+key 23 down 100
+wait 50
+release HOME
+key 23 up
+wait 200
+shot fav1.png
+turn SELECT 1 10
+wait 50
+tap OCT-
+wait 100
+shot fav2.png
+tap HOME
+wait 100
+turn PRESET 1 10
+wait 50
+tap OCT+
+wait 50
+expect preset 26

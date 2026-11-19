@@ -32,6 +32,7 @@ This page is the quick reference. How the loops, CAPTURE and the Creative Engine
 | **HOME** + white key 16, HOME let go first | the settings: DRUM KEYS, DRUM D#, DRUM G#, KEYS ON SCREEN |
 | **PRESET**, then OCT− / OCT+ within 2 s (or while a sound waits for SEL) | jump to the previous / next **family** of sounds, shown before the name: F1 acid, F2 basses, F3 drums, F4 leads and keys, F5 pads, F6 textures, F7 USER |
 | **FX** (tap) on a drum track | the pages go round SOUND → MACRO → LIVE → SETUP → USER → **DRUM EQ** (red): K1 BASS, K2 TREBLE, K3 the kick's level, K4 the hats' (a synth track skips it) |
+| **HOME** + white key 14, HOME let go first | **SOUNDS**: which sounds PRESET offers. SELECT the family, PRESET the sound, SEL offered (green) / hidden (red), OCT− / OCT+ the whole family hidden / offered, HOME back. A hidden sound still plays where it is; PRESET and the family jumps skip it, and a family with nothing offered is skipped. With HOME held, the set-up keys (14, 16) blink slowly |
 | **HOME** + white key 15, HOME let go first | **LOOP EDIT** of the selected track: SELECT goes from note to note (it sounds), a key gives it its pitch, K1 position (1/16), K2 length, K3 velocity, K4 pitch; REC takes the note out, EDIT adds one a 1/16 later; PLAY plays on; HOME or SEL back. The whole edit is one UNDO (ENV) |
 | **OCT− / OCT+** | octave of the selected line, −3 to +3 (T1..T4 and A each their own; a USER sound brings back its octave); a LOOP running: ×2 / ÷2 |
 | **MASTER** | volume |
