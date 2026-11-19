@@ -5,6 +5,10 @@
 
 
 
+## 20 November 2026 — brighter glow, breathing keys
+
+- `APP_DIM_LEVELS`: the dim lights 2.5× brighter; under a layer button the keys it offers breathe over a second.
+
 ## 20 November 2026 — HOME keys 8–10, titles, REC / CAPTURE while playing
 
 - HOME + white keys 8 / 9 / 10: SOUNDS, LOOP EDIT, OPTIONS; titles: green check when taken, red when given up,

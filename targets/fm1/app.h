@@ -10,6 +10,7 @@
 #define APP_TOUCH               /* key velocity (and pressure): lib/touch.h */
 #define APP_OVERLOAD            /* rendering over 90 % of its time: app_overload() sheds a voice */
 #define APP_SPLASH              /* the boot screen: the logo and the version (va/app/src/splash.c) */
+#define APP_DIM_LEVELS          /* the dim lights at any brightness (plat_dim_ns): brighter, and breathing under a layer */
 void app_splash(void);
 
 /* where each flash object lives (openvalive_app.h: settings, the panel calibration, the live set in two objects,
