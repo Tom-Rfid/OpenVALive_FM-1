@@ -48,10 +48,10 @@ filter, WHALE's pure tone, INIT's two saws, a kick.
 | 34 | **THUNDER** | F6 SFX | thunder: noise through a closed low-pass that swells in and rumbles; low notes boom (the sub), a hard hit cracks. Hold it for a long roll. |
 | 35 | **RAIN** | F6 SFX | rain: bright noise in a band-pass, drops from a fast random level and filter; higher notes, lighter rain. Chorus spreads it wide. |
 | 36 | **DUB SIREN** | F6 SFX | the dub siren: a square swept up and down by a slow LFO, into a long echo. Hold a note. |
-| 37 | **DRONE** | F7 dark | an octave-down square under a saw, a filter breathing over half a minute. Hold a chord. |
-| 38 | **HOLD** | F7 dark | a ship's hold: creaks, the hull groaning, long echoes. |
-| 39 | **CREAK** | F7 dark | a door or a hull creaking: a low saw through a sharp band-pass, cut into grains, the pitch slowly bending; slow notes groan, hard ones crack. |
-| 40 | **WIND** | F7 dark | filtered noise: the keys move the band, a slow LFO breathes. |
+| 37 | **DRONE** | F7 under | an octave-down square under a saw, a filter breathing over half a minute. Hold a chord. |
+| 38 | **HOLD** | F7 under | a ship's hold: creaks, the hull groaning, long echoes. |
+| 39 | **CREAK** | F7 under | a door or a hull creaking: a low saw through a sharp band-pass, cut into grains, the pitch slowly bending; slow notes groan, hard ones crack. |
+| 40 | **WIND** | F7 under | filtered noise: the keys move the band, a slow LFO breathes. |
 | 41 | **POLY** | F8 soft | warm poly chords, Juno style: two saws gently detuned, the filter half open, a soft attack, both choruses. |
 | 42 | **PAD** | F8 soft | slow attack, moving filter, Juno-style chorus, delay. |
 | 43 | **STRINGS** | F8 soft | string ensemble: detuned saws, slow attack, both choruses. |

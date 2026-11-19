@@ -49,10 +49,10 @@ qui siffle de SCREECH, le son pur de WHALE, les deux scies d'INIT, une grosse ca
 | 34 | **THUNDER** | F6 SFX | le tonnerre : du bruit dans un passe-bas fermé qui monte et gronde ; les notes graves font le boum (le sub), une note frappée fort claque. Tiens-la pour un long roulement. |
 | 35 | **RAIN** | F6 SFX | la pluie : un bruit clair dans un passe-bande, des gouttes par un niveau et un filtre aléatoires rapides ; plus aigu, plus fine. Le chorus l'élargit. |
 | 36 | **DUB SIREN** | F6 SFX | la sirène dub : un carré qui monte et descend sur un LFO lent, dans un long écho. Tenir une note. |
-| 37 | **DRONE** | F7 sombre | un carré une octave plus bas sous une scie, un filtre qui respire sur une demi-minute. Tenir un accord. |
-| 38 | **HOLD** | F7 sombre | la cale d'un navire : craquements, la coque qui gémit, longs échos. |
-| 39 | **CREAK** | F7 sombre | une porte ou une coque qui grince : une scie grave dans un passe-bande serré, découpée en grains, la hauteur qui ploie lentement ; lent ça gémit, fort ça craque. |
-| 40 | **WIND** | F7 sombre | bruit filtré : les touches déplacent la bande, un LFO lent respire. |
+| 37 | **DRONE** | F7 under | un carré une octave plus bas sous une scie, un filtre qui respire sur une demi-minute. Tenir un accord. |
+| 38 | **HOLD** | F7 under | la cale d'un navire : craquements, la coque qui gémit, longs échos. |
+| 39 | **CREAK** | F7 under | une porte ou une coque qui grince : une scie grave dans un passe-bande serré, découpée en grains, la hauteur qui ploie lentement ; lent ça gémit, fort ça craque. |
+| 40 | **WIND** | F7 under | bruit filtré : les touches déplacent la bande, un LFO lent respire. |
 | 41 | **POLY** | F8 doux | des accords chauds façon Juno : deux scies légèrement désaccordées, filtre à moitié ouvert, attaque douce, les deux chorus. |
 | 42 | **PAD** | F8 doux | attaque lente, filtre qui bouge, chorus façon Juno, delay. |
 | 43 | **STRINGS** | F8 doux | ensemble de cordes : scies désaccordées, attaque lente, les deux chorus. |

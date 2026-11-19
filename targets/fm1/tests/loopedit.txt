@@ -43,5 +43,15 @@ expect notes 2
 tap EDIT
 wait 100
 expect notes 3
+# EDIT held + two keys: a chord on the note (two notes at the same place), EDIT let go adds nothing more
+press EDIT
+tapkey 11 100
+wait 100
+tapkey 14 100
+wait 100
+release EDIT
+wait 100
+expect notes 5
+shot loopedit_chord.png
 tap HOME
 wait 100

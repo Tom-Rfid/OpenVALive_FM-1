@@ -5,6 +5,11 @@
 
 
 
+## 19 November 2026 — LOOP EDIT chords, UNDER
+
+- LOOP EDIT: EDIT held + keys = a chord on the note. F7 renamed UNDER. The recording's infinity sign appears with
+  the pink line, left of REC.
+
 ## 19 November 2026 — 12 new sounds, families by character
 
 - Psytrance and transitions: TALK, PSY BASS, ZAP, LASER, BLIP, METAL, ARP, CHOIR, NOISE, RISER, DOWNLIFTER,
