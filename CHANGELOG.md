@@ -1,9 +1,10 @@
 # Changelog
 
+## 20 November 2026 — sound levels evened out
 
-
-
-
+- Louder: DEEP SUB, ARP and DUB CHORD by 20 %; RUBBER, PLUCK, POLY, VINTAGE KEYS, LUTE and the whole F7 family (PAD,
+  STRINGS, DEEP PAD, STRINGS 70, CHOIR, SWEEP, FLUTE, WHALE) by 10 %.
+- Softer: PSY BASS by 20 %; the whole F9 family (DRONE, RUMBLE, WIND, HOLD, CREAK, GRUNGE, SCREECH) by 5 %.
 
 ## 20 November 2026 — the package named openvalive-fm1
 
