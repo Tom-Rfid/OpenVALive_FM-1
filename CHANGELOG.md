@@ -9,6 +9,7 @@
 
 - Fixed: a key pressed right at power-on played but the boot logo stayed; any key or button now ends it.
 - SEQ (PERFORM) held: the title is "∞ DIV / FILTER".
+- OPTION CONTROL: **PLAY MODE** LIVE (default) / FULL MIDI. Doc 21: the FM-1 ↔ SMK-37 controls side by side.
 
 ## 20 November 2026 — brighter glow, breathing keys
 
