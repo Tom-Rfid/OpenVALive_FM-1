@@ -1,0 +1,10 @@
+# The boot screen cut short by a key: no help pages after it (they are for a quiet start)
+master 3000
+wait 900
+key 4 down 100
+wait 200
+key 4 up
+wait 3500
+expect help 0
+expect help_page 0
+expect dropped 0

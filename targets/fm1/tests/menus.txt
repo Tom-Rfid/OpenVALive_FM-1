@@ -76,7 +76,7 @@ turn PRESET 3 10
 wait 50
 expect perc_g#4 67
 expect perc_g#3 81
-turn SELECT 3 10
+turn SELECT 4 10
 turn PRESET -1 10
 wait 50
 shot options.png
