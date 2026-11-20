@@ -1,6 +1,6 @@
 # 04 — Install
 
-Every route ends with the same file, `openvalive-X.Y.fwsc`, installed on the FM-1.
+Every route ends with the same file, `openvalive-fm1-X.Y.fwsc`, installed on the FM-1.
 
 > **Before any flash:** back up your presets and projects. To go back to M-VAVE's official firmware (V15 or V16),
 > the Felucca web installer offers it: <https://hugelton.github.io/Felucca/> (Chrome or Edge). On recent FM-1
@@ -26,7 +26,7 @@ installer, or from a command line (Windows, Linux, macOS):
 ```bash
 pip install mido python-rtmidi          # Windows: py -3.12 -m pip install mido python-rtmidi
 python3 fm1_install.py --info           # changes nothing: says what the FM-1 runs
-python3 fm1_install.py openvalive-0.2.0.fwsc
+python3 fm1_install.py openvalive-fm1-0.2.0.fwsc
 ```
 `fm1_install.py` and `fm1ports.py` are next to the firmware in the release zip (they come from fm1-base).
 

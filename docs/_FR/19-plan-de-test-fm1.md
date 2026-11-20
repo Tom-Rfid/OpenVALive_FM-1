@@ -12,7 +12,7 @@ Une révision plus ancienne (logo sous l'écran) est bienvenue comme testeur.
 |---|---|---|
 | 0.1 | Télécharger le zip de la dernière release ou de la préversion `preview-dev` (firmware, `fm1_install.py`, `fm1ports.py`, `FLASH-FM1.bat`) | — |
 | 0.2 | `py -3.12 fm1_install.py --info` | la mémoire flash (`856014` ou `B36014`) et le firmware actuel ; **note-les** |
-| 0.3 | `FLASH-FM1.bat` (ou `py -3.12 fm1_install.py openvalive-0.0.3.fwsc`) | `done: the FM-1 runs FM-1_023` |
+| 0.3 | `FLASH-FM1.bat` (ou `py -3.12 fm1_install.py openvalive-fm1-0.0.3.fwsc`) | `done: the FM-1 runs FM-1_023` |
 | 0.4 | Le FM-1 redémarre | l'écran : T1 INIT, 120 BPM, STOP, quatre pistes vides |
 
 ## 1. Son et CPU

@@ -93,13 +93,13 @@ jobs:
       - name: Collect the files
         run: |
           mkdir -p dist
-          cp "targets/fm1/build/openvalive-$VERSION.fwsc" dist/
+          cp "targets/fm1/build/openvalive-$VERSION.fwsc" "dist/openvalive-fm1-$VERSION.fwsc"   # (the machine in its name)
           cp targets/fm1/build/firmware.json dist/
           cp "$HOME/fm1-base/tools/fm1_install.py" "$HOME/fm1-base/tools/fm1ports.py" dist/
           cp scripts/windows/flash.ps1 scripts/windows/FLASH-FM1.bat dist/
           (cd build/site && zip -qr "../../dist/openvalive-fm1-site-$VERSION.zip" .)
           # one zip for Windows: browsers often refuse to download a bare .bat
-          zip -qj "dist/OpenVALive-FM1-$VERSION.zip" "dist/openvalive-$VERSION.fwsc" dist/firmware.json \
+          zip -qj "dist/OpenVALive-FM1-$VERSION.zip" "dist/openvalive-fm1-$VERSION.fwsc" dist/firmware.json \
             dist/fm1_install.py dist/fm1ports.py dist/flash.ps1 dist/FLASH-FM1.bat
           ls -la dist
 

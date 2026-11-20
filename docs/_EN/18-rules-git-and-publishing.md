@@ -66,7 +66,7 @@ back into `dev`.
 | Rule | Here |
 |---|---|
 | An identity of our own, starting with `FM-1_`; the version may follow it | `FM-1_023` for every build and release (`fm1.toml` `id_prefix` + `id_fixed`, `scripts/fm1-base-fixed-id.py`); the version is in the release. **A fork changes it.** |
-| A GitHub release with the `.fwsc` | `openvalive-X.Y.Z.fwsc`, from Actions > build > Run workflow on `main` |
+| A GitHub release with the `.fwsc` | `openvalive-fm1-X.Y.Z.fwsc`, from Actions > build > Run workflow on `main` |
 | The way back in every package | fm1-base's update loader is in every package |
 | Both flash chips (`0x856014`, `0xB36014`) | `firmware.json` lists both |
 | `fmhub.json` at the root | `what`, `author`, `kinds`, `play` (emulator), `cheat` (manual), `image`, `color` |

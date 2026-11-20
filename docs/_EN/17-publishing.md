@@ -8,7 +8,7 @@ The CI does the work (`.github/workflows/build.yml`):
 |---|---|
 | a branch with a PR | a `preview-<branch>` prerelease: `.fwsc`, desktop apps, site |
 | `main` | the `nightly` prerelease and the website (gh-pages) |
-| a tag `vX.Y.Z` | a **release** with `openvalive-X.Y.Z.fwsc`, `firmware.json`, the installers and the desktop apps |
+| a tag `vX.Y.Z` | a **release** with `openvalive-fm1-X.Y.Z.fwsc`, `firmware.json`, the installers and the desktop apps |
 
 To release: merge to `main`, update `VERSION` and `CHANGELOG.md`, then `git tag v0.2.0 && git push --tags`.
 `scripts/update-prebuilt.sh v0.2.0` then copies the release files into `prebuilt/`.
@@ -30,7 +30,7 @@ The hub lists FM-1 firmwares from their GitHub releases. Its requirements, and w
 
 ### The hardware test the hub asks for
 
-1. From M-VAVE's **V15**: install OpenVALive FM-1 (web installer or `py -3.12 fm1_install.py openvalive-0.2.0.fwsc`),
+1. From M-VAVE's **V15**: install OpenVALive FM-1 (web installer or `py -3.12 fm1_install.py openvalive-fm1-0.2.0.fwsc`),
    play, SAVE, power off and on: the set comes back.
 2. From **another firmware** (Felucca, SLOOP, X0X...): install OpenVALive FM-1 the same way.
 3. **Leave** again: the installer page's "back to V15" (or `fm1_install.py` with M-VAVE's package) must work from

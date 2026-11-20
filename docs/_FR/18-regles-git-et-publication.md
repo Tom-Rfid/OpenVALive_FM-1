@@ -71,7 +71,7 @@ puis `main` fusionné dans `dev`.
 | Règle | Ici |
 |---|---|
 | Une identité à nous, qui commence par `FM-1_` ; la version peut la suivre | `FM-1_023` pour chaque build et chaque release (`id_prefix` + `id_fixed` de `fm1.toml`, `scripts/fm1-base-fixed-id.py`) ; la version est dans la release. **Un fork la change.** |
-| Une release GitHub avec le `.fwsc` | `openvalive-X.Y.Z.fwsc`, depuis Actions > build > Run workflow sur `main` |
+| Une release GitHub avec le `.fwsc` | `openvalive-fm1-X.Y.Z.fwsc`, depuis Actions > build > Run workflow sur `main` |
 | Le chemin du retour dans chaque paquet | le chargeur de mise à jour de fm1-base est dans chaque paquet |
 | Les deux puces flash (`0x856014`, `0xB36014`) | `firmware.json` liste les deux |
 | `fmhub.json` à la racine | `what`, `author`, `kinds`, `play` (émulateur), `cheat` (manuel), `image`, `color` |

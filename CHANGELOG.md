@@ -5,6 +5,11 @@
 
 
 
+## 20 November 2026 — the package named openvalive-fm1
+
+- The release's firmware package is openvalive-fm1-X.Y.Z.fwsc (it was openvalive-X.Y.Z.fwsc): the machine is in its
+  name, as the SMK-37's. The rescue (recovery/) tells the unit from the file's name.
+
 ## 20 November 2026 — the help pages go by themselves; GOA LEAD and METAL 10 % lower
 
 - The help pages go by themselves after three rounds (six pages, 18 s).

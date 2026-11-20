@@ -41,7 +41,7 @@ Une constante sans `f` (`0.5` au lieu de `0.5f`) ou un calcul en `double`. La co
 (`-Wdouble-promotion`) le signale.
 
 **`cp: cannot stat '…/OPENVALIVE.fwsc'`**
-Le fichier est en minuscules : `openvalive.fwsc` (build de dev) ou `openvalive-X.Y.fwsc` (release).
+Le fichier est en minuscules : `openvalive.fwsc` (build de dev) ou `openvalive-fm1-X.Y.fwsc` (release).
 
 **`warning: fm1.toml has no install, screenshot`**
 Seules les releases exigent ces champs ; le `fm1.toml` d'OpenVALive les a.

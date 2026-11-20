@@ -32,11 +32,11 @@ done
 
 mkdir -p "$OUT/fm1" "$OUT/web"
 rm -f "$OUT"/fm1/*.fwsc "$OUT"/fm1/*.zip
-cp "$TMP"/openvalive-[0-9]*.fwsc "$TMP/firmware.json" "$TMP/fm1_install.py" "$TMP/fm1ports.py" \
+cp "$TMP"/openvalive-fm1-[0-9]*.fwsc "$TMP/firmware.json" "$TMP/fm1_install.py" "$TMP/fm1ports.py" \
    "$TMP/flash.ps1" "$TMP/FLASH-FM1.bat" "$OUT/fm1/"
 cp "$TMP"/OpenVALive-FM1-*.zip "$OUT/fm1/" 2>/dev/null || true
 rm -rf "$OUT/web" && mkdir -p "$OUT/web"
-unzip -q "$TMP"/openvalive-site-*.zip -d "$OUT/web"
+unzip -q "$TMP"/openvalive-fm1-site-*.zip -d "$OUT/web"
 
 echo "$TAG" > "$OUT/SOURCE_TAG"
 echo

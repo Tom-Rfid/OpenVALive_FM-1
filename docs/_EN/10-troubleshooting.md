@@ -40,7 +40,7 @@ A constant without `f` (`0.5` instead of `0.5f`) or a computation in `double`. T
 (`-Wdouble-promotion`) reports it.
 
 **`cp: cannot stat '…/OPENVALIVE.fwsc'`**
-The file is lower case: `openvalive.fwsc` (dev build) or `openvalive-X.Y.fwsc` (release build).
+The file is lower case: `openvalive.fwsc` (dev build) or `openvalive-fm1-X.Y.fwsc` (release build).
 
 **`warning: fm1.toml has no install, screenshot`**
 Only release builds need those fields; OpenVALive's `fm1.toml` has them.

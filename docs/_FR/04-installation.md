@@ -1,6 +1,6 @@
 # 04 — Installation
 
-Tous les chemins aboutissent au même fichier, `openvalive-X.Y.fwsc`, installé sur le FM-1.
+Tous les chemins aboutissent au même fichier, `openvalive-fm1-X.Y.fwsc`, installé sur le FM-1.
 
 > **Avant tout flash** : sauvegarde tes presets et projets. Pour revenir au firmware officiel M-VAVE (V15 ou
 > V16), l'installateur web de Felucca le propose : <https://hugelton.github.io/Felucca/> (Chrome ou Edge). Sur les
@@ -26,7 +26,7 @@ l'installateur web, ou en ligne de commande (Windows, Linux, macOS) :
 ```bash
 pip install mido python-rtmidi          # Windows : py -3.12 -m pip install mido python-rtmidi
 python3 fm1_install.py --info           # ne modifie rien : dit ce que le FM-1 fait tourner
-python3 fm1_install.py openvalive-0.2.0.fwsc
+python3 fm1_install.py openvalive-fm1-0.2.0.fwsc
 ```
 `fm1_install.py` et `fm1ports.py` sont à côté du firmware dans le zip de la release (ils viennent de fm1-base).
 
