@@ -5,6 +5,11 @@
 
 
 
+## 21 November 2026 — boot screen, PERFORM's title
+
+- Fixed: a key pressed right at power-on played but the boot logo stayed; any key or button now ends it.
+- SEQ (PERFORM) held: the title is "∞ DIV / FILTER".
+
 ## 20 November 2026 — brighter glow, breathing keys
 
 - `APP_DIM_LEVELS`: the dim lights 2.5× brighter; under a layer button the keys it offers breathe over a second.
