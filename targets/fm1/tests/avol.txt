@@ -1,4 +1,4 @@
-# SEL + the first black key: MUTE ALL; SEL + the fourth (C#4): A VOL (valid on release: SEL let go first). Track 1 at 50 %, track 2 at 100 %:
+# SEL + the first black key: MUTE ALL; SEL + the 6th white key (D4): A VOL (valid on release: SEL let go first). Track 1 at 50 %, track 2 at 100 %:
 # the two loudest averaged (75 %), reached over the longest loop (1 bar, 2 s at 120 BPM), A too, then it stops
 master 3000
 wait 3600
@@ -44,13 +44,13 @@ expect muted 0
 press SEL
 wait 100
 shot avol_title.png
-tapkey b3 100
+tapkey w5 100
 wait 50
 expect avol 0
-key b3 down 100
+key w5 down 100
 wait 50
 release SEL
-key b3 up
+key w5 up
 wait 50
 expect avol 1
 press SEL

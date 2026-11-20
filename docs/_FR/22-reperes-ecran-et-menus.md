@@ -35,7 +35,7 @@ Les mutes agissent tout de suite ; le reste est validé au relâché (lâcher SE
 | Touche | Fonction |
 |---|---|
 | **M1–M4** | Mute / unmute des pistes 1 à 4 |
-| **CLR** | CLEAR : efface la piste sélectionnée |
+| **AV** | Blanche 6 : A VOL, les niveaux ramenés ensemble |
 | **QNT** | QUANTIZE |
 | **CKI** | CLOCK IN : suit l’horloge MIDI externe |
 | **CKO** | CLOCK OUT : envoie l’horloge MIDI |
@@ -43,11 +43,12 @@ Les mutes agissent tout de suite ; le reste est validé au relâché (lâcher SE
 | **E6–E8** | Euclide 6, 7, 8 coups |
 | **MID** | Mode FULL MIDI (contrôleur) |
 | **MA** | Noire 1 : MUTE ALL, les quatre pistes |
-| **AV** | Noire 4 : A VOL, les niveaux ramenés ensemble |
+| **LE** (bleu) | Noire 3 : LOOP EDIT, tout de suite (violet) |
+| **CLR** (rouge) | Noire 4 : CLEAR TRACK, efface la piste sélectionnée |
 
 ### Perform — SEQ tenu
 
-Boucles validées au relâché (OCT+ depuis L16 : 1/32) ; les effets agissent tout de suite. Tenir = tant que tenu, tape courte = verrouillé.
+Par groupes : le temps (boucles, slicer, delay), les filtres, le son (drive, crush), les coupures. Boucles validées au relâché (OCT+ depuis L16 : 1/32) ; les effets agissent tout de suite. Tenir = tant que tenu, tape courte = verrouillé.
 
 ![Perform](../img/keys-seq.png)
 
@@ -56,16 +57,16 @@ Boucles validées au relâché (OCT+ depuis L16 : 1/32) ; les effets agissent to
 | **L1** | Boucle 1 mesure |
 | **L2 L4 L8** | Boucles 1/2, 1/4, 1/8 |
 | **L16** | Boucle 1/16 |
-| **SLC** | SLICER : le mix coupé en 1/16 |
-| **FL-** | Filtre fermé |
-| **FL+** | Filtre ouvert |
-| **DLY** | Delay throw |
-| **DRV** | Drive |
-| **CRU** | Crush |
-| **BRK** | Break : batterie coupée |
-| **SOL** | Solo de la piste |
-| **DRM** | Drums only |
-| **OUT** | All out : tout coupé |
+| **SLC** (violet) | SLICER : la piste choisie coupée en 1/16 (sur A : tout le mix) ; OCT− / OCT+ plus long / plus court |
+| **DLY** (jaune) | Delay throw |
+| **FL-** (orange) | Filtre fermé |
+| **FL+** (orange) | Filtre ouvert |
+| **DRV** (jaune) | Drive |
+| **CRU** (jaune) | Crush |
+| **BRK** (rouge) | Break : batterie coupée |
+| **SOL** (rouge) | Solo de la piste |
+| **DRM** (rouge) | Drums only |
+| **OUT** (rouge) | All out : tout coupé |
 | **OFF** | Tous les effets arrêtés |
 
 ### Scènes — GLO tenu
@@ -126,8 +127,8 @@ Validé au relâché.
 | Touche | Fonction |
 |---|---|
 | **RST** (rouge) | Remise à zéro de la ligne |
-| **ORG** | Carte batterie ORIGINAL |
-| **GM** | Carte batterie GM |
+| **ORG** | Blanche 6 : carte batterie ORIGINAL |
+| **GM** | Blanche 7 : carte batterie GM |
 
 ### Save — SAVE tenu
 
@@ -189,7 +190,7 @@ Les sons que PRESET propose, famille par famille (vert : proposé). SEL coupe ou
 
 ### LOOP EDIT
 
-**Ouvrir :** HOME + noire 4
+**Ouvrir :** HOME + noire 4, ou SEL + noire 3 (tout de suite)
 
 Les notes de la boucle de la piste : POS, LEN, VEL, NOTE. REC efface la note, EDIT en ajoute une ; EDIT + touches : un accord.
 

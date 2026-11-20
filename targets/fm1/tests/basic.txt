@@ -449,14 +449,14 @@ tapkey b0 100
 release SEL
 wait 50
 expect muted 0
-# per-track UNDO: CLEAR on track 2, ENV undoes it; track 1 keeps its loop
+# per-track UNDO: CLEAR (SEL + the 4th black key) on track 2, ENV undoes it; track 1 keeps its loop
 turn SELECT -2
 wait 50
 press SEL
-key w5 down 100
+key b3 down 100
 wait 30
 release SEL
-key w5 up
+key b3 up
 wait 50
 expect undo_track 1
 expect notes 0
@@ -534,15 +534,15 @@ release HOME
 wait 100
 expect bpm 120
 expect notes 0
-# the drum keys: original (D# = COWBELL 56) by default; FX + white key 16, FX let go first: GM (D# = clap 39),
+# the drum keys: original (D# = COWBELL 56) by default; FX + white key 7 (E4), FX let go first: GM (D# = clap 39),
 # kept at once (no SAVE): still GM after the reboot; HOME + white key 7 (E4) opens the settings rows
 expect drum_map 0
 expect drum_key_d# 56
 press FX
-key 26 down 100
+key w6 down 100
 wait 50
 release FX
-key 26 up
+key w6 up
 wait 50
 expect drum_map 1
 expect drum_key_d# 39
