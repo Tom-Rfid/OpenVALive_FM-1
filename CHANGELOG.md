@@ -5,6 +5,11 @@
 
 
 
+## 20 November 2026 — no breathing
+
+- Lights and the screen keyboard: offered but not on = dim (steady), on = lit, a few blink fast (MUTE ALL...);
+  nothing breathes any more (keys, buttons, A VOL).
+
 ## 20 November 2026 — boot screen, hints, HOME set-up keys, sounds
 
 - Fixed: on the FM-1 a key played at power-on did not end the boot screen (keys read between frames).
