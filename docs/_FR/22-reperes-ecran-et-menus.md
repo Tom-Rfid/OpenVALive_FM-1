@@ -18,7 +18,7 @@ Chaque touche porte son nom (3 caractères au plus, écrits de haut en bas) ; un
 
 ## L’aide au démarrage
 
-Deux pages qui alternent toutes les 3 s. Les notes les laissent ; SEL (NOTE sur le SMK-37) les coupe pour de bon ; tout autre bouton ou un bouton rotatif les ferme et fait son travail. Un logo coupé avant la fin les saute. Se règle dans OPTION CONTROL : HELP AT START.
+Deux pages qui alternent toutes les 3 s. Les notes les laissent ; SEL (NOTE sur le SMK-37) les coupe pour de bon ; tout autre bouton ou un bouton rotatif les ferme et fait son travail. Un logo coupé avant la fin les saute ; après trois tours (18 s), elles s'en vont seules. Se règle dans OPTION CONTROL : HELP AT START.
 
 <p><img src="../img/screen-help-1.png" width="320" alt="KEY COLOURS"> <img src="../img/screen-help-2.png" width="320" alt="IN PLAY"></p>
 

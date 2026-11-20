@@ -5,6 +5,11 @@
 
 
 
+## 20 November 2026 — the help pages go by themselves; GOA LEAD and METAL 10 % lower
+
+- The help pages go by themselves after three rounds (six pages, 18 s).
+- GOA LEAD and METAL 10 % lower.
+
 ## 20 November 2026 — nine new families; SEL on the help pages turns them off
 
 - The 65 sounds in nine families, the most played first in each: ACID, BASS, DRUMS, PERC (short tones), LEAD, KEYS

@@ -18,7 +18,7 @@ Each key shows its name (3 characters at most, written top to bottom); a dark or
 
 ## Help at start
 
-Two pages in turn every 3 s. Notes leave them up; SEL (NOTE on the SMK-37) turns them off for good; any other button or a knob closes them and does its job. A logo cut short skips them. OPTION CONTROL: HELP AT START.
+Two pages in turn every 3 s. Notes leave them up; SEL (NOTE on the SMK-37) turns them off for good; any other button or a knob closes them and does its job. A logo cut short skips them; after three rounds (18 s) they go by themselves. OPTION CONTROL: HELP AT START.
 
 <p><img src="../img/screen-help-1.png" width="320" alt="KEY COLOURS"> <img src="../img/screen-help-2.png" width="320" alt="IN PLAY"></p>
 

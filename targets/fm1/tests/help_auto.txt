@@ -1,0 +1,10 @@
+# The help pages go by themselves after three times round (six pages, 18 s); HELP AT START stays on
+master 3000
+wait 3800
+expect help 1
+wait 17000
+expect help 1
+wait 1500
+expect help 0
+expect no_help 0
+expect dropped 0
