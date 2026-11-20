@@ -11,7 +11,30 @@ Play freely and press **CAPTURE**: what you played loops, in time. Undo anything
 Hold a key to stutter or sweep. Let the **Creative Engine** mutate, humanize, fill or simplify your loops.
 
 > 🇫🇷 **Français** — toute la documentation existe en français dans [`docs/_FR`](docs/_FR/), à commencer par
-> [l'installation](docs/_FR/04-installation.md) et [l'utilisation](docs/_FR/05-utilisation-fm1.md).
+> [l'installation](docs/_FR/04-installation.md) et [l'utilisation](docs/_FR/05-utilisation-fm1.md) ; les repères d'un coup d'œil (clavier à l'écran, aide, menus) :
+> [22 — Repères](docs/_FR/22-reperes-ecran-et-menus.md).
+
+## At a glance
+
+<table><tr>
+<td width="250"><img src="docs/img/screen-help-1.png" width="240" alt="The help page at start: key colours"></td>
+<td>
+
+**Key colours** on the screen keyboard (hold a layer button to see it):
+
+- **pink**: valid on release: let the menu button go first, then the key
+- **violet**: on · **mint**: ready, acts at once · **yellow**: pressed
+- **blue**: opens a set-up screen · **red**: a muted track
+
+Each key shows its name (3 characters at most); a dark orange line marks each C. After the logo, two help pages
+come in turn (OPTION CONTROL: HELP AT START).
+
+</td></tr></table>
+
+<p align="center"><img src="docs/img/keys-at-a-glance.png" width="560" alt="Every layer of the FM-1's screen keyboard with its keys' names"></p>
+
+Every layer, the buttons, the set-up menus and the sounds:
+**[22 — At a glance](docs/_EN/22-screen-keyboard-and-menus.md)** · 🇫🇷 **[22 — Repères](docs/_FR/22-reperes-ecran-et-menus.md)**
 
 ## The OpenVALive family
 
@@ -28,9 +51,9 @@ On [The Firmware Hub](https://thefirmwarehub.com): **FM-1_023** (this firmware) 
 | | |
 |---|---|
 | 🎛️ **Four tracks, one clock** | synths or drums on each track, own loop lengths, swing, MIDI clock in and out |
-| 🔊 **29 sounds in 7 families** | F1 acid (303, square, scream, deep), F2 basses (Reese, wobble, deep sub…), F3 five drum kits (808, 909…), F4 leads and keys, F5 pads, F6 textures (dub siren…), F7 your own; PRESET then OCT−/OCT+ jumps family |
+| 🔊 **65 sounds in 9 families** | ACID, BASSES, DRUMS (five kits: 808, 909…), PUNCH, MINIMAL, UNDER, WORLD, SFX, SOFT, then 8 USER sounds of your own; PRESET then OCT−/OCT+ jumps family |
 | 🥁 **Drum keys** | the ORIGINAL map (toms high → low, choosable D# and G#) or GM, with key lights |
-| 🎯 **CAPTURE and LOOP EDIT** | the last phrase you played becomes the loop, in time; then edit it note by note (HOME + key 9) |
+| 🎯 **CAPTURE and LOOP EDIT** | the last phrase you played becomes the loop, in time; then edit it note by note (HOME + 4th black key) |
 | ↩️ **Undo everything** | 8 steps: takes, captures, creative gestures, clears, edits |
 | 🧬 **Creative Engine** | Mutate, Humanize, Fill, Simplify, Rotate, Reverse, Euclid… one gesture each, its % shown before you take it |
 | 🌗 **Scenes and Morph** | 8 snapshots; one knob glides between two of them |
@@ -78,6 +101,8 @@ docs/          _EN (English) and _FR (français)
 | Rules: code, git, publishing | [18](docs/_EN/18-rules-git-and-publishing.md) | [18](docs/_FR/18-regles-git-et-publication.md) |
 | FM-1 test plan | [19](docs/_EN/19-fm1-test-plan.md) | [19](docs/_FR/19-plan-de-test-fm1.md) |
 | The sounds and the drum keys | [20](docs/_EN/20-sounds-and-drum-keys.md) | [20](docs/_FR/20-sons-et-touches-batterie.md) |
+| FM-1 ↔ SMK-37: the controls side by side | [21](docs/_EN/21-fm1-smk37-controls.md) | [21](docs/_FR/21-commandes-fm1-smk37.md) |
+| **At a glance: screen keyboard, help, menus** | [22](docs/_EN/22-screen-keyboard-and-menus.md) | [22](docs/_FR/22-reperes-ecran-et-menus.md) |
 
 The synth, the Live Core, writing an engine, the API: [OpenVALive_CORE's docs](https://github.com/Tom-Rfid/OpenVALive_CORE#readme).
 To pick the project up: [STATUS.md](STATUS.md) · [CLAUDE.md](CLAUDE.md) · [CONTRIBUTING.md](CONTRIBUTING.md) ·
