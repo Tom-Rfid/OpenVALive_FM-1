@@ -497,16 +497,16 @@ wait 50
 expect muted 1
 wavstop
 expect dropped 0
-# SAVE + the 1st black key (SAVE ALL), SAVE let go first, then restart: the whole live set comes back (SAVE goes
+# SAVE + the 6th black key (SAVE ALL), SAVE let go first, then restart: the whole live set comes back (SAVE goes
 # in steps over about a second); SAVE tapped alone saves nothing
 tap SAVE
 wait 50
 expect dirty 1
 press SAVE
-key b0 down 100
+key b5 down 100
 wait 50
 release SAVE
-key b0 up
+key b5 up
 wait 300
 expect dirty 1
 wait 1000
