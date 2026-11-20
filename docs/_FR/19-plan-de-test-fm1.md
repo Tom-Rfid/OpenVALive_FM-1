@@ -57,8 +57,8 @@ Une révision plus ancienne (logo sous l'écran) est bienvenue comme testeur.
 
 | # | Action | Attendu |
 |---|---|---|
-| 4.1 | SAVE + touche blanche 9, puis changer de son, puis SAVE + touche blanche 1 | « SAVED USER 1 » (vert) ; « LOADED USER 1 » : le son revient |
-| 4.2 | SAVE (seul, relâché), éteindre, rallumer | tout revient : boucles, sons, scènes, tempo |
+| 4.1 | SAVE + touche blanche 9 (SAVE lâché en premier), puis changer de son, puis SAVE + touche blanche 1 | « SAVED USER 1 » (vert) ; « LOADED USER 1 » : le son revient |
+| 4.2 | SAVE + 1re touche noire (SAVE ALL, SAVE lâché en premier), attendre « SAVED », éteindre, rallumer | tout revient : boucles, sons, scènes, tempo |
 | 4.3 | Tenir HOME en allumant jusqu'à l'écran | « SAFE START », set vide ; rallumer normalement : le set revient |
 
 ## 5. MIDI

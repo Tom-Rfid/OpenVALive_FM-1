@@ -22,8 +22,8 @@ Le manuel illustré publié avec le firmware est [`targets/fm1/docs/MANUAL.md`](
 | **REC** | enregistre dans la piste (lance la lecture) ; une prise = un pas d'annulation |
 | **EDIT** | tapé : **CAPTURE** (la phrase qu'on vient de jouer devient la boucle) ; tenu + touches en lecture : **PUNCH** (enregistre par-dessus en remplaçant, jusqu'au relâchement d'EDIT ; EDIT clignote pendant l'enregistrement) |
 | **ENV / LFO** | ANNULER / RÉTABLIR (8 pas) de la piste sélectionnée ; rien sur A (que du live) |
-| **SAVE** | enregistre tout le live set (sons, boucles, scènes, tempo...) au relâchement ; allumé s'il y a du changement |
-| **SAVE + touche blanche 1–8** / **9–16** | **LOAD** : met USER 1–8 sur la ligne choisie / **SAVE** : garde le son de la ligne en USER 1–8 (clavier à l'écran : touches SAVE roses, allumée = un son dedans) |
+| **SAVE** + **1re touche noire** (Fa#3), SAVE relâché d'abord | **SAVE ALL** : tout le live set (sons, boucles, scènes, tempo...), par étapes sur environ une seconde, seulement ce qui a changé ; la touche clignote quand il y a quelque chose à sauver, SAVE clignote pendant la sauvegarde. SAVE seul ne sauve rien. SAVE est allumé quand quelque chose a changé (un mute ne compte pas) |
+| **SAVE + touche blanche 1–8** / **9–16**, SAVE relâché d'abord | **LOAD** : met USER 1–8 sur la ligne choisie (clavier à l'écran : violet = un son à charger, gris = vide) / **SAVE** : garde le son de la ligne en USER 1–8 (rose ; menthe / rose en alternance = déjà un son, remplacé) |
 | **SEL + REC / SEL + PLAY** | métronome / tap tempo. REC et CAPTURE (EDIT) seulement en lecture : à l'arrêt, « PLAY FIRST » |
 | **HOME tenu à l'allumage** | démarrage sûr : le set enregistré n'est pas chargé |
 | **HOME** + touche blanche 1 / 2 / 3, HOME relâché d'abord | PANIC / RESTART (toutes les pistes à leur début) / STOP ALL |

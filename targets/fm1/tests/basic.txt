@@ -292,10 +292,12 @@ press GLO
 tap PLAY
 release GLO
 expect chain 0
-# keep track 1's sound as USER 1 (hold SAVE + white key 9: SAVE on the right, LOAD on the left); SAVE alone still saves on release
+# keep track 1's sound as USER 1 (SAVE + white key 9, SAVE let go first: SAVE on the right, LOAD on the left)
 press SAVE
-tapkey 14 100
+key 14 down 100
+wait 50
 release SAVE
+key 14 up
 wait 50
 expect user 1
 # metronome (FX + REC) and tap tempo (FX + PLAY)
@@ -494,8 +496,16 @@ wait 50
 expect muted 1
 wavstop
 expect dropped 0
-# SAVE then restart: the whole live set comes back (SAVE goes in steps over about a second)
+# SAVE + the 1st black key (SAVE ALL), SAVE let go first, then restart: the whole live set comes back (SAVE goes
+# in steps over about a second); SAVE tapped alone saves nothing
 tap SAVE
+wait 50
+expect dirty 1
+press SAVE
+key b0 down 100
+wait 50
+release SAVE
+key b0 up
 wait 300
 expect dirty 1
 wait 1000
