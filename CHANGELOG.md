@@ -5,6 +5,13 @@
 
 
 
+## 20 November 2026 — CAPTURE shows what it takes; clips in less RAM
+
+- Playing on the selected track (not recording), from the first note the line paints green as the playhead goes (what
+  CAPTURE would take: you see when the loop comes round), the red infinity sign shows and EDIT blinks fast; CAPTURE
+  (EDIT tapped) puts the line back at once. A stop, REC or another line ends it too.
+- Clips keep their notes in one pool (160 notes for the 14): 3 KB of RAM less.
+
 ## 20 November 2026 — REC + key 1: RESET
 
 - REC is a layer too: REC + the leftmost white key, REC let go first, RESETs (clears) the selected track's loop (ENV
