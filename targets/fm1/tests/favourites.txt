@@ -1,5 +1,5 @@
 # SOUNDS (HOME + key 12, HOME let go): F2 hidden with OCT-, SEL on a sound, the NEXT PAGE line to OPTIONS and back
-# out with a menu button; then OCT+ from F1 skips F2 (BASSES) to the drums (sound 55, the first kit); screenshots
+# out with a menu button; then OCT+ from F1 skips F2 (BASSES) to the drums (sound 60, the first kit); screenshots
 master 3000
 wait 3600
 press HOME
@@ -31,4 +31,4 @@ turn PRESET 1 10
 wait 50
 tap OCT+
 wait 50
-expect preset 55
+expect preset 60

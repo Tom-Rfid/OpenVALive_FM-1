@@ -467,7 +467,7 @@ expect notes 4
 expect pending -1
 turn PRESET 1 10
 wait 50
-expect preset 60
+expect preset 65
 expect pending 0
 tap SEL
 wait 50
@@ -476,7 +476,7 @@ expect pending -1
 turn PRESET -1 10
 tap SEL
 wait 50
-expect preset 60
+expect preset 65
 turn PRESET 1 10
 turn SELECT 1
 wait 50
