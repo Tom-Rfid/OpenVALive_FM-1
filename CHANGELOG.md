@@ -5,6 +5,11 @@
 
 
 
+## 20 November 2026 — SAVE in steps, lights by meaning
+
+As OpenVALive CORE: SAVE without the long freeze (in steps, only what changed), SAVE not lit by a mute, FX / SEL lit,
+ARP / SEQ / GLO breathing over 2 s, EDIT lit while playing, A VOL valid on release. Simulator scripts updated.
+
 ## 20 November 2026 — LOAD / SAVE keys
 
 - SAVE + white keys 1–8 **LOAD** USER 1–8 on the selected line, 9–16 **SAVE** (was 1–8); GLO: titles LOAD / SAVE.

@@ -494,9 +494,11 @@ wait 50
 expect muted 1
 wavstop
 expect dropped 0
-# SAVE then restart: the whole live set comes back
+# SAVE then restart: the whole live set comes back (SAVE goes in steps over about a second)
 tap SAVE
-wait 50
+wait 300
+expect dirty 1
+wait 1000
 expect dirty 0
 reboot
 wait 700
