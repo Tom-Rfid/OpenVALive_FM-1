@@ -1,5 +1,10 @@
 # Changelog
 
+## 20 November 2026 — LOAD USER takes the sound at once
+
+- SAVE + white key 1–8 (LOAD USER) puts the sound on the line at once, also while its loop plays (it waited for SEL,
+  as a sound turned on PRESET does).
+
 ## 20 November 2026 — sound levels evened out
 
 - Louder: DEEP SUB, ARP and DUB CHORD by 20 %; RUBBER, PLUCK, POLY, VINTAGE KEYS, LUTE and the whole F7 family (PAD,
