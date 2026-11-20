@@ -414,7 +414,8 @@ expect undo_track 0
 tap ENV
 wait 50
 expect on_a 1
-# its sound on PRESET (synth sounds only), its arpeggio: ARP tapped (UP), two keys held play one at a time
+# its sound on PRESET (synth sounds only), its arpeggio: ARP tapped (UP), two keys held play one at a time (the one
+# before still in its release: two voices at most)
 turn PRESET 1 10
 wait 50
 expect live_sound 4
@@ -424,7 +425,7 @@ expect arp_mode 1
 key 7 down 100
 key 11 down 100
 wait 300
-expect lv_voices <2
+expect lv_voices <3
 key 7 up
 key 11 up
 tap ARP
