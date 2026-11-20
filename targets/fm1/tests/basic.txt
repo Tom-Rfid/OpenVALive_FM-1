@@ -292,9 +292,9 @@ press GLO
 tap PLAY
 release GLO
 expect chain 0
-# keep track 1's sound as USER 1 (hold SAVE + white key 1); SAVE alone still saves on release
+# keep track 1's sound as USER 1 (hold SAVE + white key 9: SAVE on the right, LOAD on the left); SAVE alone still saves on release
 press SAVE
-tapkey 0 100
+tapkey 14 100
 release SAVE
 wait 50
 expect user 1

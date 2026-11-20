@@ -5,7 +5,12 @@
 
 
 
-## 21 November 2026 — boot screen, PERFORM's title
+## 20 November 2026 — LOAD / SAVE keys
+
+- SAVE + white keys 1–8 **LOAD** USER 1–8 on the selected line, 9–16 **SAVE** (was 1–8); GLO: titles LOAD / SAVE.
+- Screen keyboard (KEYS ON SCREEN): held keys yellow, muted tracks red, SAVE keys pink. Simulator script updated.
+
+## 20 November 2026 — boot screen, PERFORM's title
 
 - Fixed: a key pressed right at power-on played but the boot logo stayed; any key or button now ends it.
 - SEQ (PERFORM) held: the title is "∞ DIV / FILTER".
