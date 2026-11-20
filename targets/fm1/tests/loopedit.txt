@@ -1,4 +1,4 @@
-# LOOP EDIT (HOME + key 15): a loop of 3 notes, then one moved, one taken out, one added; a screenshot
+# LOOP EDIT (HOME + the 4th black key, C#4): a loop of 3 notes, then one moved, one taken out, one added; a screenshot
 #   targets/fm1/build/host/openvalive_host targets/fm1/tests/loopedit.txt targets/fm1/build/loopedit
 master 3000
 wait 1050
@@ -25,10 +25,10 @@ tap PLAY
 wait 100
 expect notes 3
 press HOME
-key 14 down 100
+key 8 down 100
 wait 50
 release HOME
-key 14 up
+key 8 up
 wait 200
 turn SELECT 1 10
 wait 50

@@ -531,7 +531,7 @@ wait 100
 expect bpm 120
 expect notes 0
 # the drum keys: original (D# = COWBELL 56) by default; FX + white key 16, FX let go first: GM (D# = clap 39),
-# kept at once (no SAVE): still GM after the reboot; HOME + white key 16 opens the settings rows
+# kept at once (no SAVE): still GM after the reboot; HOME + white key 7 (E4) opens the settings rows
 expect drum_map 0
 expect drum_key_d# 56
 press FX
@@ -543,10 +543,10 @@ wait 50
 expect drum_map 1
 expect drum_key_d# 39
 press HOME
-key 16 down 100
+key 11 down 100
 wait 50
 release HOME
-key 16 up
+key 11 up
 wait 50
 expect map_open 1
 tap HOME

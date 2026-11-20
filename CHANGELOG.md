@@ -5,6 +5,16 @@
 
 
 
+## 20 November 2026 — boot screen, hints, HOME set-up keys, sounds
+
+- Fixed: on the FM-1 a key played at power-on did not end the boot screen (keys read between frames).
+- "REC (arrow down) PLAY FIRST": green, 1.6 s. A layer button held, its title gone: the header stays empty.
+- Stopped: the tracks' notes mint. CAPTURE: "LOOP CAPTURED T1" in green, the line cyan a moment.
+- The red infinity sign shows while EDIT is held playing (a loop being made), in place of PLAY.
+- HOME: OPTIONS on white key 7, SOUNDS on 8, LOOP EDIT on the 4th black key.
+- SOUNDS screen: the families' names stay on their lines, the chosen sound's name on top.
+- SCREECH 20 % lower; PSY BASS redone (two saws, strong sub, driven, a little sustain).
+
 ## 20 November 2026 — scroll bars, NEXT PAGE
 
 - MAP CONTROL, OPTION CONTROL and SOUND EDIT show a scroll bar on the right when their list is longer than the screen.

@@ -69,7 +69,7 @@ tous les paramètres.
 
 Sur une piste de batterie, chaque touche joue un instrument, et chaque octave répète les mêmes 12 touches. Deux
 cartes, choisies avec **FX + touche blanche 15** (ORIGINAL) ou **FX + touche blanche 16** (GM), en relâchant FX
-d'abord ; gardée tout de suite, même après extinction (sans SAVE). Aussi dans OPTION CONTROL : **HOME + touche blanche 10** (HOME
+d'abord ; gardée tout de suite, même après extinction (sans SAVE). Aussi dans OPTION CONTROL : **HOME + touche blanche 7** (HOME
 relâché d'abord).
 
 Quelle que soit la carte, une touche envoie la **note General MIDI** de son instrument (une grosse caisse = 36, un

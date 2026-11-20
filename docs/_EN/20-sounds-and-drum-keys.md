@@ -67,7 +67,7 @@ On a synth sound the four SOUND knobs are CUTOFF, RESO, ENV, FX (delay); SOUND E
 
 On a drum track each key plays one instrument, and every octave repeats the same 12 keys. Two maps, chosen with
 **FX + white key 15** (ORIGINAL) or **FX + white key 16** (GM), FX let go first; kept at once, past a power cycle
-(no SAVE). Also in OPTION CONTROL: **HOME + white key 10** (HOME let go first).
+(no SAVE). Also in OPTION CONTROL: **HOME + white key 7** (HOME let go first).
 
 Whatever the map, a key sends the **General MIDI note** of its instrument (a kick is 36, a closed hat 42) to the loop,
 to MIDI OUT and to a computer: Ableton's Drum Racks and FL Studio's FPC play the right drums with no set-up.

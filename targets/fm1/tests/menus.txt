@@ -59,10 +59,10 @@ tap FX
 wait 50
 expect page 0
 press HOME
-key 16 down 100
+key 11 down 100
 wait 50
 release HOME
-key 16 up
+key 11 up
 wait 100
 expect map_menu 2
 turn PRESET 1 10
