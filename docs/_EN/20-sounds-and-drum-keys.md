@@ -56,7 +56,7 @@ filter, WHALE's pure tone, INIT's two saws, a kick.
 | 42 | **PLATE** | F6 under | a struck metal sheet that rings: two squares an odd interval apart through a singing band-pass, a long ring, chorus and a dark echo. |
 | 43 | **CREAK** | F6 under | a door or a hull creaking: a low saw through a sharp band-pass, cut into grains, the pitch slowly bending; slow notes groan, hard ones crack. |
 | 44 | **WIND** | F6 under | filtered noise: the keys move the band, a slow LFO breathes. |
-| 45 | **RAVE SAX** | F7 world | the 90s rave / house sax, a synth's: a narrow square and a saw, a breath of noise, the filter opening on the attack, vibrato, glide, an echo. |
+| 45 | **RAVE SAX** | F7 world | the 90s rave / house sax, brassy: two saws close together, the filter blown open on the attack then settling (a horn's blat), the pitch scooping up into the note, a breath, drive, vibrato, an echo. |
 | 46 | **LUTE** | F7 world | a dark electro lute: a pluck and its fifth (the old modes), a resonant snap, a slow phaser, a dark echo. |
 | 47 | **FLUTE** | F7 world | a breathy recorder from a cave: a round triangle, breath, a soft attack, vibrato, a long dark echo. |
 | 48 | **BAGPIPE** | F7 world | an electro bagpipe: two saws a fourth apart (the drone under the chanter), a nasal resonant filter, driven, held. |

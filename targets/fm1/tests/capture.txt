@@ -1,8 +1,16 @@
-# CAPTURE's green line: from the first note on an empty track, gone at CAPTURE; after a REC take (the track has its
-# loop) a note played does not start it again
+# The loop take: EDIT tapped arms it (nothing green yet), the first note starts it (the line paints green), EDIT again
+# takes it (green gone, the loop made); a menu button ends a take too; EDIT tapped then EDIT with no note: nothing
 wait 3500
 tap PLAY
 wait 300
+key 0 down 100
+wait 200
+key 0 up
+wait 300
+expect cap 0
+tap EDIT
+wait 100
+expect cap 0
 key 0 down 100
 wait 200
 key 0 up
@@ -11,17 +19,23 @@ expect cap 1
 tap EDIT
 wait 100
 expect cap 0
-tap REC
+expect notes 1
+turn SELECT 1
+wait 100
+tap EDIT
 wait 100
 key 4 down 100
 wait 200
 key 4 up
 wait 300
-expect cap 0
-tap REC
+expect cap 1
+tap SEQ
 wait 100
-key 7 down 100
-wait 200
-key 7 up
-wait 200
 expect cap 0
+expect notes 1
+tap EDIT
+wait 100
+tap EDIT
+wait 100
+expect cap 0
+expect dropped 0

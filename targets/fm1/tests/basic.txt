@@ -46,13 +46,16 @@ expect p9 0
 midi B0 4A 7F
 wait 50
 expect p9 100
-# CAPTURE needs PLAY (at STOP: "PLAY FIRST"); playing, a pause (a phrase ends after 1.5 bars of silence),
-# four notes one per beat (120 BPM), then EDIT
+# The loop take needs PLAY (at STOP: "PLAY FIRST"); playing: EDIT tapped arms it, the first note starts it, four notes
+# one per beat (120 BPM), EDIT again: the loop, from the first note to now
 tap EDIT
 wait 50
 expect notes 0
 tap PLAY
 wait 3500
+tap EDIT
+wait 50
+expect cap 0
 key 0 down 110
 wait 250
 key 0 up

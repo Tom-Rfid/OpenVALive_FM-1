@@ -12,7 +12,7 @@ Le manuel illustré publié avec le firmware est [`targets/fm1/docs/MANUAL.md`](
 |---|---|
 | **Touches** | jouent la piste sélectionnée, avec la vélocité ; aussi envoyées en USB-MIDI (canal 1) |
 | **SELECT** (tourner) | piste 1 à 4 |
-| **PRESET** (tourner) | son de la piste : dans cet ordre : ACID 303, BASS, SUB, les 5 kits de batterie (808, 909, TIGHT, LOFI, IRON), LEAD, PLUCK, BRASS, ORGAN, PAD, STRINGS, SWEEP, GRUNGE, SCREECH, DRONE, WIND, HOLD, WHALE, INIT, puis USER 1–8 |
+| **PRESET** (tourner) | son de la piste : les 65 sons d'usine famille par famille (ACID, BASSES, DRUMS, PUNCH, MINIMAL, UNDER, WORLD, SFX, SOFT : [20](20-sons-et-touches-batterie.md)), puis USER 1–8 |
 | **ALGO** (tourner) | tempo, 20 à 300 BPM |
 | **K1..K4** | la page de boutons (ci-dessous) |
 | **FX** | page suivante (SOUND orange / MACRO cyan / LIVE menthe / SETUP rose / USER violet) |
@@ -20,11 +20,11 @@ Le manuel illustré publié avec le firmware est [`targets/fm1/docs/MANUAL.md`](
 | **SELECT après la piste 4** | **A**, la ligne live : les touches jouent le son propre de A en direct (PRESET), sans l'enregistrer ; ARP tapé = arpège UP / DOWN / UP-DOWN / RANDOM ; les gestes agissent sur toutes les pistes |
 | **PLAY** | lecture / arrêt |
 | **REC** | enregistre dans la piste pendant la lecture (au relâché) ; une prise = un pas d'annulation. **REC + la touche blanche tout à gauche, REC lâché en premier : RESET** de la boucle de la piste choisie (ENV l'annule) |
-| **EDIT** | tapé : **CAPTURE** (la phrase qu'on vient de jouer devient la boucle ; sur une piste encore sans boucle, dès sa première note la ligne se peint en vert au passage de la tête de lecture, le signe infini rouge s'affiche et EDIT clignote vite : tape quand la boucle a fait le tour) ; tenu + touches en lecture : **PUNCH** (enregistre par-dessus en remplaçant, jusqu'au relâchement d'EDIT ; EDIT clignote pendant l'enregistrement) |
+| **EDIT** | tapé en lecture : **LOOP REC** (« FULL LOOP AT END ») : EDIT clignote vite et le signe infini rouge s'affiche, la **première note** lance la prise (la ligne se peint en vert au passage de la tête de lecture), et **EDIT** à nouveau, ou un bouton de menu (SEL, SEQ, ARP, GLO, HOME, SAVE, FX, PLAY, REC), la termine : tout ce qui a été joué depuis la première note devient la boucle de la piste, sa longueur arrondie à 1, 2, 4 ou 8 mesures ; EDIT sans note : rien ; tenu + touches en lecture : **PUNCH** (enregistre par-dessus en remplaçant, jusqu'au relâchement d'EDIT ; EDIT clignote pendant l'enregistrement) |
 | **ENV / LFO** | ANNULER / RÉTABLIR (8 pas) de la piste sélectionnée ; rien sur A (que du live) |
 | **SAVE** + **6e touche noire** (Fa#4, entre LOAD 8 et SAVE 1), SAVE relâché d'abord | **SAVE ALL** : tout le live set (sons, boucles, scènes, tempo...), par étapes sur environ une seconde, seulement ce qui a changé ; la touche clignote quand il y a quelque chose à sauver, SAVE clignote pendant la sauvegarde. SAVE seul ne sauve rien. SAVE est allumé quand quelque chose a changé (un mute ne compte pas) |
-| **SAVE + touche blanche 1–8** / **9–16**, SAVE relâché d'abord | **LOAD** : met USER 1–8 sur la ligne choisie (clavier à l'écran : violet = un son à charger, gris = vide) / **SAVE** : garde le son de la ligne en USER 1–8 (rose ; menthe / rose en alternance = déjà un son, remplacé) |
-| **SEL + REC / SEL + PLAY** | métronome / tap tempo. REC et CAPTURE (EDIT) seulement en lecture : à l'arrêt, « PLAY FIRST » |
+| **SAVE + touche blanche 1–8** / **9–16**, SAVE relâché d'abord | **LOAD** : met USER 1–8 sur la ligne choisie (clavier à l'écran : violet = un son à charger, gris = vide) / **SAVE** : garde le son de la ligne en USER 1–8 (sur A : le son de A) (rose ; menthe / rose en alternance = déjà un son, remplacé) |
+| **SEL + REC / SEL + PLAY** | métronome / tap tempo. REC et LOOP REC (EDIT) seulement en lecture : à l'arrêt, « PLAY FIRST » |
 | **HOME tenu à l'allumage** | démarrage sûr : le set enregistré n'est pas chargé |
 | **HOME** + touche blanche 1 / 2 / 3, HOME relâché d'abord | PANIC / RESTART (toutes les pistes à leur début) / STOP ALL |
 | **FX** + touche blanche 1, FX relâché d'abord | remise à zéro de la ligne : effets coupés, réactivée, octave 0, niveau d'origine |

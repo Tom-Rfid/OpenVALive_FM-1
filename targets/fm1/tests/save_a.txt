@@ -1,0 +1,15 @@
+# SAVE on A: SAVE + white key 16 (SU8), SAVE let go first, keeps A's own sound as USER 8 (not the last track's)
+master 3000
+wait 3500
+turn SELECT 4
+wait 100
+expect preset 60
+press SAVE
+key 26 down 100
+wait 50
+release SAVE
+key 26 up
+wait 100
+expect live_sound 72
+expect preset 60
+expect dropped 0

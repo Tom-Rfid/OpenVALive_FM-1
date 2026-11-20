@@ -12,7 +12,7 @@ This page is the quick reference. How the loops, CAPTURE and the Creative Engine
 |---|---|
 | **Keys** | play the selected track, with velocity; also out over USB-MIDI (channel 1) |
 | **SELECT** (turn) | track 1 to 4 |
-| **PRESET** (turn) | sound of the track: in this order: ACID 303, BASS, SUB, the 5 drum kits (808, 909, TIGHT, LOFI, IRON), LEAD, PLUCK, BRASS, ORGAN, PAD, STRINGS, SWEEP, GRUNGE, SCREECH, DRONE, WIND, HOLD, WHALE, INIT, then USER 1–8 |
+| **PRESET** (turn) | sound of the track: the 65 factory sounds family by family (ACID, BASSES, DRUMS, PUNCH, MINIMAL, UNDER, WORLD, SFX, SOFT: [20](20-sounds-and-drum-keys.md)), then USER 1–8 |
 | **ALGO** (turn) | tempo, 20 to 300 BPM |
 | **K1..K4** | the knob page (below) |
 | **FX** | next knob page (SOUND orange / MACRO cyan / LIVE mint / SETUP pink / USER violet) |
@@ -20,11 +20,11 @@ This page is the quick reference. How the loops, CAPTURE and the Creative Engine
 | **SELECT past track 4** | **A**, the live line: the keys play A's own sound live (PRESET), not recorded; ARP tapped = arpeggio UP / DOWN / UP-DOWN / RANDOM; gestures act on every track |
 | **PLAY** | play / stop |
 | **REC** | record into the track while playing (on release); a take is one undo step. **REC + the leftmost white key, REC let go first: RESET** the selected track's loop (ENV undoes it) |
-| **EDIT** | tapped: **CAPTURE** (the phrase just played becomes the loop; on a track without a loop yet, from its first note the line paints green as the playhead goes, the red infinity sign shows and EDIT blinks fast: tap when the loop has come round); held + keys while playing: **PUNCH** (records over, replacing, until EDIT is let go; EDIT flickers while recording) |
+| **EDIT** | tapped while playing: **LOOP REC** ("FULL LOOP AT END"): EDIT blinks fast and the red infinity sign shows, the **first note** starts the take (the line paints green as the playhead goes), and **EDIT** again, or a menu button (SEL, SEQ, ARP, GLO, HOME, SAVE, FX, PLAY, REC), ends it: everything played since the first note becomes the track's loop, its length rounded to 1, 2, 4 or 8 bars; EDIT with no note: nothing; held + keys while playing: **PUNCH** (records over, replacing, until EDIT is let go; EDIT flickers while recording) |
 | **ENV / LFO** | UNDO / REDO (8 steps) of the selected track; none on A (live only) |
 | **SAVE** + **6th black key** (F#4, between LOAD 8 and SAVE 1), SAVE let go first | **SAVE ALL**: the whole live set (sounds, loops, scenes, tempo...), in steps over about a second, only what changed; the key blinks when something is to be saved, SAVE blinks while it saves. SAVE alone saves nothing. SAVE is lit when something changed (a mute does not count) |
-| **SAVE + white key 1–8** / **9–16**, SAVE let go first | **LOAD** USER 1–8 on the selected line (on a screen keyboard: violet = a sound to load, grey = empty) / **SAVE** the line's sound as USER 1–8 (pink; mint / pink in turn = one there already, replaced) |
-| **SEL + REC / SEL + PLAY** | metronome / tap tempo. REC and CAPTURE (EDIT) only while playing: at STOP, “PLAY FIRST” |
+| **SAVE + white key 1–8** / **9–16**, SAVE let go first | **LOAD** USER 1–8 on the selected line (on a screen keyboard: violet = a sound to load, grey = empty) / **SAVE** the line's sound as USER 1–8 (on A: A's own sound) (pink; mint / pink in turn = one there already, replaced) |
+| **SEL + REC / SEL + PLAY** | metronome / tap tempo. REC and LOOP REC (EDIT) only while playing: at STOP, “PLAY FIRST” |
 | **HOME held at power-on** | safe start: the saved set is not loaded |
 | **HOME** + white key 1 / 2 / 3, HOME let go first | PANIC / RESTART (every track from its start) / STOP ALL |
 | **FX** + white key 1, FX let go first | the line's reset: effects off, unmuted, octave 0, level unity |

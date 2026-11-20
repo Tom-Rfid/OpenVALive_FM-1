@@ -57,7 +57,7 @@ qui siffle de SCREECH, le son pur de WHALE, les deux scies d'INIT, une grosse ca
 | 42 | **PLATE** | F6 under | une plaque de métal frappée qui résonne : deux carrés à un intervalle étrange dans un passe-bande qui chante, une longue résonance, chorus et écho sombre. |
 | 43 | **CREAK** | F6 under | une porte ou une coque qui grince : une scie grave dans un passe-bande serré, découpée en grains, la hauteur qui ploie lentement ; lent ça gémit, fort ça craque. |
 | 44 | **WIND** | F6 under | bruit filtré : les touches déplacent la bande, un LFO lent respire. |
-| 45 | **RAVE SAX** | F7 world | le sax rave / house des années 90, version synthé : un carré étroit et une scie, un souffle de bruit, le filtre qui s'ouvre à l'attaque, vibrato, glissé, un écho. |
+| 45 | **RAVE SAX** | F7 world | le sax rave / house des années 90, cuivré : deux scies proches, le filtre soufflé grand ouvert à l'attaque puis qui se pose (le « blat » d'un cuivre), la hauteur qui monte dans la note, un souffle, de la saturation, vibrato, un écho. |
 | 46 | **LUTE** | F7 world | un luth électro sombre : une note pincée et sa quinte (les modes anciens), un claquement résonant, un phaser lent, un écho sombre. |
 | 47 | **FLUTE** | F7 world | une flûte à bec dans une grotte : un triangle rond, du souffle, une attaque douce, vibrato, un long écho sombre. |
 | 48 | **BAGPIPE** | F7 world | une cornemuse électro : deux scies à une quarte (le bourdon sous le chalumeau), un filtre nasillard résonant, saturée, tenue. |
