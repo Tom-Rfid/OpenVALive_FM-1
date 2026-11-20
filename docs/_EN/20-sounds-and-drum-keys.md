@@ -1,6 +1,6 @@
 # 20. The sounds and the drum keys
 
-PRESET turns through the 60 factory sounds in this order (nine families by character, F1–F9 with USER; OCT− / OCT+ jump between them, SOUNDS chooses which ones PRESET offers), then USER 1–8 (the sounds you keep with SAVE + white key).
+PRESET turns through the 60 factory sounds in this order (nine families by character, F1–F9 with USER; OCT− / OCT+ jump between them, SOUNDS chooses which ones PRESET offers), then USER 1–8: a track's sound as you set it (knobs, SOUND EDIT), kept with SAVE + white keys 9–16, loaded with SAVE + 1–8 or PRESET. Their names say where they came from: "U3 ACID 303" (U = USER).
 Track 1 starts on **ACID 303** (tracks 2, 3, 4: BASS, LEAD, DRUMS 808). A runs the synth sounds and USER sounds that
 hold a synth. The same list on the FM-1 and the SMK-37. Every button and key of the FM-1: [05](05-using-the-fm1.md).
 

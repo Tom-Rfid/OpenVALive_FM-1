@@ -1,6 +1,6 @@
 # 20. Les sons et les touches de batterie
 
-PRESET fait défiler les 60 sons d'usine dans cet ordre (neuf familles par caractère, F1–F9 avec USER ; OCT− / OCT+ sautent de l'une à l'autre, SOUNDS choisit ceux que PRESET propose), puis USER 1–8 (les sons gardés avec SAVE + touche blanche).
+PRESET fait défiler les 60 sons d'usine dans cet ordre (neuf familles par caractère, F1–F9 avec USER ; OCT− / OCT+ sautent de l'une à l'autre, SOUNDS choisit ceux que PRESET propose), puis USER 1–8 : le son d'une piste tel que tu l'as réglé (boutons, SOUND EDIT), gardé avec SAVE + touches blanches 9–16, rechargé avec SAVE + 1–8 ou PRESET. Leur nom dit d'où ils viennent : « U3 ACID 303 » (U = USER).
 La piste 1 démarre sur **ACID 303** (pistes 2, 3, 4 : BASS, LEAD, DRUMS 808). A joue les sons de synthé et les sons
 USER qui contiennent un synthé. La même liste sur le FM-1 et le SMK-37. Chaque bouton et touche du FM-1 :
 [05](05-utilisation-fm1.md).
