@@ -32,13 +32,13 @@ qui siffle de SCREECH, le son pur de WHALE, les deux scies d'INIT, une grosse ca
 | 17 | **DRUMS LOFI** | F3 batteries | sombre et saturé. |
 | 18 | **DRUMS IRON** | F3 batteries | industriel : grave, métallique, distordu, longs charleys qui grésillent. |
 | 19 | **LEAD** | F4 punch | mono legato : carré à largeur modulée + scie une octave au-dessus, vibrato, delay. |
-| 20 | **PLUCK** | F4 punch | une attaque brillante qui s'éteint, des échos derrière. |
-| 21 | **STAB** | F4 punch | le « stab » d'accord house / techno : deux scies, filtre et ampli courts et claquants, chorus, un écho. Joue des accords, courts. |
+| 20 | **PLUCK** | F4 punch | une attaque brillante qui retombe sur un son doux tenu avec la touche, un relâchement qui résonne, chorus et échos. |
+| 21 | **STAB** | F4 punch | le « stab » d'accord house / techno : deux scies et un peu de sub, une attaque de filtre claquante, puis un corps qui tient avec les touches, chorus, un écho. Joue des accords. |
 | 22 | **BRASS** | F4 punch | le filtre s'ouvre après l'attaque, comme un souffle. |
 | 23 | **ORGAN** | F4 punch | triangle + carré une octave au-dessus + sub, chorus II en guise de cabine tournante. |
 | 24 | **VINTAGE KEYS** | F4 punch | un piano électrique des années 70 : une attaque de cloche qui s'éteint, plus sombre joué doux, un trémolo lent et le chorus I. |
 | 25 | **NOISE** | F5 SFX | du bruit blanc dans un passe-bas, tenu : K1 (cutoff) l'ouvre pour faire ta propre montée. |
-| 26 | **RISER** | F5 SFX | bruit et scie, filtre et hauteur (une octave) qui montent pendant environ 8 s tant que la note est tenue (4 mesures à 120 BPM), puis restent en haut. |
+| 26 | **RISER** | F5 SFX | bruit et scie, entendus tout de suite, filtre et hauteur (une octave) qui montent pendant environ 8 s tant que la note est tenue (4 mesures à 120 BPM), puis restent en haut. |
 | 27 | **DOWNLIFTER** | F5 SFX | l'inverse : ouvert et une octave plus haut, il descend et s'éteint en environ 8 s (tenu). |
 | 28 | **SHAKER** | F5 SFX | du bruit passe-haut qui pulse à la double croche (un LFO au tempo) : une boucle de charley à tenir. |
 | 29 | **THUNDER** | F5 SFX | le tonnerre : du bruit dans un passe-bas fermé qui monte et gronde ; les notes graves font le boum (le sub), une note frappée fort claque. Tiens-la pour un long roulement. |

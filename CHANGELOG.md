@@ -5,6 +5,11 @@
 
 
 
+## 20 November 2026 — STAB, PLUCK, RISER
+
+- STAB and PLUCK hold with the keys (a body after the attack, a longer release) instead of a 200 ms blip; RISER is
+  heard at once (shorter attack, the filter a little open).
+
 ## 20 November 2026 — CAPTURE shows what it takes; clips in less RAM
 
 - Playing on the selected track (not recording), from the first note the line paints green as the playhead goes (what

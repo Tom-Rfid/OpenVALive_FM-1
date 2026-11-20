@@ -31,13 +31,13 @@ filter, WHALE's pure tone, INIT's two saws, a kick.
 | 17 | **DRUMS LOFI** | F3 drums | dark and driven. |
 | 18 | **DRUMS IRON** | F3 drums | industrial: low, metallic, distorted, long rattling hats. |
 | 19 | **LEAD** | F4 punch | mono legato: pulse-width-modulated square + saw an octave up, vibrato, delay. |
-| 20 | **PLUCK** | F4 punch | a bright attack that dies away, echoes behind it. |
-| 21 | **STAB** | F4 punch | the house / techno chord stab: two saws, a short snappy filter and amp, chorus, an echo. Play chords, short. |
+| 20 | **PLUCK** | F4 punch | a bright attack that dies down to a soft tone held with the key, a ringing release, chorus and echoes. |
+| 21 | **STAB** | F4 punch | the house / techno chord stab: two saws and a little sub, a snappy filter attack, then a body that holds with the keys, chorus, an echo. Play chords. |
 | 22 | **BRASS** | F4 punch | the filter opens after the attack, like a breath. |
 | 23 | **ORGAN** | F4 punch | triangle + square an octave up + sub, chorus II as a rotary. |
 | 24 | **VINTAGE KEYS** | F4 punch | a 70s electric piano: a bell-like start that fades, darker when soft, a slow tremolo and chorus I. |
 | 25 | **NOISE** | F5 SFX | white noise in a low-pass, held: K1 (cutoff) opens it for a build-up of your own. |
-| 26 | **RISER** | F5 SFX | noise and a saw, filter and pitch (an octave) rising for about 8 s while held (4 bars at 120 BPM), then staying up. |
+| 26 | **RISER** | F5 SFX | noise and a saw, heard at once, filter and pitch (an octave) rising for about 8 s while held (4 bars at 120 BPM), then staying up. |
 | 27 | **DOWNLIFTER** | F5 SFX | the other way: open and an octave up, falling and fading for about 8 s (held). |
 | 28 | **SHAKER** | F5 SFX | high-passed noise pulsing on the 1/16 (an LFO on the tempo): a hat loop to hold. |
 | 29 | **THUNDER** | F5 SFX | thunder: noise through a closed low-pass that swells in and rumbles; low notes boom (the sub), a hard hit cracks. Hold it for a long roll. |
