@@ -19,7 +19,7 @@ This page is the quick reference. How the loops, CAPTURE and the Creative Engine
 | **SEL** | held: the tracks layer (below); pressed: takes a sound waiting (**+SEL**); held + SELECT: point at a line, let go: select it — from A (SEL lit): **swap** A and that track (sounds, effects, octaves; ENV on the track swaps back) |
 | **SELECT past track 4** | **A**, the live line: the keys play A's own sound live (PRESET), not recorded; ARP tapped = arpeggio UP / DOWN / UP-DOWN / RANDOM; gestures act on every track |
 | **PLAY** | play / stop |
-| **REC** | record into the track (starts playing); a take is one undo step |
+| **REC** | record into the track while playing (on release); a take is one undo step. **REC + the leftmost white key, REC let go first: RESET** the selected track's loop (ENV undoes it) |
 | **EDIT** | tapped: **CAPTURE** (the phrase just played becomes the loop); held + keys while playing: **PUNCH** (records over, replacing, until EDIT is let go; EDIT flickers while recording) |
 | **ENV / LFO** | UNDO / REDO (8 steps) of the selected track; none on A (live only) |
 | **SAVE** + **1st black key** (F#3), SAVE let go first | **SAVE ALL**: the whole live set (sounds, loops, scenes, tempo...), in steps over about a second, only what changed; the key blinks when something is to be saved, SAVE blinks while it saves. SAVE alone saves nothing. SAVE is lit when something changed (a mute does not count) |

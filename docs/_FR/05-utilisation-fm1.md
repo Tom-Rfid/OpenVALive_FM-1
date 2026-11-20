@@ -19,7 +19,7 @@ Le manuel illustré publié avec le firmware est [`targets/fm1/docs/MANUAL.md`](
 | **SEL** | tenu : couche des pistes (plus bas) ; appuyé : prend un son en attente (**+SEL**) ; tenu + SELECT : pointer une ligne, relâché : la sélectionner — depuis A (SEL allumé) : **échange** A et cette piste (sons, effets, octaves ; ENV sur la piste ré-échange) |
 | **SELECT après la piste 4** | **A**, la ligne live : les touches jouent le son propre de A en direct (PRESET), sans l'enregistrer ; ARP tapé = arpège UP / DOWN / UP-DOWN / RANDOM ; les gestes agissent sur toutes les pistes |
 | **PLAY** | lecture / arrêt |
-| **REC** | enregistre dans la piste (lance la lecture) ; une prise = un pas d'annulation |
+| **REC** | enregistre dans la piste pendant la lecture (au relâché) ; une prise = un pas d'annulation. **REC + la touche blanche tout à gauche, REC lâché en premier : RESET** de la boucle de la piste choisie (ENV l'annule) |
 | **EDIT** | tapé : **CAPTURE** (la phrase qu'on vient de jouer devient la boucle) ; tenu + touches en lecture : **PUNCH** (enregistre par-dessus en remplaçant, jusqu'au relâchement d'EDIT ; EDIT clignote pendant l'enregistrement) |
 | **ENV / LFO** | ANNULER / RÉTABLIR (8 pas) de la piste sélectionnée ; rien sur A (que du live) |
 | **SAVE** + **1re touche noire** (Fa#3), SAVE relâché d'abord | **SAVE ALL** : tout le live set (sons, boucles, scènes, tempo...), par étapes sur environ une seconde, seulement ce qui a changé ; la touche clignote quand il y a quelque chose à sauver, SAVE clignote pendant la sauvegarde. SAVE seul ne sauve rien. SAVE est allumé quand quelque chose a changé (un mute ne compte pas) |

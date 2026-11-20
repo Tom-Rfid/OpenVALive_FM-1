@@ -5,6 +5,11 @@
 
 
 
+## 20 November 2026 — REC + key 1: RESET
+
+- REC is a layer too: REC + the leftmost white key, REC let go first, RESETs (clears) the selected track's loop (ENV
+  undoes it). REC alone now acts on release.
+
 ## 20 November 2026 — families: PSY BASS with the basses, PSY before USER
 
 - PSY BASS joins the basses (F2) and holds as long as the key. The psy hits (ZAP, LASER, BLIP, METAL, ARP) go to F8,
