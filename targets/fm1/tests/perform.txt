@@ -1,0 +1,32 @@
+# PERFORM (SEQ): a loop is valid on release (SEQ let go first); the effects act at once (SLICER, key 6, held: on;
+# let go: off); LOOP 1/32 has no key: OCT+ from LOOP 1/16 reaches it, OCT- comes back
+wait 3500
+tap PLAY
+wait 300
+tapkey 0 100
+tapkey 4 100
+wait 300
+press SEQ
+key 9 down 100
+wait 100
+expect slicer 1
+wait 300
+key 9 up
+wait 50
+expect slicer 0
+key 7 down 100
+wait 50
+release SEQ
+key 7 up
+wait 100
+expect loop 4
+press SEQ
+tap OCT+
+release SEQ
+wait 50
+expect loop 16
+press SEQ
+tap OCT-
+release SEQ
+wait 50
+expect loop 4
