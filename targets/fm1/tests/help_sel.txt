@@ -1,0 +1,20 @@
+# SEL on the help pages: HELP AT START off for good (kept past a power cycle); that SEL press shows no tracks layer
+# and a key held with it mutes nothing
+master 3000
+wait 3800
+expect help 1
+expect no_help 0
+press SEL
+wait 100
+expect help 0
+expect no_help 1
+key 0 down 100
+wait 100
+key 0 up
+release SEL
+wait 100
+expect muted 0
+reboot
+wait 3800
+expect help 0
+expect dropped 0

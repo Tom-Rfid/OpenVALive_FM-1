@@ -1,5 +1,5 @@
-# The help pages after the boot screen (OPTION CONTROL: HELP AT START): a page every 3 s; notes and SEL leave them
-# up, any other button or a knob closes them; a boot screen cut short (a key, a button) skips them
+# The help pages after the boot screen (OPTION CONTROL: HELP AT START): a page every 3 s; notes leave them up, a
+# button or a knob closes them (SEL: for good, help_sel.txt); a boot screen cut short (a key, a button) skips them
 master 3000
 wait 3800
 expect help 1
@@ -11,9 +11,6 @@ shot help-2.png
 key 4 down 100
 wait 300
 key 4 up
-expect help 1
-tap SEL
-wait 100
 expect help 1
 tap PLAY
 wait 100

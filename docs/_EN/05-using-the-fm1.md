@@ -12,7 +12,7 @@ This page is the quick reference. How the loops, CAPTURE and the Creative Engine
 |---|---|
 | **Keys** | play the selected track, with velocity; also out over USB-MIDI (channel 1) |
 | **SELECT** (turn) | track 1 to 4 |
-| **PRESET** (turn) | sound of the track: the 65 factory sounds family by family (ACID, BASSES, DRUMS, PUNCH, MINIMAL, UNDER, WORLD, SFX, SOFT: [20](20-sounds-and-drum-keys.md)), then USER 1–8 |
+| **PRESET** (turn) | sound of the track: the 65 factory sounds family by family (ACID, BASS, DRUMS, PERC, LEAD, KEYS, SOFT, FX, DARK: [20](20-sounds-and-drum-keys.md)), then USER 1–8 |
 | **ALGO** (turn) | tempo, 20 to 300 BPM |
 | **K1..K4** | the knob page (below) |
 | **FX** | next knob page (SOUND orange / MACRO cyan / LIVE mint / SETUP pink / USER violet) |

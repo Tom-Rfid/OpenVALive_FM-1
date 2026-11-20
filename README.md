@@ -51,7 +51,7 @@ On [The Firmware Hub](https://thefirmwarehub.com): **FM-1_023** (this firmware) 
 | | |
 |---|---|
 | 🎛️ **Four tracks, one clock** | synths or drums on each track, own loop lengths, swing, MIDI clock in and out |
-| 🔊 **65 sounds in 9 families** | ACID, BASSES, DRUMS (five kits: 808, 909…), PUNCH, MINIMAL, UNDER, WORLD, SFX, SOFT, then 8 USER sounds of your own; PRESET then OCT−/OCT+ jumps family |
+| 🔊 **65 sounds in 9 families** | ACID, BASS, DRUMS (five kits: 808, 909…), PERC, LEAD, KEYS, SOFT, FX, DARK, then 8 USER sounds of your own; PRESET then OCT−/OCT+ jumps family |
 | 🥁 **Drum keys** | the ORIGINAL map (toms high → low, choosable D# and G#) or GM, with key lights |
 | 🎯 **CAPTURE and LOOP EDIT** | the last phrase you played becomes the loop, in time; then edit it note by note (HOME + 4th black key) |
 | ↩️ **Undo everything** | 8 steps: takes, captures, creative gestures, clears, edits |

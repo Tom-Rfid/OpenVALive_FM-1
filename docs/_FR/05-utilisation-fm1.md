@@ -12,7 +12,7 @@ Le manuel illustré publié avec le firmware est [`targets/fm1/docs/MANUAL.md`](
 |---|---|
 | **Touches** | jouent la piste sélectionnée, avec la vélocité ; aussi envoyées en USB-MIDI (canal 1) |
 | **SELECT** (tourner) | piste 1 à 4 |
-| **PRESET** (tourner) | son de la piste : les 65 sons d'usine famille par famille (ACID, BASSES, DRUMS, PUNCH, MINIMAL, UNDER, WORLD, SFX, SOFT : [20](20-sons-et-touches-batterie.md)), puis USER 1–8 |
+| **PRESET** (tourner) | son de la piste : les 65 sons d'usine famille par famille (ACID, BASS, DRUMS, PERC, LEAD, KEYS, SOFT, FX, DARK : [20](20-sons-et-touches-batterie.md)), puis USER 1–8 |
 | **ALGO** (tourner) | tempo, 20 à 300 BPM |
 | **K1..K4** | la page de boutons (ci-dessous) |
 | **FX** | page suivante (SOUND orange / MACRO cyan / LIVE menthe / SETUP rose / USER violet) |

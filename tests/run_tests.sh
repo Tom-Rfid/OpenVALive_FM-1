@@ -53,6 +53,7 @@ if [ -n "${FM1_BASE:-}" ] && [ -f "$FM1_BASE/include/fastmath.h" ]; then
            && targets/fm1/build/host/openvalive_host targets/fm1/tests/perform.txt targets/fm1/build/host >>$B/fm1_run.log 2>&1 \
            && targets/fm1/build/host/openvalive_host targets/fm1/tests/help.txt targets/fm1/build/host >>$B/fm1_run.log 2>&1 \
            && targets/fm1/build/host/openvalive_host targets/fm1/tests/help_cut.txt targets/fm1/build/host >>$B/fm1_run.log 2>&1 \
+           && targets/fm1/build/host/openvalive_host targets/fm1/tests/help_sel.txt targets/fm1/build/host >>$B/fm1_run.log 2>&1 \
            && targets/fm1/build/host/openvalive_host targets/fm1/tests/save_a.txt targets/fm1/build/host >>$B/fm1_run.log 2>&1 \
            && ! grep -q FAIL $B/fm1_run.log; then
             pass "FM-1: app in the fm1-base simulator ($(grep -c '^  ok' $B/fm1_run.log) checks)"

@@ -343,14 +343,14 @@ wait 30
 release SEL
 key 26 up
 expect controller 0
-# a drum kit on track 3 (PRESET's order: LEAD - 5 = DRUMS 808, the kits sit after the basses), then back
+# a drum kit on track 3 (PRESET's order: LEAD - 12 = DRUMS 808, the kits sit after the basses), then back
 turn SELECT -1
 wait 50
 expect kind 0
-turn PRESET -5 10
+turn PRESET -12 10
 wait 50
 expect kind 1
-turn PRESET 5 10
+turn PRESET 12 10
 wait 50
 expect kind 0
 turn SELECT -2
