@@ -1,0 +1,27 @@
+# CAPTURE's green line: from the first note on an empty track, gone at CAPTURE; after a REC take (the track has its
+# loop) a note played does not start it again
+wait 3500
+tap PLAY
+wait 300
+key 0 down 100
+wait 200
+key 0 up
+wait 300
+expect cap 1
+tap EDIT
+wait 100
+expect cap 0
+tap REC
+wait 100
+key 4 down 100
+wait 200
+key 4 up
+wait 300
+expect cap 0
+tap REC
+wait 100
+key 7 down 100
+wait 200
+key 7 up
+wait 200
+expect cap 0

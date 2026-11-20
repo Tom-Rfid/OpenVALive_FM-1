@@ -58,7 +58,7 @@ filter, WHALE's pure tone, INIT's two saws, a kick.
 | 44 | **ZAP** | F8 psy | the pitch dives two octaves in a blink, a little echo. |
 | 45 | **LASER** | F8 psy | a longer dive, the filter singing on the way down, echoes that keep it flying. |
 | 46 | **BLIP** | F8 psy | a tiny square, each note a random pitch and brightness: glitchy fast patterns behind the mix. |
-| 47 | **METAL** | F8 psy | a square and a saw a ninth apart, slightly off, through a ringing band-pass: struck metal (high) or wood (low). Close to an FM percussion, without FM. |
+| 47 | **METAL** | F8 psy | a square and a saw a ninth apart, slightly off, through a ringing band-pass: struck metal (high) or wood (low), ringing on while held and after. Close to an FM percussion, without FM. |
 | 48 | **ARP** | F8 psy | cut for fast hypnotic arpeggios: saw and square, snappy filter, short body, an echo. |
 
 On a synth sound the four SOUND knobs are CUTOFF, RESO, ENV, FX (delay); SOUND EDIT (ARP + SEL) opens every parameter.

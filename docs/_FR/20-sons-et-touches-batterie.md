@@ -59,7 +59,7 @@ qui siffle de SCREECH, le son pur de WHALE, les deux scies d'INIT, une grosse ca
 | 44 | **ZAP** | F8 psy | la hauteur plonge de deux octaves en un éclair, un petit écho. |
 | 45 | **LASER** | F8 psy | une plongée plus longue, le filtre qui chante en descendant, des échos qui le font voler. |
 | 46 | **BLIP** | F8 psy | un tout petit carré, chaque note une hauteur et une brillance au hasard : des motifs rapides et glitchés derrière le mix. |
-| 47 | **METAL** | F8 psy | un carré et une scie à une neuvième, un peu désaccordés, dans un passe-bande qui sonne : du métal frappé (aigu) ou du bois (grave). Proche d'une percussion FM, sans FM. |
+| 47 | **METAL** | F8 psy | un carré et une scie à une neuvième, un peu désaccordés, dans un passe-bande qui sonne : du métal frappé (aigu) ou du bois (grave), qui résonne tant que la touche est tenue et après. Proche d'une percussion FM, sans FM. |
 | 48 | **ARP** | F8 psy | taillé pour les arpèges rapides et hypnotiques : scie et carré, filtre claquant, corps court, un écho. |
 
 Sur un son de synthé, les quatre boutons SOUND sont CUTOFF, RESO, ENV, FX (delay) ; SOUND EDIT (ARP + SEL) ouvre
