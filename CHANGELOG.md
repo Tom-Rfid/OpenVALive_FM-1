@@ -1,5 +1,10 @@
 # Changelog
 
+## 20 November 2026 — bigger key names on the screen keyboard
+
+- The keys' names on the screen keyboard in a 5x7 font (was 3x5): easier to read. The black keys are 20 % shorter
+  from the bottom, so the white keys' names sit under them.
+
 ## 20 November 2026 — LOAD USER takes the sound at once
 
 - SAVE + white key 1–8 (LOAD USER) puts the sound on the line at once, also while its loop plays (it waited for SEL,
