@@ -53,9 +53,10 @@ Le manuel illustré publié avec le firmware est [`targets/fm1/docs/MANUAL.md`](
 
 Les boutons de MOOD, LIVE et EQ peuvent recevoir d'autres cibles dans MAP CONTROL, comme ceux de USER. MOOD (l'ancien
 MACRO) et les boutons sur la piste choisie (les effets de USER sur SEL TRK, LEVEL, PAN) gardent une valeur par piste :
-de retour sur une piste, ses propres valeurs. **FX tenu + un bouton** sur un tel réglage : les autres pistes rejoignent
-la valeur de la piste choisie en cinq crans (« 2/5 » … « ALL ALIGNED ») ; les barres sont menthe tant que FX est tenu,
-et FX lâché ne change alors pas de page.
+de retour sur une piste, ses propres valeurs. **FX tenu + un bouton**, sur toutes les pages sauf SETUP : le bouton
+règle la piste choisie comme d'habitude, et chaque autre piste va vers cette valeur à son rythme, dessus après cinq
+crans (« ALL 1/5 » … « ALL ON IT ») ; les barres sont menthe tant que FX est tenu, et FX lâché ne change alors pas de
+page.
 
 Un son pris (SEL) : le titre reste celui de l'attente (« T1 BLEEP »), en vert et fixe, avec une coche.
 

@@ -53,8 +53,9 @@ This page is the quick reference. How the loops, CAPTURE and the Creative Engine
 
 MOOD, LIVE and EQ's knobs can be given other targets in MAP CONTROL, like USER's. MOOD (formerly MACRO) and the
 knobs on the selected track (USER's effects on SEL TRK, LEVEL, PAN) keep a value per track: back on a track, its own
-values. **FX held + a knob** on such a control: the other tracks come to the selected track's value in five detents
-("2/5" … "ALL ALIGNED"); the bars are mint while FX is held, and FX let go then turns no page.
+values. **FX held + a knob**, on every page but SETUP: the knob turns the selected track as usual, and every other track
+goes toward that value at its own pace, on it after five detents ("ALL 1/5" … "ALL ON IT"); the bars are mint while FX
+is held, and FX let go then turns no page.
 
 A sound taken (SEL): the title stays as it was while it waited ("T1 BLEEP"), green and still, with a check mark.
 
