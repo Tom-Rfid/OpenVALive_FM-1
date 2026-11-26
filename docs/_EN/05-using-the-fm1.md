@@ -15,7 +15,7 @@ This page is the quick reference. How the loops, CAPTURE and the Creative Engine
 | **PRESET** (turn) | sound of the track: the 65 factory sounds family by family (ACID, BASS, DRUMS, PERC, LEAD, KEYS, SOFT, FX, DARK: [20](20-sounds-and-drum-keys.md)), then USER 1–8 |
 | **ALGO** (turn) | tempo, 20 to 300 BPM |
 | **K1..K4** | the knob page (below) |
-| **FX** | next knob page (SOUND orange / MACRO cyan / LIVE mint / SETUP pink / USER violet) |
+| **FX** | next knob page (SOUND orange / MOOD cyan / LIVE mint / SETUP pink / USER violet) |
 | **SEL** | held: the tracks layer (below); pressed: takes a sound waiting (**+SEL**); held + SELECT: point at a line, let go: select it — from A (SEL lit): **swap** A and that track (sounds, effects, octaves; ENV on the track swaps back). The title says it ("SWAP TRACK A <> T2", "SELECT LINE T3"; the screen keyboard steps aside); OCT− or OCT+ with SEL still held gives it up, SELECT starts again |
 | **SELECT past track 4** | **A**, the live line: the keys play A's own sound live (PRESET), not recorded; ARP tapped = arpeggio UP / DOWN / UP-DOWN / RANDOM; gestures act on every track |
 | **PLAY** | play / stop |
@@ -30,9 +30,9 @@ This page is the quick reference. How the loops, CAPTURE and the Creative Engine
 | **FX** + white key 1, FX let go first | the line's reset: effects off, unmuted, octave 0, level unity |
 | **FX** + white key 6 / 7 (D4 / E4), FX let go first | drum keys ORIGINAL / GM ([20](20-sounds-and-drum-keys.md)), kept at once |
 | **HOME** + white key 7 (E4), HOME let go first | **OPTION CONTROL**: DRUM KEYS (ORIGINAL / GM), **PERC 1–4** (each D# / G# key of the drum keyboard its own percussion: G#3, D#4, G#4, D#5; COWBELL, CLAP, TRIANGLE, RIM, PEDAL HAT, BELL HIGH, BELL LOW, TRI MUTE, TAMBOURINE, CLAVES), KEYS ON SCREEN, **HELP AT START** (the help pages after the logo), **T1–T4 / A NEW SOUND** (the page a new sound on that line brings: KEEP or a page). EDIT: the row's default |
-| **GLO + SEL** | **MAP CONTROL**: the knob pages in FX's order (PRESET moves one, ALGO shows / hides it), then what K1–K4 do on MACRO, LIVE, EQ and USER (PRESET the target, ALGO the option; a changed one in cyan). Among the targets **PAN**: a knob puts a track left / right in the stereo field (notched in the middle), the FM-1's stereo control. EDIT: the row's default. The last row of SOUNDS, MAP CONTROL and OPTION CONTROL (MENU) goes from one to the next with PRESET or OCT; any menu button closes and keeps |
+| **GLO + SEL** | **MAP CONTROL**: the knob pages in FX's order (PRESET moves one, ALGO shows / hides it), then what K1–K4 do on MOOD, LIVE, EQ and USER (PRESET the target, ALGO the option; a changed one in cyan). Among the targets **PAN**: a knob puts a track left / right in the stereo field (notched in the middle), the FM-1's stereo control. EDIT: the row's default. The last row of SOUNDS, MAP CONTROL and OPTION CONTROL (MENU) goes from one to the next with PRESET or OCT; any menu button closes and keeps |
 | **PRESET**, then OCT− / OCT+ within 2 s (or while a sound waits for SEL) | jump to the previous / next **family** of sounds, shown before the name: F1 ACID, F2 BASS, F3 DRUMS, F4 PERC (short tones), F5 LEAD, F6 KEYS (stabs, chords, keys), F7 SOFT (pads, strings, choir), F8 FX (risers, zaps, weather), F9 DARK (drones, the harsh ones), then USER |
-| **FX** (tap) on a drum track | the pages go round SOUND → MACRO → LIVE → SETUP → USER → **EQ** → **DRUM EQ** (red; the order and the pages shown: MAP CONTROL): K1 BASS, K2 TREBLE, K3 the kick's level, K4 the hats' (a synth track skips it) |
+| **FX** (tap) on a drum track | the pages go round SOUND → MOOD → LIVE → SETUP → USER → **EQ** → **DRUM EQ** (red; the order and the pages shown: MAP CONTROL): K1 BASS, K2 TREBLE, K3 the kick's level, K4 the hats' (a synth track skips it) |
 | **HOME** + white key 8 (F4), HOME let go first | **SOUNDS**: which sounds PRESET offers. The screen stays open with HOME let go (both hands free). One line a family F1–F9: the whole line red = family hidden, “F2” blue = partly, green = all offered; a square a sound; on the chosen line, the chosen sound's name (and under the title its place “3/5”, its family and ON / HIDDEN). Each family's name takes its colour. SELECT the line, PRESET the sound, SEL offered (green) / hidden (red), OCT− / OCT+ the whole family hidden / offered. Last line **→ NEXT PAGE** (the help says "<- PRESET ->"): PRESET or OCT goes on to **MAP CONTROL** (OCT−: **OPTION CONTROL**), which have the same last line; a list longer than the screen has a scroll bar on the right. Any menu button (HOME, FX, ARP, SEQ, GLO, SAVE) closes and saves. A hidden sound still plays where it is; PRESET and the family jumps skip it |
 | **HOME** + the 4th black key (C#4), HOME let go first, or **SEL** + the 3rd black key (A#3), at once | **LOOP EDIT** of the selected track: SELECT goes from note to note (it sounds), a key gives it its pitch, K1 position (1/16), K2 length, K3 velocity, K4 pitch; REC takes the note out, EDIT adds one a 1/16 later, **EDIT held + keys** add notes at the same place (a chord); PLAY plays on; HOME or SEL back. The whole edit is one UNDO (ENV) |
 | **OCT− / OCT+** | octave of the selected line, −3 to +3 (T1..T4 and A each their own; a USER sound brings back its octave); a LOOP running: ×2 / ÷2 |
@@ -45,13 +45,18 @@ This page is the quick reference. How the loops, CAPTURE and the Creative Engine
 | SOUND, synth | CUTOFF | RESO | ENV | FX (delay) |
 | SOUND, drums | TUNE | DECAY | CUTOFF | DRIVE |
 | SOUND, controller mode | CC 74 | CC 71 | CC 75 | CC 94 |
-| MACRO (all tracks) | ENERGY | SPACE | TENSION | DENSITY |
+| MOOD (the selected track's own) | ENERGY | SPACE | TENSION | DENSITY |
 | LIVE | MORPH (between the last two scenes recalled) | SWING | PUMP (sidechain) | LEVEL (0–100, 67 = unity) |
 | SETUP (preparation) | MIDI IN | XFADE (cut, 1, 2, 4 bars) | QUANTIZE | BARS (1–8; bars added repeat the loop) |
 | USER | what you gave them (MAP CONTROL) | | | |
 | EQ (the master, orange) | BASS (±12 dB, 120 Hz) | MID (±12 dB) | TREBLE (±12 dB, 8 kHz) | MID FREQ (250 Hz – 4 kHz) |
 
-MACRO, LIVE and EQ's knobs can be given other targets in MAP CONTROL, like USER's.
+MOOD, LIVE and EQ's knobs can be given other targets in MAP CONTROL, like USER's. MOOD (formerly MACRO) and the
+knobs on the selected track (USER's effects on SEL TRK, LEVEL, PAN) keep a value per track: back on a track, its own
+values. **FX held + a knob** on such a control: the other tracks come to the selected track's value in five detents
+("2/5" … "ALL ALIGNED"); the bars are mint while FX is held, and FX let go then turns no page.
+
+A sound taken (SEL): the title stays as it was while it waited ("T1 BLEEP"), green and still, with a check mark.
 
 ### Hold a layer button + a white key (F3 = key 1 ... G5 = key 16)
 

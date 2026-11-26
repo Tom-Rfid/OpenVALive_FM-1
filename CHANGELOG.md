@@ -1,5 +1,11 @@
 # Changelog
 
+## 26 November 2026 — CORE b0f21db: MOOD per track, FX held aligns the tracks, a taken sound in green, BLEEP / METAL levels
+
+- MACRO renamed MOOD, each track its own; USER's knobs on the selected track keep a value per track; FX held + a knob:
+  the other tracks come to its value in five detents (mint bars); a sound taken: the title green with a check mark.
+- BLEEP 20 % louder, METAL 10 % softer. (CORE's CHANGELOG has the details.)
+
 ## 20 November 2026 — the sounds levelled by measure; the slicer on a track; SEL and SEQ rearranged
 
 - Every synth sound levelled by measure (`tools/level_sounds.py`: a K-weighted level, each note by its loudest 100 ms,

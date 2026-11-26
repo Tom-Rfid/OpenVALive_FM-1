@@ -48,7 +48,7 @@ Une révision plus ancienne (logo sous l'écran) est bienvenue comme testeur.
 | 3.4 | GLO + 9 (mémoriser), changer le son, GLO + 10 ; en lecture GLO + 1 | « NEXT BAR » : la scène arrive sur la mesure suivante |
 | 3.5 | FX ×3 (SETUP), K2 = 2 BARS, puis GLO + 2 en lecture | fondu sur 2 mesures |
 | 3.6 | FX ×2 (LIVE), K1 MORPH | glisse entre les deux dernières scènes rappelées |
-| 3.7 | FX (MACRO) : ENERGY à fond, puis SPACE, TENSION, DENSITY | tout le morceau change d'un geste ; retour à 50 = le son d'origine |
+| 3.7 | FX (MOOD) : ENERGY à fond, puis SPACE, TENSION, DENSITY | tout le morceau change d'un geste ; retour à 50 = le son d'origine |
 | 3.8 | LIVE, K3 PUMP à 70 avec la batterie et un pad | le pad « pompe » sur la grosse caisse |
 | 3.9 | 2 ou 3 scènes mémorisées, GLO + PLAY | les scènes s'enchaînent toutes les 4 mesures |
 | 3.10 | Piste en ACID, notes fortes et douces, legato | les notes fortes « squelchent », les liées glissent |

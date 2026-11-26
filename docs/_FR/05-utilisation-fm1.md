@@ -15,7 +15,7 @@ Le manuel illustré publié avec le firmware est [`targets/fm1/docs/MANUAL.md`](
 | **PRESET** (tourner) | son de la piste : les 65 sons d'usine famille par famille (ACID, BASS, DRUMS, PERC, LEAD, KEYS, SOFT, FX, DARK : [20](20-sons-et-touches-batterie.md)), puis USER 1–8 |
 | **ALGO** (tourner) | tempo, 20 à 300 BPM |
 | **K1..K4** | la page de boutons (ci-dessous) |
-| **FX** | page suivante (SOUND orange / MACRO cyan / LIVE menthe / SETUP rose / USER violet) |
+| **FX** | page suivante (SOUND orange / MOOD cyan / LIVE menthe / SETUP rose / USER violet) |
 | **SEL** | tenu : couche des pistes (plus bas) ; appuyé : prend un son en attente (**+SEL**) ; tenu + SELECT : pointer une ligne, relâché : la sélectionner — depuis A (SEL allumé) : **échange** A et cette piste (sons, effets, octaves ; ENV sur la piste ré-échange). Le titre le dit (« SWAP TRACK A <> T2 », « SELECT LINE T3 » ; le clavier à l'écran s'efface) ; OCT− ou OCT+ avec SEL encore tenu l'annule, SELECT recommence |
 | **SELECT après la piste 4** | **A**, la ligne live : les touches jouent le son propre de A en direct (PRESET), sans l'enregistrer ; ARP tapé = arpège UP / DOWN / UP-DOWN / RANDOM ; les gestes agissent sur toutes les pistes |
 | **PLAY** | lecture / arrêt |
@@ -30,9 +30,9 @@ Le manuel illustré publié avec le firmware est [`targets/fm1/docs/MANUAL.md`](
 | **FX** + touche blanche 1, FX relâché d'abord | remise à zéro de la ligne : effets coupés, réactivée, octave 0, niveau d'origine |
 | **FX** + touche blanche 6 / 7 (Ré4 / Mi4), FX relâché d'abord | touches de batterie ORIGINAL / GM ([20](20-sons-et-touches-batterie.md)), gardé tout de suite |
 | **HOME** + touche blanche 7 (Mi4), HOME relâché d'abord | **OPTION CONTROL** : DRUM KEYS (ORIGINAL / GM), **PERC 1–4** (chaque touche Ré# / Sol# du clavier de batterie sa propre percussion : Sol#3, Ré#4, Sol#4, Ré#5 ; COWBELL, CLAP, TRIANGLE, RIM, PEDAL HAT, BELL HIGH, BELL LOW, TRI MUTE, TAMBOURINE, CLAVES), KEYS ON SCREEN, **HELP AT START** (les pages d'aide après le logo), **T1–T4 / A NEW SOUND** (la page qu'un nouveau son amène sur cette ligne : KEEP ou une page). EDIT : la valeur par défaut de la ligne |
-| **GLO + SEL** | **MAP CONTROL** : les pages de boutons dans l'ordre de FX (PRESET en déplace une, ALGO l'affiche / la masque), puis ce que font K1–K4 sur MACRO, LIVE, EQ et USER (PRESET la cible, ALGO l'option ; une ligne changée en cyan). Parmi les cibles, **PAN** : un bouton place une piste à gauche / droite dans la stéréo (cran au milieu), la commande stéréo du FM-1. EDIT : la valeur par défaut de la ligne. La dernière ligne de SOUNDS, MAP CONTROL et OPTION CONTROL (MENU) passe de l'un à l'autre avec PRESET ou OCT ; n'importe quel bouton de menu ferme et garde |
+| **GLO + SEL** | **MAP CONTROL** : les pages de boutons dans l'ordre de FX (PRESET en déplace une, ALGO l'affiche / la masque), puis ce que font K1–K4 sur MOOD, LIVE, EQ et USER (PRESET la cible, ALGO l'option ; une ligne changée en cyan). Parmi les cibles, **PAN** : un bouton place une piste à gauche / droite dans la stéréo (cran au milieu), la commande stéréo du FM-1. EDIT : la valeur par défaut de la ligne. La dernière ligne de SOUNDS, MAP CONTROL et OPTION CONTROL (MENU) passe de l'un à l'autre avec PRESET ou OCT ; n'importe quel bouton de menu ferme et garde |
 | **PRESET**, puis OCT− / OCT+ dans les 2 s (ou tant qu'un son attend SEL) | famille de sons précédente / suivante, affichée devant le nom : F1 ACID, F2 BASS, F3 DRUMS, F4 PERC (sons courts), F5 LEAD, F6 KEYS (stabs, accords, claviers), F7 SOFT (nappes, cordes, chœur), F8 FX (montées, zaps, météo), F9 DARK (drones, les sons durs), puis USER |
-| **FX** (tap) sur une piste de batterie | les pages font SOUND → MACRO → LIVE → SETUP → USER → **EQ** → **DRUM EQ** (rouge ; l'ordre et les pages affichées : MAP CONTROL) : K1 graves (BASS), K2 aigus (TREBLE), K3 le niveau de la grosse caisse, K4 celui des charleys (une piste synthé la saute) |
+| **FX** (tap) sur une piste de batterie | les pages font SOUND → MOOD → LIVE → SETUP → USER → **EQ** → **DRUM EQ** (rouge ; l'ordre et les pages affichées : MAP CONTROL) : K1 graves (BASS), K2 aigus (TREBLE), K3 le niveau de la grosse caisse, K4 celui des charleys (une piste synthé la saute) |
 | **HOME** + touche blanche 8 (Fa4), HOME relâché d'abord | **SOUNDS** : les sons que PRESET propose. L'écran reste ouvert HOME relâché (les deux mains libres). Une ligne par famille F1–F9 : toute la ligne rouge = famille masquée, « F2 » en bleu = en partie, en vert = tout proposé ; un carré par son ; sur la ligne choisie, le nom du son choisi (et sous le titre sa position « 3/5 », sa famille et ON / HIDDEN). Le nom de chaque famille prend sa couleur. SELECT la ligne, PRESET le son, SEL proposé (vert) / masqué (rouge), OCT− / OCT+ toute la famille masquée / proposée. Dernière ligne **→ NEXT PAGE** (l'aide dit « <- PRESET -> ») : PRESET ou OCT passe à **MAP CONTROL** (OCT− : **OPTION CONTROL**), qui ont la même dernière ligne ; une liste plus longue que l'écran a une barre de défilement à droite. N'importe quel bouton de menu (HOME, FX, ARP, SEQ, GLO, SAVE) ferme et enregistre. Un son masqué continue de jouer là où il est ; PRESET et les sauts de famille le sautent |
 | **HOME** + 4e touche noire (Do#4), HOME relâché d'abord, ou **SEL** + 3e touche noire (La#3), tout de suite | **LOOP EDIT** de la piste choisie : SELECT passe d'une note à l'autre (elle sonne), une touche lui donne sa hauteur, K1 position (1/16), K2 longueur, K3 vélocité, K4 hauteur ; REC efface la note, EDIT en ajoute une un 1/16 plus loin, **EDIT tenu + touches** ajoute des notes au même endroit (un accord) ; PLAY lance la lecture ; HOME ou SEL pour sortir. Toute l'édition = un seul UNDO (ENV) |
 | **OCT− / OCT+** | octave de la ligne sélectionnée, −3 à +3 (T1..T4 et A ont chacune la leur ; un son USER ramène son octave) ; une LOOP en cours : ×2 / ÷2 |
@@ -45,13 +45,19 @@ Le manuel illustré publié avec le firmware est [`targets/fm1/docs/MANUAL.md`](
 | SOUND, synthé | CUTOFF | RESO | ENV | FX (delay) |
 | SOUND, batterie | TUNE | DECAY | CUTOFF | DRIVE |
 | SOUND, mode contrôleur | CC 74 | CC 71 | CC 75 | CC 94 |
-| MACRO (toutes les pistes) | ENERGY | SPACE | TENSION | DENSITY |
+| MOOD (la piste choisie, chacune la sienne) | ENERGY | SPACE | TENSION | DENSITY |
 | LIVE | MORPH (entre les deux dernières scènes rappelées) | SWING | PUMP (sidechain) | LEVEL (volume de piste, 0–100, 67 = tel quel) |
 | SETUP (préparation) | MIDI IN | XFADE (coupe, 1, 2, 4 mesures) | QUANTIZE | BARS (1–8 mesures ; les mesures ajoutées répètent la boucle) |
 | USER | ce que tu leur as donné (MAP CONTROL) | | | |
 | EQ (la sortie, orange) | BASS graves (±12 dB, 120 Hz) | MID médiums (±12 dB) | TREBLE aigus (±12 dB, 8 kHz) | MID FREQ (250 Hz – 4 kHz) |
 
-Les boutons de MACRO, LIVE et EQ peuvent recevoir d'autres cibles dans MAP CONTROL, comme ceux de USER.
+Les boutons de MOOD, LIVE et EQ peuvent recevoir d'autres cibles dans MAP CONTROL, comme ceux de USER. MOOD (l'ancien
+MACRO) et les boutons sur la piste choisie (les effets de USER sur SEL TRK, LEVEL, PAN) gardent une valeur par piste :
+de retour sur une piste, ses propres valeurs. **FX tenu + un bouton** sur un tel réglage : les autres pistes rejoignent
+la valeur de la piste choisie en cinq crans (« 2/5 » … « ALL ALIGNED ») ; les barres sont menthe tant que FX est tenu,
+et FX lâché ne change alors pas de page.
+
+Un son pris (SEL) : le titre reste celui de l'attente (« T1 BLEEP »), en vert et fixe, avec une coche.
 
 ### Maintenir un bouton de couche + une touche blanche (F3 = touche 1 ... G5 = touche 16)
 
