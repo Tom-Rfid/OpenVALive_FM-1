@@ -1,5 +1,9 @@
 # Changelog
 
+# v0.1.1 — 27 November 2026
+
+- `fmhub.json`: the SMK-37 card (`smk37`: what, image docs/img/smk37-card.png, install, guide). The firmware is 0.1.0's.
+
 ## 26 November 2026 — CORE 8416fe9: MOOD per track, FX held aligns the tracks, a taken sound in green, BLEEP / METAL levels
 
 - MACRO renamed MOOD, each track its own; USER's knobs on the selected track keep a value per track; FX held + a knob:

@@ -1,9 +1,17 @@
 {
   "what": "A live-first instrument: four synth tracks with their own loops, Capture (play freely, press once, it loops in time), undo, scenes and Morph, hold-to-play stutter and filter throws, and a Creative Engine that mutates, humanizes, fills or simplifies what you played.",
   "author": "Tom-Rfid",
-  "kinds": ["groove"],
+  "kinds": [
+    "groove"
+  ],
   "play": "https://tom-rfid.github.io/OpenVALive_FM-1/emu/",
   "cheat": "https://tom-rfid.github.io/OpenVALive_FM-1/manual/",
   "image": "docs/img/fm1-card.png",
-  "color": "#FFB43C"
+  "color": "#FFB43C",
+  "smk37": {
+    "what": "The same live instrument on the SMK-37 Elite and Pro: 37 keys, pressure pads for perform effects, mutes and scenes, faders and wheels you can assign, MIDI out to a drum machine.",
+    "image": "docs/img/smk37-card.png",
+    "install": "https://github.com/Tom-Rfid/OpenVALive_SMK-37/releases/latest",
+    "guide": "https://tom-rfid.github.io/OpenVALive_SMK-37/"
+  }
 }
