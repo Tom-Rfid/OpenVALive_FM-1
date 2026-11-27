@@ -67,6 +67,7 @@ On [The Firmware Hub](https://thefirmwarehub.com): **FM-1_023** (this firmware) 
 | I want to... | Do this |
 |---|---|
 | **try it now** | the [browser emulator](https://tom-rfid.github.io/OpenVALive_FM-1/emu/) |
+| **see every gesture, menu and pad** | the [visual guide](https://tom-rfid.github.io/OpenVALive_SMK-37/) (FM-1 / SMK-37 switch; [en français](https://tom-rfid.github.io/OpenVALive_SMK-37/fr.html)) |
 | **install it on my FM-1** | the [web installer](https://tom-rfid.github.io/OpenVALive_FM-1/install/) (Chrome / Edge), or the latest [release](https://github.com/Tom-Rfid/OpenVALive_FM-1/releases): `OpenVALive-FM1-X.Y.Z.zip`, then `FLASH-FM1.bat` ([guide](docs/_EN/04-install.md)) |
 | **bring back a unit that no longer starts** | [jieli-usbkey-unbrick](https://github.com/Tom-Rfid/jieli-usbkey-unbrick) (also in `recovery/`): a Raspberry Pi through the USB cable, the unit stays closed |
 | **build everything on Windows** | double-click `INSTALL-WINDOWS.bat` (WSL, toolchain, tests, firmware, flash) |
