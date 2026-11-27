@@ -1,5 +1,7 @@
 # OpenVALive
 
+<img src="img/openvalive-logo.png" alt="OpenVALive" width="160" height="160">
+
 **A live-first instrument for the M-VAVE FM-1.** It has four synth tracks, each with its own loop. Play freely and
 press CAPTURE: what you played loops, in time. Undo anything. Glide between scenes with one knob. Hold a key to
 stutter or sweep. Let the Creative Engine mutate, humanize, fill or simplify your loops. No menus. Open source,
@@ -9,6 +11,7 @@ from the DSP to the installer.
 
 This is version {{VERSION}}. You install it at your own risk; the installer can put M-VAVE's own firmware back.
 
+- [The visual guide](https://tom-rfid.github.io/OpenVALive_SMK-37/): every gesture, loop, menu and screen, FM-1 and SMK-37 ([en français](https://tom-rfid.github.io/OpenVALive_SMK-37/fr.html)).
 - [Try it in the browser](emu/): the same code as on the FM-1, with sound. No FM-1 needed.
 - [Install](install/) it from Chrome or Edge, with the FM-1 connected by USB.
 - The [Manual](manual/) explains the screen, the loops, the Creative Engine, scenes, effects and MIDI.
