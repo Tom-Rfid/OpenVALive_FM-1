@@ -159,12 +159,20 @@ function usualName(name, names = PORT_NAMES) {
   return names.some((p) => n.includes(p));
 }
 
-const livePorts = (map) => [...map.values()].filter((p) => p.state !== "disconnected");
+// never a Bluetooth MIDI port: an FM-1 paired over Bluetooth shows one beside its USB port, an install or a backup over
+// it is not offered, and it answers nothing asked of it. bluetooth = true: a list the user picks from by hand (the mirror
+// page's two drop-downs) keeps them, after the others
+const IS_BLUETOOTH = (name) => /bluetooth/i.test(name || "");
+const livePorts = (map, bluetooth = false) => {
+  const live = [...map.values()].filter((p) => p.state !== "disconnected" && (bluetooth || !IS_BLUETOOTH(p.name)));
+  return bluetooth ? [...live.filter((p) => !IS_BLUETOOTH(p.name)), ...live.filter((p) => IS_BLUETOOTH(p.name))] : live;
+};
 
 // an input's output: the one with its name; else the only one with its name but for a number at the end (Windows
-// numbers each port); else the only output there is. null: none
+// numbers each port); else the only output there is. null: none. A Bluetooth input (picked by hand) looks among the
+// Bluetooth outputs too
 function outputFor(access, input) {
-  const outs = livePorts(access.outputs);
+  const outs = livePorts(access.outputs, IS_BLUETOOTH(input.name));
   const bare = (s) => (s || "").replace(/\s+\d+$/, "");
   const same = outs.filter((o) => bare(o.name) === bare(input.name));
   return outs.find((o) => o.name === input.name) || (same.length === 1 ? same[0] : null) ||
@@ -380,9 +388,6 @@ const LOADER_MARK = [..."FELUCCA-LOADER-1"].map((c) => c.charCodeAt(0));
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const IS_OTA = (id) => /^ota-/i.test(id.model);
 
-// an FM-1 paired over Bluetooth MIDI shows a port named "... Bluetooth" beside its USB one: it never answers an update
-// (and a Mac lists the paired one first), so no port with that word is asked, picked, listed or tried
-const IS_BLUETOOTH = (name) => /bluetooth/i.test(name || "");
 
 // M-VAVE's FM1 Open firmware (V10, 2026-10): its updater takes only a package it has been told about
 // first (cmd 49 reads its state, cmd 50 arms it with the image length and the package's SHA-256); then
@@ -531,6 +536,10 @@ async function ask(link, query, ms) {
 
 // the identity: HS_QUERY, then HS_FULL when the answer is NAME_ and three digits (a firmware on chip/ota.c tells its
 // whole identity so); the plain answer when nothing answers HS_FULL (M-VAVE's, an older build)
+// the identity a device answered is the package's: the whole of it, or NAME_ and three digits that start it (a firmware
+// that never answered HS_FULL; fm1_install.py's check, the same)
+const sameId = (text, product) => text === product || (/^[^_]+_\d{3}$/.test(text) && product.startsWith(text));
+
 async function handshake(link, tries = 3) {
   link.drain();
   for (let t = 0; t < tries; t++) {
@@ -694,6 +703,21 @@ class Updater {
     return null;
   }
 
+  // a device back from an update that answered only NAME_ and three digits, the start of the identity it should have
+  // (product): asked again for its whole identity, for up to ms. Its first boot can be slow to answer HS_FULL (a
+  // firmware setting up its store after another firmware's: flash erased with the interrupts off), and handshake waits
+  // only 600 ms for it. The link closed after.
+  async settle(back, product, ms = 10000) {
+    const end = Date.now() + ms;
+    while (back.id.text !== product && product.startsWith(back.id.text) && Date.now() < end) {
+      await sleep(500);
+      const full = await ask(back.link, HS_FULL, 1500);
+      if (full === false) break;
+      if (full && full.model === back.id.model && full.text.startsWith(back.id.text)) back.id = full;
+    }
+    back.link.close();
+  }
+
   async waitFor(filter, ms) {
     const end = Date.now() + ms;
     while (Date.now() < end) {
@@ -780,8 +804,8 @@ class Updater {
     await sleep(3000);
     const back = await this.waitFor((id) => !IS_OTA(id), 40000);
     if (!back) throw fail("noreturn", "the device did not come back: power-cycle it");
-    back.link.close();
-    if (back.id.text !== product) throw fail("mismatch", `installed, but the device reports ${back.id.text}`, back.id.text);
+    await this.settle(back, product);
+    if (!sameId(back.id.text, product)) throw fail("mismatch", `installed, but the device reports ${back.id.text}`, back.id.text);
     step("done", back.id.text);
     return back.id.text;
   }
@@ -908,8 +932,8 @@ class Updater {
         await sleep(3000);
         const back = await this.waitFor((id) => !IS_OTA(id), 40000);
         if (!back) throw fail("noreturn", "the device did not come back: power-cycle it");
-        back.link.close();
-        if (back.id.text !== product) throw fail("mismatch", `written, but the device reports ${back.id.text}`, back.id.text);
+        await this.settle(back, product);
+        if (!sameId(back.id.text, product)) throw fail("mismatch", `written, but the device reports ${back.id.text}`, back.id.text);
         step("done", back.id.text);
       }
       return true;
@@ -1094,7 +1118,7 @@ const log = (t) => {
   if (atEnd) el.scrollTop = el.scrollHeight;
 };
 let image = null, boot = null, res = null;
-const meta = {"version": "0.0.3", "product": "FM-1_023", "pkg": "../firmware/openvalive-0.0.3.fwsc", "backup": false, "res": null, "boot": {"pkg": "../firmware/m-bootloader-2.4.fwsc", "version": "2.4", "sha256": "28fb1336dbff22882f545169d57afbb5a732eeb6268331aaa444f1c657b286d3"}};
+const meta = {"version": "0.1.0", "product": "FM-1_023", "pkg": "../firmware/openvalive-0.1.0.fwsc", "backup": false, "res": null, "boot": {"pkg": "../firmware/m-bootloader-2.4.fwsc", "version": "2.4", "sha256": "28fb1336dbff22882f545169d57afbb5a732eeb6268331aaa444f1c657b286d3"}};
 /* the firmware's own steps around an install (its site's install_app script, or none): before(midi, ui) runs before
    anything is written, may ask (ui.ask) and returns its state, or false to stop there; after(midi, ui, state) once
    the new firmware has started (it waits for it itself). A failure in after is said, the install stays done */
